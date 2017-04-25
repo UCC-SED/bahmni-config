@@ -139,6 +139,21 @@
                     "showDetailsButton":true
                 }
             },
+            "baseline": {
+                "type": "forms",
+                "displayOrder": 5,
+                "dashboardConfig": {
+                    "title": null,
+                    "maximumNoOfVisits": 10
+                },
+                "formGroup": [
+                    "History and Examination",
+                    "All Orderables",
+                    "Visit Diagnoses"
+
+                ],
+                "translationKey": "DASHBOARD_TITLE_BASELINE_FORMS"
+            },
             "bacteriologyResults":{  
                 "translationKey":"DASHBOARD_TITLE_BACTERIOLOGY_RESULTS_KEY",
                 "type":"bacteriologyResultsControl",
@@ -258,19 +273,19 @@
                 "translationKey":"DASHBOARD_TITLE_HISTORY_AND_EXAMINATIONS_KEY",
                 "type":"vitals",
                 "isObservation":true,
-                "displayOrder":14,
+                "displayOrder":1,
                 "dashboardConfig":{  
                     "showDetailsButton":true,
                     "conceptNames":[  
                         "History and Examination"
                     ],
-                    "numberOfVisits":2
+                    "numberOfVisits":10
                 },
                 "expandedViewConfig":{  
                     "conceptNames":[  
                         "History and Examination"
                     ],
-                    "numberOfVisits":2,
+                    "numberOfVisits":10,
                     "showDetailsButton":true,
                     "pivotTable":{  
 
