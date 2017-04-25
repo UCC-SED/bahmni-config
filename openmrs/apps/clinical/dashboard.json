@@ -105,6 +105,7 @@
                     "numberOfVisits":4
                 }
             },
+
             "pacs":{  
                 "orderType":"Radiology Order",
                 "type":"pacsOrders",
@@ -152,7 +153,7 @@
                     "Visit Diagnoses"
 
                 ],
-                "translationKey": "DASHBOARD_TITLE_BASELINE_FORMS"
+                "translationKey": "DASHBOARD_TITLE_HISTORY_AND_EXAMINATIONS_KEY"
             },
             "bacteriologyResults":{  
                 "translationKey":"DASHBOARD_TITLE_BACTERIOLOGY_RESULTS_KEY",
@@ -288,6 +289,29 @@
                     "numberOfVisits":10,
                     "showDetailsButton":true,
                     "pivotTable":{  
+
+                    }
+                }
+            },
+            "patientTreatment":{
+                "translationKey":"DASHBOARD_PATIENT_TREATMENT",
+                "type":"vitals",
+                "isObservation":true,
+                "displayOrder":3,
+                "dashboardConfig":{
+                    "showDetailsButton":true,
+                    "conceptNames":[
+                        "Client Treatment Process"
+                    ],
+                    "numberOfVisits":10
+                },
+                "expandedViewConfig":{
+                    "conceptNames":[
+                        "Client Treatment Process"
+                    ],
+                    "numberOfVisits":10,
+                    "showDetailsButton":true,
+                    "pivotTable":{
 
                     }
                 }
