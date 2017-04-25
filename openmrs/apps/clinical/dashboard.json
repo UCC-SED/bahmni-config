@@ -584,7 +584,7 @@
                         "Chief Complaint Data",
                         "Examination Notes",
                         "Smoking History",
-                        "Clief COmplaint Notes",
+                        "Chief Complaint Notes",
                         "Blood Pressure"
                     ]
                 },
@@ -631,6 +631,23 @@
                     "drugs":[  
 
                     ]
+                }
+            }
+        }
+    },
+    "birthCertificate": {
+        "title": "Birth Certificate",
+        "printing": {
+            "title": "Bahmni",
+            "header": "Certificate",
+            "logo": "../images/bahmniLogo.png"
+        },
+        "sections": {
+            "Birth Certificate": {
+                "type": "custom",
+                "config": {
+                    "title": "Birth Certificate",
+                    "template": "<birth-certificate></birth-certificate>"
                 }
             }
         }
