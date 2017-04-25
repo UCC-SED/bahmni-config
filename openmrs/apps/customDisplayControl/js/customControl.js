@@ -13,12 +13,12 @@ angular.module('bahmni.common.displaycontrol.custom')
                 $scope.contentUrl = appService.configBaseUrl() + "/customDisplayControl/views/birthCertificate.html";
                 spinner.forPromise(observationsService.fetch($scope.patient.uuid, conceptNames, "latest", undefined, $scope.visitUuid, undefined).then(function (response) {
                     $scope.observations = response.data;
-                    console.log(response.data);
+
                 }));
             };
 
             return {
-                restrict: 'E',
+               // restrict: 'E',
                 template: '<ng-include src="contentUrl"/>',
                 link: link
             }
