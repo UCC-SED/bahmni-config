@@ -303,8 +303,10 @@
                     "conceptNames":[
                         "Chief Complaint Data",
                         "Chief Complaint Notes",
-                        "All Orderables",
-                        "Visit Diagnoses"
+                        "Lab Samples",
+                        "Coded Diagnosis",
+                        "Diagnosis Certainty",
+                        "Bahmni Diagnosis Status"
                     ],
                     "numberOfVisits":10
                 },
