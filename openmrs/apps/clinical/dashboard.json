@@ -301,13 +301,19 @@
                 "dashboardConfig":{
                     "showDetailsButton":true,
                     "conceptNames":[
-                        "Client Treatment Process"
+                        "Chief Complaint Data",
+                        "Chief Complaint Notes",
+                        "All Orderables",
+                        "Visit Diagnoses"
                     ],
                     "numberOfVisits":10
                 },
                 "expandedViewConfig":{
                     "conceptNames":[
-                        "Client Treatment Process"
+                        "Chief Complaint Data",
+                        "Chief Complaint Notes",
+                        "All Orderables",
+                        "Visit Diagnoses"
                     ],
                     "numberOfVisits":10,
                     "showDetailsButton":true,
