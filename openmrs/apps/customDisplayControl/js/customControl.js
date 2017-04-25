@@ -4,7 +4,7 @@ angular.module('bahmni.common.displaycontrol.custom')
     .directive('birthCertificate', ['observationsService', 'appService', 'spinner', function (observationsService, appService, spinner) {
             var link = function ($scope) {
                 console.log("inside birth certificate");
-                var conceptNames = ["HEIGHT", "Chief Complaint Data",
+                var conceptNames = [ "Chief Complaint Data",
                     "Chief Complaint Notes",
                     "Lab Samples",
                     "Coded Diagnosis",
