@@ -46,7 +46,6 @@
                 "translationKey":"DASHBOARD_TITLE_LAB_ORDERS_DISPLAY_CONTROL_KEY",
                 "type":"ordersControl",
                 "orderType":"Lab Order",
-                "displayType":"Full-Page",
                 "showDetailsButton":true,
                 "displayOrder":3,
                 "dashboardConfig":{
@@ -72,7 +71,6 @@
                 "translationKey":"DASHBOARD_TITLE_LAB_RESULTS_KEY",
                 "type":"labOrders",
                 "displayOrder":4,
-                "displayType":"Full-Page",
                 "dashboardConfig":{
                     "title":null,
                     "showChart":false,
