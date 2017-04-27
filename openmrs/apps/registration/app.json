@@ -28,16 +28,6 @@
                         "Telephone Contact"
                     ]
                 },
-                "additionalSocialHistoryInformation": {
-                    "title": "Other Vital Information",
-                    "attributes": [
-                        "education",
-                        "occupation",
-                        "File Number",
-                        "Place of Birth",
-                        "Telephone Contact"
-                    ]
-                },
                 "hidden": {
                     "attributes": [
                         "primaryContact"
