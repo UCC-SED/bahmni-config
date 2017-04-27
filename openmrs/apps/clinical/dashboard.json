@@ -8,7 +8,7 @@
                 "translationKey":"DASHBOARD_TITLE_NAVIGATION_LINKS_CONTROL_KEY",
                 "displayType":"Full-Page",
                 "type":"navigationLinksControl",
-                "displayOrder":1,
+                "displayOrder":0,
                 "showLinks":[
                     "home",
                     "visit",
@@ -23,10 +23,9 @@
                 "type":"diagnosis",
                 "showCertainty":true,
                 "numberOfVisits":10,
-                "displayType":"Full-Page",
                 "showOrder":true,
                 "showDetailsButton":true,
-                "displayOrder":0
+                "displayOrder":1
             },
             "visits":{
                 "translationKey":"DASHBOARD_TITLE_VISITS_KEY",
@@ -124,7 +123,6 @@
                 "translationKey":"DASHBOARD_TITLE_VITALS_KEY",
                 "type":"vitals",
                 "isObservation":true,
-                "displayType":"Full-Page",
                 "displayOrder":8,
                 "dashboardConfig":{
                     "showDetailsButton":true,
@@ -155,14 +153,6 @@
                     }
                 }
             },
-
-            "admissionDetails":{
-                "translationKey":"DASHBOARD_TITLE_ADMISSION_DETAILS_KEY",
-                "type":"admissionDetails",
-                "displayType":"Full-Page",
-                "displayOrder":10,
-                "showDetailsButton":true
-            }
         }
     },
     "trends":{
