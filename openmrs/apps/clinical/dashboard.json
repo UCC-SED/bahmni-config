@@ -19,19 +19,11 @@
                     "countryDistrict"
                 ]
             },
-            "diagnosis":{  
-                "translationKey":"DASHBOARD_TITLE_DIAGNOSIS_KEY",
-                "type":"diagnosis",
-                "showCertainty":true,
-                "showOrder":true,
-                "showDetailsButton":true,
-                "displayOrder":1
-            },
-            "navigationLinksControl":{  
+            "navigationLinksControl":{
                 "translationKey":"DASHBOARD_TITLE_NAVIGATION_LINKS_CONTROL_KEY",
                 "type":"navigationLinksControl",
-                "displayOrder":2,
-                "showLinks":[  
+                "displayOrder":1,
+                "showLinks":[
                     "home",
                     "visit",
                     "registration",
@@ -40,28 +32,82 @@
                     "visitAttribute"
                 ]
             },
-	    "tuberculosis": {
-                "title": "Tuberculosis Follow Up",
-                "type": "tuberculosis",
-                "isObservation": true,
-                "dashboardConfig": {
-                    "conceptNames": [
-                        "Tuberculosis Followup Template"
+            "historyAndExaminations":{
+                "translationKey":"DASHBOARD_TITLE_HISTORY_AND_EXAMINATIONS_KEY",
+                "type":"vitals",
+                "isObservation":true,
+                "displayOrder":2,
+                "dashboardConfig":{
+                    "showDetailsButton":true,
+                    "conceptNames":[
+                        "History and Examination"
                     ],
-                    "numberOfVisits": 2
+                    "numberOfVisits":10
+                },
+                "expandedViewConfig":{
+                    "conceptNames":[
+                        "History and Examination"
+                    ],
+                    "numberOfVisits":10,
+                    "showDetailsButton":true,
+                    "pivotTable":{
+
+                    }
                 }
             },
-            "disposition":{  
-                "translationKey":"DASHBOARD_TITLE_DISPOSITION_KEY",
+            "labOrdersDisplayControl":{
+                "translationKey":"DASHBOARD_TITLE_LAB_ORDERS_DISPLAY_CONTROL_KEY",
+                "type":"ordersControl",
+                "orderType":"Lab Order",
                 "showDetailsButton":true,
-                "type":"disposition",
-                "numberOfVisits":1,
-                "displayOrder":3
+                "displayOrder":3,
+                "dashboardConfig":{
+                    "conceptNames":[
+                        "Systolic",
+                        "Diastolic",
+                        "Posture",
+                        "Temperature"
+                    ]
+                },
+                "expandedViewConfig":{
+                    "conceptNames":[
+                        "Systolic",
+                        "Diastolic",
+                        "Posture",
+                        "Temperature"
+                    ],
+                    "showDetailsButton":true
+                }
+            },
+            "labResults":{
+                "translationKey":"DASHBOARD_TITLE_LAB_RESULTS_KEY",
+                "type":"labOrders",
+                "displayOrder":4,
+                "dashboardConfig":{
+                    "title":null,
+                    "numberOfVisits":1,
+                    "showChart":false,
+                    "showTable":true,
+                    "showDetailsButton":false,
+                    "initialAccessionCount":0,
+                    "latestAccessionCount":1
+                },
+                "expandedViewConfig":{
+                    "numberOfVisits":10
+                }
+            },
+            "diagnosis":{
+                "translationKey":"DASHBOARD_TITLE_DIAGNOSIS_KEY",
+                "type":"diagnosis",
+                "showCertainty":true,
+                "showOrder":true,
+                "showDetailsButton":true,
+                "displayOrder":5
             },
             "treatments":{  
                 "translationKey":"DASHBOARD_TITLE_TREATMENTS_KEY",
                 "type":"treatment",
-                "displayOrder":4,
+                "displayOrder":6,
                 "dashboardConfig":{  
                     "showFlowSheet":true,
                     "showListView":true,
@@ -82,142 +128,16 @@
                     "showDetailsButton":true
                 }
             },
-            "radiology":{  
-                "translationKey":"DASHBOARD_TITLE_RADIOLOGY_KEY",
-                "type":"radiology",
-                "showDetailsButton":true,
-                "displayOrder":5
-            },
             "programs":{  
                 "translationKey":"DASHBOARD_TITLE_PROGRAMS_KEY",
                 "type":"programs",
-                "displayOrder":6
-            },
-            "radiologyOrders":{  
-                "orderType":"Radiology Order",
-                "type":"ordersControl",
-                "translationKey":"DASHBOARD_TITLE_RADIOLOGY_ORDERS_KEY",
-                "displayOrder":7,
-                "dashboardConfig":{  
-                    "conceptNames":[  
-                        "Summary"
-                    ],
-                    "numberOfVisits":4
-                }
-            },
-
-            "pacs":{  
-                "orderType":"Radiology Order",
-                "type":"pacsOrders",
-                "translationKey":"DASHBOARD_TITLE_PACS_KEY",
-                "displayOrder":8,
-                "dashboardConfig":{  
-                    "pacsImageUrl":"/oviyam2/viewer.html?patientID={{patientID}}&accessionNumber={{orderNumber}}",
-                    "numberOfVisits":4
-                }
-            },
-            "labOrdersDisplayControl":{  
-                "translationKey":"DASHBOARD_TITLE_LAB_ORDERS_DISPLAY_CONTROL_KEY",
-                "type":"ordersControl",
-                "orderType":"Lab Order",
-                "showDetailsButton":true,
-                "displayOrder":9,
-                "dashboardConfig":{  
-                    "conceptNames":[  
-                        "Systolic",
-                        "Diastolic",
-                        "Posture",
-                        "Temperature"
-                    ]
-                },
-                "expandedViewConfig":{  
-                    "conceptNames":[  
-                        "Systolic",
-                        "Diastolic",
-                        "Posture",
-                        "Temperature"
-                    ],
-                    "showDetailsButton":true
-                }
-            },
-            "baseline": {
-                "type": "forms",
-                "displayOrder": 5,
-                "dashboardConfig": {
-                    "title": null,
-                    "maximumNoOfVisits": 10
-                },
-                "formGroup": [
-                    "History and Examination",
-                    "All Orderables",
-                    "Visit Diagnoses"
-
-                ],
-                "translationKey": "DASHBOARD_TITLE_HISTORY_AND_EXAMINATIONS_KEY"
-            },
-            "bacteriologyResults":{  
-                "translationKey":"DASHBOARD_TITLE_BACTERIOLOGY_RESULTS_KEY",
-                "type":"bacteriologyResultsControl",
-                "scope":"All",
-                "orderType":"",
-                "dashboardConfig":{  
-                    "conceptNames":[  
-                        "BACTERIOLOGY CONCEPT SET"
-                    ]
-                }
-            },
-            "labResults":{  
-                "translationKey":"DASHBOARD_TITLE_LAB_RESULTS_KEY",
-                "type":"labOrders",
-                "displayOrder":10,
-                "dashboardConfig":{  
-                    "title":null,
-                    "numberOfVisits":1,
-                    "showChart":false,
-                    "showTable":true,
-                    "showDetailsButton":false,
-                    "initialAccessionCount":0,
-                    "latestAccessionCount":1
-                },
-                "expandedViewConfig":{  
-                    "numberOfVisits":10
-                }
-            },
-            "nutritionalValues":{  
-                "translationKey":"DASHBOARD_TITLE_NUTRITIONAL_VALUES_KEY",
-                "type":"vitals",
-                "isObservation":true,
-                "displayOrder":11,
-                "dashboardConfig":{  
-                    "conceptNames":[  
-                        "HEIGHT",
-                        "Weight",
-                        "BMI Data",
-                        "BMI Status Data"
-                    ],
-                    "showDetailsButton":true,
-                    "numberOfVisits":2
-                },
-                "expandedViewConfig":{  
-                    "conceptNames":[  
-                        "HEIGHT",
-                        "Weight",
-                        "BMI",
-                        "BMI STATUS"
-                    ],
-                    "numberOfVisits":2,
-                    "scope":"latest",
-                    "showDetailsButton":true,
-                    "pivotTable":{  
-
-                    }
-                }
+                "displayOrder":7
             },
             "vitals":{  
                 "translationKey":"DASHBOARD_TITLE_VITALS_KEY",
                 "type":"vitals",
                 "isObservation":true,
-                "displayOrder":12,
+                "displayOrder":8,
                 "dashboardConfig":{  
                     "showDetailsButton":true,
                     "conceptNames":[  
@@ -247,182 +167,20 @@
                     }
                 }
             },
-            "secondVitals":{  
-                "translationKey":"DASHBOARD_TITLE_SECOND_VITALS_KEY",
-                "type":"second vitals",
-                "isObservation":true,
-                "displayOrder":13,
-                "dashboardConfig":{  
-                    "showDetailsButton":true,
-                    "conceptNames":[  
-                        "Second Vitals"
-                    ],
-                    "numberOfVisits":2
-                },
-                "expandedViewConfig":{  
-                    "conceptNames":[  
-                        "Second Vitals"
-                    ],
-                    "numberOfVisits":2,
-                    "showDetailsButton":true,
-                    "pivotTable":{  
-
-                    }
-                }
-            },
-            "historyAndExaminations":{  
-                "translationKey":"DASHBOARD_TITLE_HISTORY_AND_EXAMINATIONS_KEY",
-                "type":"vitals",
-                "isObservation":true,
-                "displayOrder":1,
-                "dashboardConfig":{  
-                    "showDetailsButton":true,
-                    "conceptNames":[  
-                        "History and Examination"
-                    ],
-                    "numberOfVisits":10
-                },
-                "expandedViewConfig":{  
-                    "conceptNames":[  
-                        "History and Examination"
-                    ],
-                    "numberOfVisits":10,
-                    "showDetailsButton":true,
-                    "pivotTable":{  
-
-                    }
-                }
-            },
-            "patientTreatment":{
-                "translationKey":"DASHBOARD_PATIENT_TREATMENT",
-                "type":"vitals",
-                "isObservation":true,
-                "displayOrder":3,
-                "dashboardConfig":{
-                    "showDetailsButton":true,
-                    "conceptNames":[
-                        "Chief Complaint Data",
-                        "Chief Complaint Notes",
-                        "Lab Samples",
-                        "Coded Diagnosis",
-                        "Diagnosis Certainty",
-                        "Bahmni Diagnosis Status"
-                    ],
-                    "numberOfVisits":10
-                },
-                "expandedViewConfig":{
-                    "conceptNames":[
-                        "Chief Complaint Data",
-                        "Chief Complaint Notes",
-                        "All Orderables",
-                        "Visit Diagnoses"
-                    ],
-                    "numberOfVisits":10,
-                    "showDetailsButton":true,
-                    "pivotTable":{
-
-                    }
-                }
-            },
-            "gynaecology":{  
-                "translationKey":"DASHBOARD_TITLE_GYNAECOLOGY_KEY",
-                "type":"gynaecology",
-                "isObservation":true,
-                "displayOrder":15,
-                "dashboardConfig":{  
-                    "conceptNames":[  
-                        "Gynaecology"
-                    ],
-                    "showDetailsButton":true,
-                    "numberOfVisits":2
-                },
-                "expandedViewConfig":{  
-                    "conceptNames":[  
-                        "Gynaecology"
-                    ],
-                    "numberOfVisits":2,
-                    "showDetailsButton":true,
-                    "pivotTable":{  
-
-                    }
-                }
-            },
-            "obstetrics":{  
-                "translationKey":"DASHBOARD_TITLE_OBSTETRICS_KEY",
-                "type":"obstetrics",
-                "isObservation":true,
-                "displayOrder":16,
-                "dashboardConfig":{  
-                    "showDetailsButton":true,
-                    "conceptNames":[  
-                        "Obstetrics"
-                    ],
-                    "numberOfVisits":2
-                },
-                "expandedViewConfig":{  
-                    "conceptNames":[  
-                        "Obstetrics"
-                    ],
-                    "numberOfVisits":2,
-                    "showDetailsButton":true,
-                    "pivotTable":{  
-
-                    }
-                }
-            },
             "visits":{  
                 "translationKey":"DASHBOARD_TITLE_VISITS_KEY",
                 "type":"visits",
-                "displayOrder":17,
+                "displayOrder":9,
                 "dashboardConfig":{  
                     "title":null,
                     "maximumNoOfVisits":8,
                     "groupByVisits":true
                 }
             },
-            "diabetes":{  
-                "title":"Diabetes",
-                "templateName":"Diabetes Templates",
-                "type":"diseaseTemplate",
-                "displayOrder":18,
-                "dashboardConfig":{  
-                    "showOnly":[  
-
-                    ]
-                },
-                "expandedViewConfig":{  
-                    "showDetailsButton":true,
-                    "pivotTable":{  
-                        "numberOfVisits":"15",
-                        "groupBy":"encounters",
-                        "obsConcepts":[  
-                            "Weight",
-                            "Height",
-                            "Systolic",
-                            "Diastolic",
-                            "Diabetes, Foot Exam",
-                            "Diabetes, Eye Exam"
-                        ],
-                        "drugConcepts":[  
-                            "Ipratropium Pressurised",
-                            "Garbhpal Rasa"
-                        ],
-                        "labConcepts":[  
-                            "RBS",
-                            "FBS",
-                            "PP2BS",
-                            "Hb1AC",
-                            "Creatinine",
-                            "Albumin",
-                            "Polymorph"
-                        ]
-                    }
-                }
-            },
             "admissionDetails":{  
                 "translationKey":"DASHBOARD_TITLE_ADMISSION_DETAILS_KEY",
                 "type":"admissionDetails",
-                "displayOrder":19,
+                "displayOrder":10,
                 "showDetailsButton":true
             }
         }
@@ -632,39 +390,25 @@
 
                     ]
                 }
-            }
-        }
-    },
-    "birthCertificate": {
-        "title": "Birth Certificate",
-        "printing": {
-            "title": "Bahmni",
-            "header": "Certificate",
-            "logo": "../images/bahmniLogo.png"
-        },
-        "sections": {
-            "Birth Certificate": {
-                "type": "custom",
-                "config": {
-                    "title": "Birth Certificate",
-                    "template": "<birth-certificate></birth-certificate>"
-                }
-            }
-        }
-    },
-    "customTreatmentChart": {
-        "title": "Custom Treatment Chart",
-        "printing": {
-            "title": "Bahmni",
-            "header": "Certificate",
-            "logo": "../images/bahmniLogo.png"
-        },
-        "sections": {
-            "Birth Certificate": {
-                "type": "custom",
-                "config": {
-                    "title": "Birth Certificate",
-                    "template": "<custom-treatment-chart></custom-treatment-chart>"
+            },
+            "previousTBTreatmentRegimen": {
+                "translationKey": "SUMMARY_TITLE_PREVIOUS_TB_TREATMENT_TABLE",
+                "type": "obsToObsFlowSheet",
+                "headingConceptSource": "Abbreviation",
+                "dataConceptSource": "Abbreviation",
+                "displayType": "Full-Page",
+                "displayOrder": 7,
+                "dashboardConfig": {
+                    "groupByConcept": "Baseline, Start date of past TB treatment",
+                    "templateName": "Client Treatment Process",
+                    "conceptNames": [
+                        "Baseline, End date of past TB treatment",
+                        "Baseline, Past TB treatment drug regimen",
+                        "Baseline, Type of past TB treatment",
+                        "Baseline, Past TB treatment regimen type",
+                        "Baseline, Past TB treatment outcome"
+                    ],
+                    "type": "PreviousTBTreatmentRegimen"
                 }
             }
         }
