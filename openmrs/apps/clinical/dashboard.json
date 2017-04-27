@@ -118,7 +118,11 @@
                         "HEIGHT",
                         "Weight",
                         "BMI Data",
-                        "BMI Status Data"
+                        "BMI Status Data",
+                        "Pulse Data",
+                        "Temperature Data",
+                        "RR Data",
+                        "SPO2 Data"
                     ],
                     "showDetailsButton": true,
                     "numberOfVisits": 2
