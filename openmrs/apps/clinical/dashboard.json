@@ -651,5 +651,22 @@
                 }
             }
         }
+    },
+    "customTreatmentChart": {
+        "title": "Custom Treatment Chart",
+        "printing": {
+            "title": "Bahmni",
+            "header": "Certificate",
+            "logo": "../images/bahmniLogo.png"
+        },
+        "sections": {
+            "Birth Certificate": {
+                "type": "custom",
+                "config": {
+                    "title": "Birth Certificate",
+                    "template": "<custom-treatment-chart></custom-treatment-chart>"
+                }
+            }
+        }
     }
 }
