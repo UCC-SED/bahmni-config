@@ -4,21 +4,6 @@
         "displayByDefault":true,
         "maxRecentlyViewedPatients":10,
         "sections":{
-            "patientInformation":{
-                "translationKey":"DASHBOARD_TITLE_PATIENT_INFORMATION_KEY",
-                "type":"patientInformation",
-                "displayOrder":0,
-                "ageLimit":100,
-                "patientAttributes":[
-
-                ],
-                "addressFields":[
-                    "address1",
-                    "address2",
-                    "cityVillage",
-                    "countryDistrict"
-                ]
-            },
             "navigationLinksControl":{
                 "translationKey":"DASHBOARD_TITLE_NAVIGATION_LINKS_CONTROL_KEY",
                 "type":"navigationLinksControl",
