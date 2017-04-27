@@ -108,40 +108,21 @@
                 "type":"programs",
                 "displayOrder":7
             },
-            "vitals":{
-                "translationKey":"DASHBOARD_TITLE_VITALS_KEY",
+            "nutritionalValues":{
+                "translationKey":"DASHBOARD_TITLE_NUTRITIONAL_VALUES_KEY",
                 "type":"vitals",
                 "isObservation":true,
                 "displayOrder":8,
                 "dashboardConfig":{
-                    "showDetailsButton":true,
                     "conceptNames":[
-                        "Vitals"
+                        "HEIGHT",
+                        "Weight",
+                        "BMI Data",
+                        "BMI Status Data"
                     ],
-                    "numberOfVisits":10
-                },
-                "expandedViewConfig":{
-                    "conceptNames":[
-                        "Vitals"
-                    ],
-                    "numberOfVisits":10,
                     "showDetailsButton":true,
-                    "pivotTable":{
-                        "numberOfVisits":"10",
-                        "groupBy":"encounters",
-                        "obsConcepts":[
-                            "Weight",
-                            "Vitals"
-                        ],
-                        "drugConcepts":[
-
-                        ],
-                        "labConcepts":[
-
-                        ]
-                    }
+                    "numberOfVisits":2
                 }
-            }
         }
     },
     "trends":{
