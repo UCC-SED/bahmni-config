@@ -403,26 +403,7 @@
                     ]
                 }
             },
-            "previousTBTreatmentRegimen": {
-                "translationKey": "SUMMARY_TITLE_PREVIOUS_TB_TREATMENT_TABLE",
-                "type": "obsToObsFlowSheet",
-                "headingConceptSource": "Abbreviation",
-                "dataConceptSource": "Abbreviation",
-                "displayType": "Full-Page",
-                "displayOrder": 7,
-                "dashboardConfig": {
-                    "groupByConcept": "Baseline, Start date of past TB treatment",
-                    "templateName": "Client Treatment Process",
-                    "conceptNames": [
-                        "Baseline, End date of past TB treatment",
-                        "Baseline, Past TB treatment drug regimen",
-                        "Baseline, Type of past TB treatment",
-                        "Baseline, Past TB treatment regimen type",
-                        "Baseline, Past TB treatment outcome"
-                    ],
-                    "type": "PreviousTBTreatmentRegimen"
-                }
-            }
+
         }
     }
 }
