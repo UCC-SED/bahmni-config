@@ -36,7 +36,7 @@
         "extensionPointId": "org.bahmni.registration.conceptSetGroup.observations",
         "type": "config",
         "extensionParams": {
-            "conceptName": "Second Vitals",
+            "conceptName": "Vitals",
             "translationKey": "NUTRITIONAL_VALUES_LOCALE_KEY",
             "conceptNames": ["Pulse Data", "Blood Pressure", "Temperature Data", "RR Data", "SPO2 Data"],
             "required":true,
