@@ -19,7 +19,17 @@
         "config" : {
             "patientInformation": {
                 "additionalPatientInformation": {
-                    "title": "Additional Patient Information",
+                    "title": "Other Vital Information",
+                    "attributes": [
+                        "education",
+                        "occupation",
+                        "File Number",
+                        "Place of Birth",
+                        "Telephone Contact"
+                    ]
+                },
+                "additionalSocialHistoryInformation": {
+                    "title": "Other Vital Information",
                     "attributes": [
                         "education",
                         "occupation",
