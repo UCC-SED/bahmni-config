@@ -60,7 +60,6 @@
                 "translationKey":"DASHBOARD_TITLE_LAB_ORDERS_DISPLAY_CONTROL_KEY",
                 "type":"ordersControl",
                 "orderType":"Lab Order",
-                "numberOfVisits":10
                 "displayType": "Full-Page",
                 "showDetailsButton":true,
                 "displayOrder":3,
@@ -70,7 +69,8 @@
                         "Diastolic",
                         "Posture",
                         "Temperature"
-                    ]
+                    ],
+                    "numberOfVisits":10,
                 },
                 "expandedViewConfig":{
                     "conceptNames":[
@@ -86,16 +86,15 @@
                 "translationKey":"DASHBOARD_TITLE_LAB_RESULTS_KEY",
                 "type":"labOrders",
                 "displayOrder":4,
-                "numberOfVisits":10
                 "displayType": "Full-Page",
                 "dashboardConfig":{
                     "title":null,
-                    "numberOfVisits":1,
                     "showChart":false,
                     "showTable":true,
                     "showDetailsButton":false,
                     "initialAccessionCount":0,
-                    "latestAccessionCount":1
+                    "latestAccessionCount":1,
+                    "numberOfVisits":10,
                 },
                 "expandedViewConfig":{
                     "numberOfVisits":10
@@ -105,7 +104,7 @@
                 "translationKey":"DASHBOARD_TITLE_DIAGNOSIS_KEY",
                 "type":"diagnosis",
                 "showCertainty":true,
-                "numberOfVisits":10
+                "numberOfVisits":10,
                 "displayType": "Full-Page",
                 "showOrder":true,
                 "showDetailsButton":true,
@@ -115,14 +114,13 @@
                 "translationKey":"DASHBOARD_TITLE_TREATMENTS_KEY",
                 "type":"treatment",
                 "displayType": "Full-Page",
-                "numberOfVisits":10
                 "displayOrder":6,
                 "dashboardConfig":{  
                     "showFlowSheet":true,
                     "showListView":true,
                     "showRoute":true,
                     "showDrugForm":true,
-                    "numberOfVisits":5,
+                    "numberOfVisits":10,
                     "showOtherActive":true,
                     "showDetailsButton":true
                 },
@@ -140,7 +138,6 @@
             "programs":{  
                 "translationKey":"DASHBOARD_TITLE_PROGRAMS_KEY",
                 "type":"programs",
-                "numberOfVisits":10
                 "displayType": "Full-Page",
                 "displayOrder":7
             },
@@ -148,7 +145,6 @@
                 "translationKey":"DASHBOARD_TITLE_VITALS_KEY",
                 "type":"vitals",
                 "isObservation":true,
-                "numberOfVisits":10
                 "displayType": "Full-Page",
                 "displayOrder":8,
                 "dashboardConfig":{  
@@ -156,6 +152,7 @@
                     "conceptNames":[  
                         "Vitals"
                     ],
+                    "numberOfVisits":10,
                     "numberOfVisits":2
                 },
                 "expandedViewConfig":{  
@@ -184,18 +181,16 @@
                 "translationKey":"DASHBOARD_TITLE_VISITS_KEY",
                 "type":"visits",
                 "displayOrder":9,
-                "numberOfVisits":10
                 "displayType": "Full-Page",
                 "dashboardConfig":{  
                     "title":null,
-                    "maximumNoOfVisits":8,
+                    "maximumNoOfVisits":10,
                     "groupByVisits":true
                 }
             },
             "admissionDetails":{  
                 "translationKey":"DASHBOARD_TITLE_ADMISSION_DETAILS_KEY",
                 "type":"admissionDetails",
-                "numberOfVisits":10
                 "displayType": "Full-Page",
                 "displayOrder":10,
                 "showDetailsButton":true
