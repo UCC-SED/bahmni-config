@@ -103,16 +103,11 @@
                     "showDetailsButton": true
                 }
             },
-            "programs": {
-                "translationKey": "DASHBOARD_TITLE_PROGRAMS_KEY",
-                "type": "programs",
-                "displayOrder": 7
-            },
             "nutritionalValues": {
                 "translationKey": "DASHBOARD_TITLE_NUTRITIONAL_VALUES_KEY",
                 "type": "vitals",
                 "isObservation": true,
-                "displayOrder": 8,
+                "displayOrder": 7,
                 "dashboardConfig": {
                     "conceptNames": [
                         "HEIGHT",
@@ -127,7 +122,13 @@
                     "showDetailsButton": true,
                     "numberOfVisits": 2
                 }
+            },
+            "programs": {
+                "translationKey": "DASHBOARD_TITLE_PROGRAMS_KEY",
+                "type": "programs",
+                "displayOrder": 8
             }
+
         }
     },
     "trends":{
