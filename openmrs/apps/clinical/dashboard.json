@@ -36,6 +36,7 @@
                 "translationKey":"DASHBOARD_TITLE_HISTORY_AND_EXAMINATIONS_KEY",
                 "type":"vitals",
                 "isObservation":true,
+                "displayType": "Full-Page",
                 "displayOrder":2,
                 "dashboardConfig":{
                     "showDetailsButton":true,
@@ -59,6 +60,8 @@
                 "translationKey":"DASHBOARD_TITLE_LAB_ORDERS_DISPLAY_CONTROL_KEY",
                 "type":"ordersControl",
                 "orderType":"Lab Order",
+                "numberOfVisits":10
+                "displayType": "Full-Page",
                 "showDetailsButton":true,
                 "displayOrder":3,
                 "dashboardConfig":{
@@ -83,6 +86,8 @@
                 "translationKey":"DASHBOARD_TITLE_LAB_RESULTS_KEY",
                 "type":"labOrders",
                 "displayOrder":4,
+                "numberOfVisits":10
+                "displayType": "Full-Page",
                 "dashboardConfig":{
                     "title":null,
                     "numberOfVisits":1,
@@ -100,6 +105,8 @@
                 "translationKey":"DASHBOARD_TITLE_DIAGNOSIS_KEY",
                 "type":"diagnosis",
                 "showCertainty":true,
+                "numberOfVisits":10
+                "displayType": "Full-Page",
                 "showOrder":true,
                 "showDetailsButton":true,
                 "displayOrder":5
@@ -107,6 +114,8 @@
             "treatments":{  
                 "translationKey":"DASHBOARD_TITLE_TREATMENTS_KEY",
                 "type":"treatment",
+                "displayType": "Full-Page",
+                "numberOfVisits":10
                 "displayOrder":6,
                 "dashboardConfig":{  
                     "showFlowSheet":true,
@@ -131,12 +140,16 @@
             "programs":{  
                 "translationKey":"DASHBOARD_TITLE_PROGRAMS_KEY",
                 "type":"programs",
+                "numberOfVisits":10
+                "displayType": "Full-Page",
                 "displayOrder":7
             },
             "vitals":{  
                 "translationKey":"DASHBOARD_TITLE_VITALS_KEY",
                 "type":"vitals",
                 "isObservation":true,
+                "numberOfVisits":10
+                "displayType": "Full-Page",
                 "displayOrder":8,
                 "dashboardConfig":{  
                     "showDetailsButton":true,
@@ -171,6 +184,8 @@
                 "translationKey":"DASHBOARD_TITLE_VISITS_KEY",
                 "type":"visits",
                 "displayOrder":9,
+                "numberOfVisits":10
+                "displayType": "Full-Page",
                 "dashboardConfig":{  
                     "title":null,
                     "maximumNoOfVisits":8,
@@ -180,6 +195,8 @@
             "admissionDetails":{  
                 "translationKey":"DASHBOARD_TITLE_ADMISSION_DETAILS_KEY",
                 "type":"admissionDetails",
+                "numberOfVisits":10
+                "displayType": "Full-Page",
                 "displayOrder":10,
                 "showDetailsButton":true
             }
