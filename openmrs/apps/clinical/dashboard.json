@@ -26,7 +26,18 @@
                 "displayType":"Full-Page",
                 "showOrder":true,
                 "showDetailsButton":true,
-                "displayOrder":1
+                "displayOrder":0
+            },
+            "visits":{
+                "translationKey":"DASHBOARD_TITLE_VISITS_KEY",
+                "type":"visits",
+                "displayOrder":2,
+                "displayType":"Full-Page",
+                "dashboardConfig":{
+                    "title":null,
+                    "maximumNoOfVisits":10,
+                    "groupByVisits":true
+                }
             },
             "labOrdersDisplayControl":{
                 "translationKey":"DASHBOARD_TITLE_LAB_ORDERS_DISPLAY_CONTROL_KEY",
@@ -83,7 +94,6 @@
             "treatments":{
                 "translationKey":"DASHBOARD_TITLE_TREATMENTS_KEY",
                 "type":"treatment",
-                "displayType":"Full-Page",
                 "displayOrder":6,
                 "dashboardConfig":{
                     "showFlowSheet":true,
@@ -108,7 +118,6 @@
             "programs":{
                 "translationKey":"DASHBOARD_TITLE_PROGRAMS_KEY",
                 "type":"programs",
-                "displayType":"Full-Page",
                 "displayOrder":7
             },
             "vitals":{
@@ -146,17 +155,7 @@
                     }
                 }
             },
-            "visits":{
-                "translationKey":"DASHBOARD_TITLE_VISITS_KEY",
-                "type":"visits",
-                "displayOrder":9,
-                "displayType":"Full-Page",
-                "dashboardConfig":{
-                    "title":null,
-                    "maximumNoOfVisits":10,
-                    "groupByVisits":true
-                }
-            },
+
             "admissionDetails":{
                 "translationKey":"DASHBOARD_TITLE_ADMISSION_DETAILS_KEY",
                 "type":"admissionDetails",
