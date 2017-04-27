@@ -6,6 +6,7 @@
         "sections":{
             "navigationLinksControl":{
                 "translationKey":"DASHBOARD_TITLE_NAVIGATION_LINKS_CONTROL_KEY",
+                "displayType":"Full-Page",
                 "type":"navigationLinksControl",
                 "displayOrder":1,
                 "showLinks":[
