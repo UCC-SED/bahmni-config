@@ -12,16 +12,16 @@ Bahmni.ConceptSet.FormConditions.rules = {
             }
         }
     },
-    'Systolic Data' : function (formName, formFieldValues) {
-        var systolic = formFieldValues['Systolic'];
-        var diastolic = formFieldValues['Diastolic'];
-        if (systolic || diastolic) {
+    'Systolic Data' : function (formName, formFieldValues, patient) {
+        console.log(patient);
+        if (patient['gender'] == 'Female') {
             return {
                 enable: ["Posture"]
             }
         } else {
             return {
-                disable: ["Posture"]
+                disable: ["Posture"],
+                error: "Error message here if any"
             }
         }
     }
