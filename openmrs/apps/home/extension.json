@@ -89,6 +89,16 @@
     "order": 8,
     "requiredPrivilege": "app:reports"
   },
+  "bahmniBilling": {
+    "id": "bahmni.billing",
+    "extensionPointId": "org.bahmni.home.dashboard",
+    "type": "link",
+    "label": "Prescription",
+    "url": "../clinical/#/default/patient/search",
+    "icon": "fa-inr",
+    "order": 8,
+    "requiredPrivilege": "app:billing"
+  },
   "appointments": {
     "id": "bahmni.appointments",
     "extensionPointId": "org.bahmni.home.dashboard",
