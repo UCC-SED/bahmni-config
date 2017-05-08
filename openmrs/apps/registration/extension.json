@@ -38,7 +38,7 @@
         "extensionParams": {
             "conceptName": "Vitals",
             "translationKey": "VITAL_VALUES_LOCALE_KEY",
-            "conceptNames": ["Pulse Data", "Blood Pressure", "Temperature Data", "RR Data", "SPO2 Data"],
+            "conceptNames": ["Height", "Weight", "BMI Data", "BMI Status Data","Pulse Data", "Blood Pressure", "Temperature Data", "RR Data", "SPO2 Data"],
             "required":false,
             "showLatest": true
         },
@@ -64,6 +64,7 @@
         "label": "Open <u>Q</u>uotation",
         "url": "http://192.168.1.13:8069/quotations/latest?patient_ref={{patient_ref}}&dispensed=false&location_ref={{location_ref}}",
         "shortcutKey": "q",
+        "order": 3,
         "requiredPrivilege": "app:billing"
     }
 }
