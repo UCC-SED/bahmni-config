@@ -134,7 +134,6 @@
                 "type": "programs",
                 "displayOrder": 8
             },
-            ,
             "Baseline Forms":{
                 "type":"forms",
                 "hideEmptyDisplayControl": true,
