@@ -23,7 +23,7 @@
                     "attributes": [
                         "education",
                         "occupation",
-                        "File Number",
+                        "FileNumber",
                         "Place of Birth",
                         "Telephone Contact"
                     ]
