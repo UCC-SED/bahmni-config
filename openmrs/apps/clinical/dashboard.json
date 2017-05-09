@@ -137,7 +137,7 @@
             "Baseline Forms":{
                 "type":"forms",
                 "hideEmptyDisplayControl": true,
-                "displayOrder":3,
+                "displayOrder":9,
                 "dashboardConfig":{
                     "title":null,
                     "maximumNoOfVisits":10
