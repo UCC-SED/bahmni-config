@@ -24,5 +24,16 @@ Bahmni.ConceptSet.FormConditions.rules = {
                 disable: ["Posture"]
             }
         }
+    },
+    'Chief Complaint Data': function(formName, formFieldValues) {//'Chief Complaint Data' concept when edited, triggers this function
+        var conditions = {show: [], hide: []};
+        var chiefComplaint = formFieldValues['Chief Complaint'];
+        var nonCodedChiefComplaint = formFieldValues['Non-Coded Chief Complaint'];
+        if(chiefComplaint || nonCodedChiefComplaint) {
+            conditions.show.push("Chief Complaint Notes")
+        } else {
+            conditions.hide.push("Chief Complaint Notes")
+        }
+        return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
     }
 };
