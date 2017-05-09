@@ -57,5 +57,25 @@ Bahmni.ConceptSet.FormConditions.rules = {
             conditions.hide.push(other)
         }
         return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
+    },
+    'HTC, Pregnancy Status': function(formName, formFieldValues) {
+        var conditions = {show: [], hide: []};
+        var edd = "HCT, EDD Date";
+        var anc = "HCT, ANC Number";
+        var family_plan="Family Planning Template";
+        var conditionConcept = formFieldValues['HTC, Pregnancy Status'];
+        if(conditionConcept== "Yes" ) {
+            conditions.show.push(edd)
+            conditions.show.push(anc)
+
+            conditions.hide.push(family_plan)
+
+        } else {
+            conditions.hide.push(edd)
+            conditions.hide.push(anc)
+
+            conditions.show.push(family_plan)
+        }
+        return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
     }
 };
