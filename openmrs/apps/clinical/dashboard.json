@@ -133,6 +133,20 @@
                 "hideEmptyDisplayControl": true,
                 "type": "programs",
                 "displayOrder": 8
+            },
+            ,
+            "Baseline Forms":{
+                "type":"forms",
+                "hideEmptyDisplayControl": true,
+                "displayOrder":3,
+                "dashboardConfig":{
+                    "title":null,
+                    "maximumNoOfVisits":10
+                },
+                "formGroup":[
+                    "HIV Care and Treatment - Intake"
+                ],
+                "translationKey":"DASHBOARD_TITLE_BASELINE_FORMS"
             }
 
         }
