@@ -77,5 +77,16 @@ Bahmni.ConceptSet.FormConditions.rules = {
             conditions.show.push(family_plan)
         }
         return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
+    },
+    'ART Adherence Status': function(formName, formFieldValues) {
+        var conditions = {show: [], hide: []};
+        var poor = "ART Adherence Status Poor";
+        var conditionConcept = formFieldValues['ART Adherence Status'];
+        if(conditionConcept== "ART Adherence Status, POOR" ) {
+            conditions.show.push(poor)
+        } else {
+            conditions.hide.push(poor)
+        }
+        return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
     }
 };
