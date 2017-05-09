@@ -46,5 +46,16 @@ Bahmni.ConceptSet.FormConditions.rules = {
             conditions.hide.push(name)
         }
         return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
+    },
+    'Patient Referred From': function(formName, formFieldValues) {
+        var conditions = {show: [], hide: []};
+        var other = "Patient Referred From - Other Specify";
+        var conditionConcept = formFieldValues['Patient Referred From'];
+        if(conditionConcept== "Patient Referred From - Other" ) {
+            conditions.show.push(other)
+        } else {
+            conditions.hide.push(other)
+        }
+        return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
     }
 };
