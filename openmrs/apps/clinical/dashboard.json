@@ -42,7 +42,6 @@
                 "translationKey": "DASHBOARD_TITLE_LAB_ORDERS_DISPLAY_CONTROL_KEY",
                 "type": "ordersControl",
                 "orderType": "Lab Order",
-                "hideEmptyDisplayControl": true,
                 "showDetailsButton": true,
                 "displayOrder": 3,
                 "dashboardConfig": {
@@ -67,7 +66,6 @@
             "labResults": {
                 "translationKey": "DASHBOARD_TITLE_LAB_RESULTS_KEY",
                 "type": "labOrders",
-                "hideEmptyDisplayControl": true,
                 "displayOrder": 4,
                 "dashboardConfig": {
                     "title": null,
@@ -85,7 +83,6 @@
             "treatments": {
                 "translationKey": "DASHBOARD_TITLE_TREATMENTS_KEY",
                 "type": "treatment",
-                "hideEmptyDisplayControl": true,
                 "displayOrder": 6,
                 "dashboardConfig": {
                     "showFlowSheet": true,
