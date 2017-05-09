@@ -47,6 +47,15 @@
                 "Parent":"patient"
             },
 
+            "forwardUrlsForVisitTypes": [
+                {
+                    "visitType": "CTC",
+                    "forwardUrl": "../clinical/#/programs/patient/{{patientUuid}}/consultationContext",
+                    "translationKey": "Enter Visit page details",
+                    "shortcutKey": "c"
+                }
+            ],
+
             "autoCompleteFields":["familyName", "caste"],
             "defaultIdentifierPrefix": "GAN",
             "defaultVisitType": "OPD",

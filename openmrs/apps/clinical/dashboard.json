@@ -24,6 +24,7 @@
                 "showCertainty": true,
                 "numberOfVisits": 10,
                 "showOrder": true,
+                "hideEmptyDisplayControl": true,
                 "showDetailsButton": true,
                 "displayOrder": 1
             },
@@ -41,6 +42,7 @@
                 "translationKey": "DASHBOARD_TITLE_LAB_ORDERS_DISPLAY_CONTROL_KEY",
                 "type": "ordersControl",
                 "orderType": "Lab Order",
+                "hideEmptyDisplayControl": true,
                 "showDetailsButton": true,
                 "displayOrder": 3,
                 "dashboardConfig": {
@@ -65,6 +67,7 @@
             "labResults": {
                 "translationKey": "DASHBOARD_TITLE_LAB_RESULTS_KEY",
                 "type": "labOrders",
+                "hideEmptyDisplayControl": true,
                 "displayOrder": 4,
                 "dashboardConfig": {
                     "title": null,
@@ -82,6 +85,7 @@
             "treatments": {
                 "translationKey": "DASHBOARD_TITLE_TREATMENTS_KEY",
                 "type": "treatment",
+                "hideEmptyDisplayControl": true,
                 "displayOrder": 6,
                 "dashboardConfig": {
                     "showFlowSheet": true,
@@ -106,6 +110,7 @@
             "nutritionalValues": {
                 "translationKey": "DASHBOARD_TITLE_NUTRITIONAL_VALUES_KEY",
                 "type": "vitals",
+                "hideEmptyDisplayControl": true,
                 "isObservation": true,
                 "displayOrder": 7,
                 "dashboardConfig": {
@@ -125,6 +130,7 @@
             },
             "programs": {
                 "translationKey": "DASHBOARD_TITLE_PROGRAMS_KEY",
+                "hideEmptyDisplayControl": true,
                 "type": "programs",
                 "displayOrder": 8
             }
