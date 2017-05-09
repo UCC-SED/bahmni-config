@@ -35,5 +35,16 @@ Bahmni.ConceptSet.FormConditions.rules = {
             conditions.hide.push("Chief Complaint Notes")
         }
         return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
+    },
+    'Patient Joined Community Support Organisation': function(formName, formFieldValues) {
+        var conditions = {show: [], hide: []};
+        var name = "Name of Organisation Group";
+        var conditionConcept = formFieldValues['Patient Joined Community Support Organisation'];
+        if(conditionConcept ) {
+            conditions.show.push(name)
+        } else {
+            conditions.hide.push(name)
+        }
+        return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
     }
 };
