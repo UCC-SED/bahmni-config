@@ -6,7 +6,7 @@
   },
   "loginPage": {
     "logo": "/bahmni/images/tanzaniaLogoFull.png",
-    "showHeaderText": true,
+    "showHeaderText": false,
     "showTitleText": false
   },
   "helpLink": {
