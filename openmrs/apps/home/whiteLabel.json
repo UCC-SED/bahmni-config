@@ -1,11 +1,11 @@
 {
   "homePage": {
     "header_text": "<b>WELCOME TO<br />TANZANIA EMR",
-    "logo": "/images/tanzaniaLogoFull.png",
+    "logo": "/bahmni/images/tanzaniaLogoFull.png",
     "title_text": " "
   },
   "loginPage": {
-    "logo": "/images/tanzaniaLogoFull.png",
+    "logo": "/bahmni/images/tanzaniaLogoFull.png",
     "showHeaderText": true,
     "showTitleText": true
   },
