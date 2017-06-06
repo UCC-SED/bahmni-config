@@ -179,9 +179,9 @@
         "view": "custom",
         "sections": {
           "activeTbDrugs": {
-            "title": "Active TB Drugs",
+            "title": "All HIV Drugs",
             "active": true,
-            "includeConceptSet": "All TB Drugs",
+            "includeConceptSet": "All HIV Drugs",
             "captureStopReason": true,
             "columnHeaders": {
               "drugName" : "DRUG_HISTORY_HIV_DRUGNAME",
@@ -199,9 +199,9 @@
             ]
           },
           "inactiveTbDrugs": {
-            "title": "Inactive TB Drugs",
+            "title": "Inactive HIV Drugs",
             "active": false,
-            "includeConceptSet": "All TB Drugs",
+            "includeConceptSet": "All HIV Drugs",
             "columnHeaders": {
               "drugName" : "DRUG_HISTORY_HIV_DRUGNAME",
               "dosage": "DRUG_HISTORY_HIV_DOSAGE",
