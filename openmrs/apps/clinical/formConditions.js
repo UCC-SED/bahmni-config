@@ -1,31 +1,17 @@
 Bahmni.ConceptSet.FormConditions.rules = {
-    'Diastolic Data' : function (formName, formFieldValues) {
-        var systolic = formFieldValues['Systolic'];
-        var diastolic = formFieldValues['Diastolic'];
-        if (systolic || diastolic) {
+    'Systolic Data' : function (formName, formFieldValues, patient) {
+        if (patient['gender'] == 'Female') {
             return {
                 enable: ["Posture"]
             }
         } else {
             return {
-                disable: ["Posture"]
+                disable: ["Posture"],
+                error: "Error message here if any"
             }
         }
     },
-    'Systolic Data' : function (formName, formFieldValues) {
-        var systolic = formFieldValues['Systolic'];
-        var diastolic = formFieldValues['Diastolic'];
-        if (systolic || diastolic) {
-            return {
-                enable: ["Posture"]
-            }
-        } else {
-            return {
-                disable: ["Posture"]
-            }
-        }
-    },
-    'Chief Complaint Data': function(formName, formFieldValues) {//'Chief Complaint Data' concept when edited, triggers this function
+    'Chief Complaint Data': function(formName, formFieldValues, patient) {//'Chief Complaint Data' concept when edited, triggers this function
         var conditions = {show: [], hide: []};
         var chiefComplaint = formFieldValues['Chief Complaint'];
         var nonCodedChiefComplaint = formFieldValues['Non-Coded Chief Complaint'];
@@ -36,7 +22,7 @@ Bahmni.ConceptSet.FormConditions.rules = {
         }
         return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
     },
-    'Patient Joined Community Support Organisation': function(formName, formFieldValues) {
+    'Patient Joined Community Support Organisation': function(formName, formFieldValues, patient) {
         var conditions = {show: [], hide: []};
         var name = "Name of Organisation Group";
         var conditionConcept = formFieldValues['Patient Joined Community Support Organisation'];
@@ -47,7 +33,7 @@ Bahmni.ConceptSet.FormConditions.rules = {
         }
         return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
     },
-    'Patient Referred From': function(formName, formFieldValues) {
+    'Patient Referred From': function(formName, formFieldValues, patient) {
         var conditions = {show: [], hide: []};
         var other = "Patient Referred From - Other Specify";
         var conditionConcept = formFieldValues['Patient Referred From'];
@@ -58,7 +44,7 @@ Bahmni.ConceptSet.FormConditions.rules = {
         }
         return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
     },
-    'HTC, Pregnancy Status': function(formName, formFieldValues) {
+    'HTC, Pregnancy Status': function(formName, formFieldValues, patient) {
         var conditions = {show: [], hide: []};
         var edd = "HCT, EDD Date";
         var anc = "HCT, ANC Number";
@@ -78,7 +64,7 @@ Bahmni.ConceptSet.FormConditions.rules = {
         }
         return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
     },
-    'ART Adherence Status': function(formName, formFieldValues) {
+    'ART Adherence Status': function(formName, formFieldValues, patient) {
         var conditions = {show: [], hide: []};
         var poor = "ART Adherence Status Poor";
         var conditionConcept = formFieldValues['ART Adherence Status'];
@@ -89,7 +75,7 @@ Bahmni.ConceptSet.FormConditions.rules = {
         }
         return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
     },
-    'ART Adherence Status Poor': function(formName, formFieldValues) {
+    'ART Adherence Status Poor': function(formName, formFieldValues, patient) {
         var conditions = {show: [], hide: []};
         var other = "ART Adherence Status, Other Specify";
         var conditionConcept = formFieldValues['ART Adherence Status Poor'];
