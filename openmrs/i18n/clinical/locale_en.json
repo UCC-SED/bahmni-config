@@ -44,7 +44,6 @@
 
   "DISCHARGE_SUMMARY_ADVICE_ON_DISCHARGE_KEY": "Advice on Discharge",
   "DISCHARGE_SUMMARY_AT_ADMISSION_KEY": "At Admission",
-  "DISCHARGE_SUMMARY_ADMISSION_DETAILS_KEY": "Admission Details",
   "DISCHARGE_SUMMARY_CLINICAL_NOTES_KEY": "Clinical Notes",
   "DISCHARGE_SUMMARY_AT_DISCHARGE_KEY": "At Discharge",
   "DISCHARGE_SUMMARY_TREATMENTS_KEY": "Treatments",
@@ -69,7 +68,7 @@
   "PATIENT_VISIT_PAGE_KEY":"Patient Visit Page",
   "HOME_DASHBOARD_KEY":"Home Dashboard",
   "MEDICATION_CHANGE_DURATION_BUTTON": "Change Duration",
-  "DASHBOARD_TITLE_Consultation_KEY": "Consultation Notes"
+  "DASHBOARD_TITLE_Consultation_KEY": "Consultation Notes",
 
   "MEDICATION_LABEL_DRUG_NAME_PLACEHOLDER_HIV_TAB": "Select HIV Drug",
   "MEDICATION_LABEL_DOSE_HIV_TAB": "Total Daily Dose",
