@@ -47,8 +47,12 @@
             		"Stage"
         		],
         		"personAttributes": [
+				    "pregnancyStatus",
             		"class",
-            		"caste"
+            		"caste",
+                    "FileNumber",
+					"EDD"
+			
         		],
         		"additionalPatientIdentifiers": [
            			"National ID"
