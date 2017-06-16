@@ -4,3 +4,5 @@ implementation_name: eFMS
 two_factor_auth: disabled
 selinux_state: disabled
 implementer_interface: disabled
+SSLCertificateFilePath: /etc/pki/tls/certs/ca.crt
+SSLCertificateKeyFilePath: /etc/pki/tls/private/ca.key
