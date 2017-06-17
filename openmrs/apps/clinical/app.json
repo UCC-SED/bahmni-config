@@ -121,6 +121,13 @@
             "Accepted Family Planning methods": {
                 "multiSelect": true
             },
+            "CTC - Signs and Symptoms and OIs": {
+                "multiSelect": true
+            },
+            "CTC - Other Signs Symptoms and OIs":
+             {
+                 "allowAddMore": true
+            },
             "defaults": {
                 "Number of living children": 1,
                 "Accepted Family Planning methods": [
