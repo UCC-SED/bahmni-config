@@ -125,21 +125,21 @@ Bahmni.ConceptSet.FormConditions.rules = {
         }
         return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
     },
-    'Pregnant Y/N': function(formName, formFieldValues) {
-        var edd = "EDD";
-        var ancNumber = "HCT, ANC Number";
-        var familyPlanning = "Family Planning Template";
-        var pregnanciesDelivery = "Pregnancies";
+    'CTC - Pregnant Y/N': function(formName, formFieldValues) {
+        var edd = "CTC - EDD";
+        var ancNumber = "CTC - ANC Number";
+        var familyPlanning = "CTC - Family Planning Template";
+
 
         var conditions = {show: [], hide: []};
 
-        var conditionConcept = formFieldValues['Pregnant Y/N'];
+        var conditionConcept = formFieldValues['CTC - Pregnant Y/N'];
         if (conditionConcept) {
 
-            return {show: [edd,ancNumber,pregnanciesDelivery], hide: [familyPlanning]}
+            return {show: [edd,ancNumber], hide: [familyPlanning]}
 
         } else {
-            return {hide: [edd,ancNumber,pregnanciesDelivery], show: [familyPlanning]}
+            return {hide: [edd,ancNumber], show: [familyPlanning]}
         }
     },
      'CTC - Function Reproductive' : function (formName, formFieldValues, patient) {
