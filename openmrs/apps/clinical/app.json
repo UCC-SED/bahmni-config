@@ -112,6 +112,9 @@
             "Coded3": {
                 "multiSelect": true
             },
+            "Patient Support":{
+                "allowAddMore": true
+            },
             "Image": {
                 "allowAddMore": true
             },

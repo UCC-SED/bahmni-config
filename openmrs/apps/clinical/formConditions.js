@@ -1,4 +1,5 @@
 Bahmni.ConceptSet.FormConditions.rules = {
+<<<<<<< HEAD
     'Systolic Data' : function (formName, formFieldValues, patient) {
         console.log(patient);
         var conditions = {show: [], hide: []};
@@ -6,19 +7,42 @@ Bahmni.ConceptSet.FormConditions.rules = {
                 conditions.show.push("Posture")
         } else {
                 conditions.hide.push("Posture")
+=======
+    'Systolic Data': function(formName, formFieldValues, patient) {
+        console.log(patient);
+        var conditions = {
+            show: [],
+            hide: []
+        };
+        if (patient['gender'] == 'F') {
+            conditions.show.push("Posture")
+        } else {
+            conditions.hide.push("Posture")
+>>>>>>> ad0b4901d18d3a33f545cae657cdb487a6a31466
         }
 
         return conditions;
     },
+<<<<<<< HEAD
     'ARV Status' : function (formName, formFieldValues, patient) {
         var value = formFieldValues['ARV Status'];
         console.log("Value " + value);
         var conditions = {show: [], hide: []};
+=======
+    'ARV Status': function(formName, formFieldValues, patient) {
+        var value = formFieldValues['ARV Status'];
+        console.log("Value " + value);
+        var conditions = {
+            show: [],
+            hide: []
+        };
+>>>>>>> ad0b4901d18d3a33f545cae657cdb487a6a31466
         if (value) {
             conditions.show.push("ARV Regimens");
 
         } else {
             conditions.hide.push("ARV Regimens");
+<<<<<<< HEAD
         }
 
         return conditions;
@@ -109,6 +133,55 @@ Bahmni.ConceptSet.FormConditions.rules = {
         var other = formFieldValues['Patient refered from'];
         var variable = "Other Referred from";
         if(other =="Patient refered from, Other") {
+=======
+        }
+
+        return conditions;
+    },
+    'Tests and Examinations': function(formName, formFieldValues, patient) {
+        var conditions = {
+            show: [],
+            hide: []
+        };
+        var cd4Percentage = "CTC - CD4 Percentage";
+        var cd4Count = "CTC - CD4 Count"
+        if (patient['age'] > 15) {
+            conditions.show.push(cd4Count);
+            conditions.hide.push(cd4Percentage);
+
+        } else {
+            conditions.show.push(cd4Percentage);
+            conditions.hide.push(cd4Count);
+
+
+        }
+
+        return conditions;
+    },
+    'HIV Vitals': function(formName, formFieldValues, patient) { //'Chief Complaint Data' concept when edited, triggers this function
+        var conditions = {
+            show: [],
+            hide: []
+        };
+        var height = formFieldValues['HEIGHT'];
+        var variable = "HEIGHT";
+        if (patient['age'] > 15) {
+
+            conditions.hide.push(variable)
+        } else {
+            conditions.show.push(variable)
+        }
+        return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
+    },
+    'Patient refered from': function(formName, formFieldValues, patient) { //'Chief Complaint Data' concept when edited, triggers this function
+        var conditions = {
+            show: [],
+            hide: []
+        };
+        var other = formFieldValues['Patient refered from'];
+        var variable = "Other Referred from";
+        if (other == "Patient refered from, Other") {
+>>>>>>> ad0b4901d18d3a33f545cae657cdb487a6a31466
             conditions.show.push(variable)
         } else {
             conditions.hide.push(variable)
@@ -116,10 +189,17 @@ Bahmni.ConceptSet.FormConditions.rules = {
         return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
     },
     'Patient Joined Community Support Organisation': function(formName, formFieldValues, patient) {
+<<<<<<< HEAD
         var conditions = {show: [], hide: []};
+=======
+        var conditions = {
+            show: [],
+            hide: []
+        };
+>>>>>>> ad0b4901d18d3a33f545cae657cdb487a6a31466
         var name = "Name of Community Support Organisation";
         var conditionConcept = formFieldValues['Patient Joined Community Support Organisation'];
-        if(conditionConcept ) {
+        if (conditionConcept) {
             conditions.show.push(name)
         } else {
             conditions.hide.push(name)
@@ -127,10 +207,13 @@ Bahmni.ConceptSet.FormConditions.rules = {
         return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
     },
     'Patient Referred From': function(formName, formFieldValues, patient) {
-        var conditions = {show: [], hide: []};
+        var conditions = {
+            show: [],
+            hide: []
+        };
         var other = "Patient Referred From - Other Specify";
         var conditionConcept = formFieldValues['Patient Referred From'];
-        if(conditionConcept== "Patient Referred From - Other" ) {
+        if (conditionConcept == "Patient Referred From - Other") {
             conditions.show.push(other)
         } else {
             conditions.hide.push(other)
@@ -138,12 +221,15 @@ Bahmni.ConceptSet.FormConditions.rules = {
         return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
     },
     'HTC, Pregnancy Status': function(formName, formFieldValues, patient) {
-        var conditions = {show: [], hide: []};
+        var conditions = {
+            show: [],
+            hide: []
+        };
         var edd = "HCT, EDD Date";
         var anc = "HCT, ANC Number";
-        var family_plan="Family Planning Template";
+        var family_plan = "Family Planning Template";
         var conditionConcept = formFieldValues['HTC, Pregnancy Status'];
-        if(conditionConcept== "Yes" ) {
+        if (conditionConcept == "Yes") {
             conditions.show.push(edd)
             conditions.show.push(anc)
             conditions.hide.push(family_plan)
@@ -167,10 +253,13 @@ Bahmni.ConceptSet.FormConditions.rules = {
             return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
         },
     'ART Adherence Status': function(formName, formFieldValues, patient) {
-        var conditions = {show: [], hide: []};
+        var conditions = {
+            show: [],
+            hide: []
+        };
         var poor = "ART Adherence Status Poor";
         var conditionConcept = formFieldValues['ART Adherence Status'];
-        if(conditionConcept== "ART Adherence Status, POOR" ) {
+        if (conditionConcept == "ART Adherence Status, POOR") {
             conditions.show.push(poor)
         } else {
             conditions.hide.push(poor)
@@ -178,16 +267,20 @@ Bahmni.ConceptSet.FormConditions.rules = {
         return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
     },
     'ART Adherence Status Poor': function(formName, formFieldValues, patient) {
-        var conditions = {show: [], hide: []};
+        var conditions = {
+            show: [],
+            hide: []
+        };
         var other = "ART Adherence Status, Other Specify";
         var conditionConcept = formFieldValues['ART Adherence Status Poor'];
-        if(conditionConcept== "ART Adherence Status, Other" ) {
+        if (conditionConcept == "ART Adherence Status, Other") {
             conditions.show.push(other)
         } else {
             conditions.hide.push(other)
         }
         return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
     },
+<<<<<<< HEAD
     'Pregnant Y/N': function(formName, formFieldValues) {
         var edd = "EDD";
         var ancNumber = "HCT, ANC Number";
@@ -297,6 +390,168 @@ Bahmni.ConceptSet.FormConditions.rules = {
             conditions.hide.push("ARV Regimens");
             conditions.hide.push("ARV Start");
             conditions.hide.push("ARV Reason - No Start");
+=======
+    'CTC - Pregnant Y/N': function(formName, formFieldValues) {
+        var edd = "CTC - EDD";
+        var ancNumber = "CTC - ANC Number";
+        var familyPlanning = "CTC - Family Planning Template";
+
+
+        var conditions = {
+            show: [],
+            hide: []
+        };
+
+        var conditionConcept = formFieldValues['CTC - Pregnant Y/N'];
+        if (conditionConcept) {
+
+            return {
+                show: [edd, ancNumber],
+                hide: [familyPlanning]
+            }
+
+        } else {
+            return {
+                hide: [edd, ancNumber],
+                show: [familyPlanning]
+            }
+        }
+    },
+    'CTC - Function Reproductive': function(formName, formFieldValues, patient) {
+        console.log(patient);
+        var conditions = {
+            show: [],
+            hide: []
+        };
+        if (patient['gender'] == 'F' && patient['age'] > 10) {
+            conditions.show.push("CTC - Function Reproductive");
+
+        } else {
+            conditions.hide.push("CTC - Function Reproductive");
+
+
+        }
+
+        return conditions;
+    },
+    'CTC - ARV Status': function(formName, formFieldValues) {
+
+
+        var conditions = {
+            show: [],
+            hide: []
+        };
+        var otherReason = "CTC - ARV Specify Other Reason";
+        var firstLineRegimeAdult = "CTC - ARV Regimens - First Line Adult";
+        var secondLineRegimeAdult = "CTC - ARV Regimens - Second Line Adult";
+        var firstLineRegimePediatric = "CTC - ARV Regimens - First Line Pediatric";
+        var secondLineRegimePediatric = "CTC - ARV Regimens - Second Line Pediatric";
+        var reasonPoorAdhere = "CTC - Reasons for Poor ARV Adherence";
+        var otherReasonPoorAdhere = "CTC - Other Reasons for Poor ARV Adherence";
+        var arvStatus = formFieldValues['CTC - ARV Status'];
+
+        var adhereStatus = "CTC - ARV Adherence Status";
+
+        if (arvStatus == "CTC - ARV Status, No ARV") {
+            conditions.show.push("CTC - ARV Reason - No Start");
+            conditions.hide.push("CTC - ARV Start");
+
+            conditions.hide.push("CTC - ARV Reason - Change or Stop because of TB or Adverse Reaction");
+            conditions.hide.push("CTC - ARV Reason - Change or Stop because of Treatment Failure");
+            conditions.hide.push("CTC - ARV Reason - Change or Stop because of Other Reasons");
+            conditions.hide.push("CTC - ARV Regimens");
+
+            conditions.hide.push(adhereStatus);
+            conditions.hide.push(reasonPoorAdhere);
+            conditions.hide.push(otherReasonPoorAdhere);
+
+
+        } else if (arvStatus == "CTC - ARV Status, Start ARV") {
+
+            conditions.show.push("CTC - ARV Start");
+
+
+            conditions.hide.push("CTC - ARV Reason - No Start");
+            conditions.hide.push("CTC - ARV Reason - Change or Stop because of TB or Adverse Reaction");
+            conditions.hide.push("CTC - ARV Reason - Change or Stop because of Treatment Failure");
+            conditions.hide.push("CTC - ARV Reason - Change or Stop because of Other Reasons");
+
+            conditions.show.push("CTC - ARV Regimens");
+            conditions.hide.push(adhereStatus);
+            conditions.hide.push(reasonPoorAdhere);
+            conditions.hide.push(otherReasonPoorAdhere);
+        } else if (arvStatus == "CTC - ARV Status, Continue") {
+            conditions.hide.push("CTC - ARV Reason - Change or Stop because of TB or Adverse Reaction");
+            conditions.hide.push("CTC - ARV Reason - Change or Stop because of Treatment Failure");
+            conditions.hide.push("CTC - ARV Reason - Change or Stop because of Other Reasons");
+            conditions.hide.push("CTC - ARV Start");
+            conditions.hide.push("CTC - ARV Reason - No Start");
+
+            conditions.show.push("CTC - ARV Regimens");
+            conditions.hide.push(otherReason);
+            conditions.show.push(adhereStatus);
+            conditions.show.push(reasonPoorAdhere);
+            conditions.show.push(otherReasonPoorAdhere);
+
+
+        } else if (arvStatus == "CTC - ARV Status, Change") {
+            conditions.show.push("CTC - ARV Reason - Change or Stop because of TB or Adverse Reaction");
+            conditions.show.push("CTC - ARV Reason - Change or Stop because of Treatment Failure");
+            conditions.show.push("CTC - ARV Reason - Change or Stop because of Other Reasons");
+            conditions.hide.push("CTC - ARV Start");
+            conditions.hide.push("CTC - ARV Reason - No Start");
+
+            conditions.show.push("CTC - ARV Regimens");
+            conditions.show.push(adhereStatus);
+            conditions.show.push(otherReasonPoorAdhere);
+            conditions.show.push(reasonPoorAdhere);
+        } else if (arvStatus == "CTC - ARV Status, Stop") {
+            conditions.show.push("CTC - ARV Reason - Change or Stop because of TB or Adverse Reaction");
+            conditions.show.push("CTC - ARV Reason - Change or Stop because of Treatment Failure");
+            conditions.show.push("CTC - ARV Reason - Change or Stop because of Other Reasons");
+            conditions.hide.push("CTC - ARV Start");
+            conditions.hide.push("CTC - ARV Reason - No Start");
+
+
+            conditions.hide.push("CTC - ARV Regimens");
+            conditions.show.push(adhereStatus);
+            conditions.show.push(reasonPoorAdhere);
+            conditions.show.push(otherReasonPoorAdhere);
+        } else if (arvStatus == "CTC - ARV Status, Restart") {
+            conditions.show.push("CTC - ARV Start");
+            conditions.hide.push("CTC - ARV Reason - Change or Stop because of TB or Adverse Reaction");
+            conditions.hide.push("CTC - ARV Reason - Change or Stop because of Treatment Failure");
+            conditions.hide.push("CTC - ARV Reason - Change or Stop because of Other Reasons");
+
+            conditions.show.push("CTC - ARV Regimens");
+            conditions.show.push(adhereStatus);
+            conditions.show.push(reasonPoorAdhere);
+            conditions.show.push(otherReasonPoorAdhere);
+        } else if (arvStatus == "CTC - ARV Status, PMTCT Prophylaxis") {
+            conditions.show.push("CTC - ARV Start");
+            conditions.hide.push("CTC - ARV Reason - No Start");
+            conditions.hide.push("CTC - ARV Reason - Change or Stop because of TB or Adverse Reaction");
+            conditions.hide.push("CTC - ARV Reason - Change or Stop because of Treatment Failure");
+            conditions.hide.push("CTC - ARV Reason - Change or Stop because of Other Reasons");
+
+            conditions.show.push("CTC - ARV Regimens");
+
+            conditions.hide.push(firstLineRegimeAdult);
+            conditions.hide.push(secondLineRegimeAdult);
+            conditions.hide.push(firstLineRegimePediatric);
+            conditions.hide.push(secondLineRegimePediatric);
+            conditions.show.push(adhereStatus);
+            conditions.show.push(reasonPoorAdhere);
+            conditions.show.push(otherReasonPoorAdhere);
+        } else {
+
+            conditions.hide.push("CTC - ARV Reason - Change or Stop because of TB or Adverse Reaction");
+            conditions.hide.push("CTC - ARV Reason - Change or Stop because of Treatment Failure");
+            conditions.hide.push("CTC - ARV Reason - Change or Stop because of Other Reasons");
+            conditions.hide.push("CTC - ARV Regimens");
+            conditions.hide.push("CTC - ARV Start");
+            conditions.hide.push("CTC - ARV Reason - No Start");
+>>>>>>> ad0b4901d18d3a33f545cae657cdb487a6a31466
 
 
         }
@@ -304,7 +559,14 @@ Bahmni.ConceptSet.FormConditions.rules = {
     },
     'ARV Reason - No Start': function(formName, formFieldValues) {
 
+<<<<<<< HEAD
         var conditions = {show: [], hide: []};
+=======
+        var conditions = {
+            show: [],
+            hide: []
+        };
+>>>>>>> ad0b4901d18d3a33f545cae657cdb487a6a31466
         var arvReason = formFieldValues['ARV Reason - No Start'];
 
         if (arvReason == "99 - Patient fulfils criteria but does not start for other reason") {
@@ -315,6 +577,7 @@ Bahmni.ConceptSet.FormConditions.rules = {
         }
         return conditions; //Return object SHOULD be a map with 'enable' and 'disable' arrays having the concept names
     },
+<<<<<<< HEAD
     'ARV Adherence status': function(formName, formFieldValues) {
         var conditions = {show: [], hide: []};
 
@@ -338,6 +601,37 @@ Bahmni.ConceptSet.FormConditions.rules = {
 
         } else {
             conditions.hide.push("Other Reasons for poor ARV adherence");
+=======
+    'CTC - ARV Adherence Status': function(formName, formFieldValues) {
+        var conditions = {
+            show: [],
+            hide: []
+        };
+
+        var arvAdherencestatus = formFieldValues['CTC - ARV Adherence Status'];
+
+        if (arvAdherencestatus == "2 P(Poor) - 2 or more missed days") {
+            conditions.show.push("CTC - Reasons for Poor ARV Adherence");
+
+        } else {
+            conditions.hide.push("CTC - Reasons for Poor ARV Adherence");
+        }
+        return conditions; //Return object SHOULD be a map with 'enable' and 'disable' arrays having the concept names
+    },
+    'CTC - Reasons for Poor ARV Adherence': function(formName, formFieldValues) {
+        var conditions = {
+            show: [],
+            hide: []
+        };
+
+        var poorARVAdherence = formFieldValues['CTC - Reasons for Poor ARV Adherence'];
+
+        if (poorARVAdherence == "13 - Other (Specify)") {
+            conditions.show.push("CTC - Other Reasons for Poor ARV Adherence");
+
+        } else {
+            conditions.hide.push("CTC - Other Reasons for Poor ARV Adherence");
+>>>>>>> ad0b4901d18d3a33f545cae657cdb487a6a31466
         }
         return conditions; //Return object SHOULD be a map with 'enable' and 'disable' arrays having the concept names
     },
@@ -372,5 +666,29 @@ Bahmni.ConceptSet.FormConditions.rules = {
                 enable: [secondLineAdult, firstLinePediatric, secondLinePediatric]
             }
         }
+<<<<<<< HEAD
+=======
+    },
+    'TB - Reason for Examination': function(formName, formFieldValues, patient) {
+        var conditions = {
+            show: [],
+            hide: []
+        };
+        var examinationReason = formFieldValues['TB - Reason for Examination'];
+        var diagnosis = "TB - Reason for Examination, Diagnosis Option";
+        var followup = "TB - Reason for Examination, Follow-up, Month";
+
+        console.log(examinationReason);
+
+        if (examinationReason == "TB - Reason for Examination, Diagnosis") {
+            conditions.show.push(diagnosis);
+            conditions.hide.push(followup);
+
+        } else {
+            conditions.show.push(followup);
+            conditions.hide.push(diagnosis);
+        }
+        return conditions; //Return object SHOULD be a map with 'enable' and 'disable' arrays having the concept names
+>>>>>>> ad0b4901d18d3a33f545cae657cdb487a6a31466
     }
 };
