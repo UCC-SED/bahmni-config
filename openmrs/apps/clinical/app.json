@@ -115,11 +115,21 @@
             "Image": {
                 "allowAddMore": true
             },
+			"TB - List of under 5 years who are household of bacleriogical confirmed TB cases": {
+                "allowAddMore": true
+            },
             "Gynaecology, Gravida": {
                 "stepper": true
             },
             "Accepted Family Planning methods": {
                 "multiSelect": true
+            },
+            "CTC - Signs and Symptoms and OIs": {
+                "multiSelect": true
+            },
+            "CTC - Other Signs Symptoms and OIs":
+             {
+                 "allowAddMore": true
             },
             "defaults": {
                 "Number of living children": 1,
