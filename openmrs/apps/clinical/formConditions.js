@@ -407,18 +407,156 @@ Bahmni.ConceptSet.FormConditions.rules = {
         };
         var examinationReason = formFieldValues['TB - Reason for Examination'];
         var diagnosis = "TB - Reason for Examination, Diagnosis Option";
-        var follow-up = "TB - Reason for Examination, Follow-up, Month";
+        var followup = "TB - Reason for Examination, Follow-up, Month";
 
         console.log(examinationReason);
 
         if (examinationReason == "TB - Reason for Examination, Diagnosis") {
             conditions.show.push(diagnosis);
-            conditions.hide.push(follow-up);
+            conditions.hide.push(followup);
 
         } else {
-            conditions.show.push(follow - up);
+            conditions.show.push(followup);
             conditions.hide.push(diagnosis);
         }
         return conditions; //Return object SHOULD be a map with 'enable' and 'disable' arrays having the concept names
-    }
+    },
+
+
+
+
+    'HIV Vitals': function(formName, formFieldValues, patient) {
+    //'Chief Complaint Data' concept when edited, triggers this function
+            var conditions = {show: [], hide: []};
+            var height = formFieldValues['HEIGHT'];
+            var variable = "HEIGHT";
+            if(patient['age']>15) {
+
+                conditions.hide.push(variable)
+            } else {
+                conditions.show.push(variable)
+            }
+            return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
+        },
+    	'TB - Reffered by': function(formName, formFieldValues, patient) {
+    //'Chief Complaint Data' concept when edited, triggers this function
+            var conditions = {show: [], hide: []};
+            var other = formFieldValues['TB - Reffered by'];
+            var variable = "TB - Specify";
+            if(other =="TB - Others(Specify below)") {
+                conditions.show.push(variable)
+            } else {
+                conditions.hide.push(variable)
+            }
+            return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
+        },
+     'TB - CPT': function(formName, formFieldValues, patient) {
+    //'Chief Complaint Data' concept when edited, triggers this function
+            var conditions = {show: [], hide: []};
+            var other = formFieldValues['TB - CPT'];
+            var variable = "TB - CPT - Start Date";
+            if(other =="TB - CPT - Yes")
+    		{
+                conditions.show.push(variable)
+            } else {
+                conditions.hide.push(variable)
+            }
+            return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
+        },
+    	 'TB - ART drugs': function(formName, formFieldValues, patient) {
+    //'Chief Complaint Data' concept when edited, triggers this function
+            var conditions = {show: [], hide: []};
+            var other = formFieldValues['TB - ART drugs'];
+            var variable = "TB - ART - Start Date";
+            if(other =="TB - ART - Yes")
+    		{
+                conditions.show.push(variable)
+            } else {
+                conditions.hide.push(variable)
+            }
+            return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
+        },
+
+    	'TB - Classification by history of treatment': function(formName, formFieldValues, patient) {
+    //'Chief Complaint Data' concept when edited, triggers this function
+            var conditions = {show: [], hide: []};
+            var other = formFieldValues['TB - Classification by history of treatment'];
+            var variable = "TB - Classification by history - Specify";
+            if(other =="TB - Classification by history - Others(Specify below)") {
+                conditions.show.push(variable)
+            } else {
+                conditions.hide.push(variable)
+            }
+            return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
+        },
+        'Patient refered from': function(formName, formFieldValues, patient) {//'Chief Complaint Data' concept when edited, triggers this function
+            var conditions = {show: [], hide: []};
+            var other = formFieldValues['Patient refered from'];
+            var variable = "Other Referred from";
+            if(other =="Patient refered from, Other") {
+                conditions.show.push(variable)
+            } else {
+                conditions.hide.push(variable)
+            }
+            return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
+        },
+        'Patient Joined Community Support Organisation': function(formName, formFieldValues, patient) {
+            var conditions = {show: [], hide: []};
+            var name = "Name of Community Support Organisation";
+            var conditionConcept = formFieldValues['Patient Joined Community Support Organisation'];
+            if(conditionConcept ) {
+                conditions.show.push(name)
+            } else {
+                conditions.hide.push(name)
+            }
+            return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
+        },
+        'Patient Referred From': function(formName, formFieldValues, patient) {
+            var conditions = {show: [], hide: []};
+            var other = "Patient Referred From - Other Specify";
+            var conditionConcept = formFieldValues['Patient Referred From'];
+            if(conditionConcept== "Patient Referred From - Other" ) {
+                conditions.show.push(other)
+            } else {
+                conditions.hide.push(other)
+            }
+            return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
+        },
+        'HTC, Pregnancy Status': function(formName, formFieldValues, patient) {
+            var conditions = {show: [], hide: []};
+            var edd = "HCT, EDD Date";
+            var anc = "HCT, ANC Number";
+            var family_plan="Family Planning Template";
+            var conditionConcept = formFieldValues['HTC, Pregnancy Status'];
+            if(conditionConcept== "Yes" ) {
+                conditions.show.push(edd)
+                conditions.show.push(anc)
+                conditions.hide.push(family_plan)
+
+            } else {
+                conditions.hide.push(edd)
+                conditions.hide.push(anc)
+                conditions.show.push(family_plan)
+            }
+            return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
+        },
+        'Breast feeding': function(formName, formFieldValues, patient) {
+                var conditions = {show: [], hide: []};
+                var name = "Breast feeding";
+                if (patient['gender'] == 'F') {
+                        conditions.show.push("Breast feeding")
+                } else {
+                        conditions.hide.push("Breast feeding")
+                }
+
+                return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
+            }
+
+
+
+
+
+
+
+
 };
