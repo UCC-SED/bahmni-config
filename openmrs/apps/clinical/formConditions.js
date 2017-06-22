@@ -368,6 +368,19 @@ Bahmni.ConceptSet.FormConditions.rules = {
         }
         return conditions; //Return object SHOULD be a map with 'enable' and 'disable' arrays having the concept names
     },
+	'TB - DOT - Type': function(formName, formFieldValues, patient) {
+//'Chief Complaint Data' concept when edited, triggers this function
+        var conditions = {show: [], hide: []};
+        var home = formFieldValues['TB - DOT - Type'];
+        var variable = "TB - DOT - EndDate";
+        if(home =="TB - DOT - Home-based") {
+            conditions.show.push(variable)
+        } else {
+            conditions.hide.push(variable)
+        }
+        return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
+    },
+	
     'Referral to': function(formName, formFieldValues) {
         var conditions = {
             show: [],
