@@ -383,6 +383,7 @@ Bahmni.ConceptSet.FormConditions.rules = {
         }
         return conditions; //Return object SHOULD be a map with 'enable' and 'disable' arrays having the concept names
     },
+	
 
     'ARV Regimens - First Line Adult': function(formName, formFieldValues) {
         var firstLineAdult = "ARV Regimens - First Line Adult";
