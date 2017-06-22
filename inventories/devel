@@ -11,10 +11,8 @@
 [bahmni-emr-db-slave]
 
 [bahmni-lab]
-127.0.0.1
 
 [bahmni-lab-db]
-127.0.0.1
 
 [bahmni-lab-db-slave]
 
@@ -74,4 +72,4 @@ bahmni-event-log-service
 
 [local:vars]
 implementation_name=eFMS
-bahmni_repo_url=http://repo.mybahmni.org.s3.amazonaws.com/rpm/bahmni/
+bahmni_repo_url=http://dl.bintray.com/bahmni/rpm/
