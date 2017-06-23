@@ -41,14 +41,19 @@
 [pacs-integration-db-slave]
 
 [dcm4chee]
+127.0.0.1
 
 [dcm4chee-db]
+127.0.0.1
 
 [dcm4chee-db-slave]
 
 [bahmni-event-log-service]
 
 [bahmni-offline]
+
+[atomfeed-console]
+127.0.0.1
 
 [local:children]
 nagios-server
@@ -71,6 +76,7 @@ dcm4chee
 dcm4chee-db
 dcm4chee-db-slave
 bahmni-event-log-service
+atomfeed-console
 
 [local:vars]
 implementation_name=eFMS
