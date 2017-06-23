@@ -11,8 +11,10 @@
 [bahmni-emr-db-slave]
 
 [bahmni-lab]
+127.0.0.1
 
 [bahmni-lab-db]
+127.0.0.1
 
 [bahmni-lab-db-slave]
 
