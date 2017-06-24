@@ -45,7 +45,6 @@
         "order": 1,
         "requiredPrivilege": "Edit Visits"
     },
-    ,
     "reasonForVisit":{
         "id": "bahmni.registration.conceptSetGroup.reasonForVisit",
         "extensionPointId": "org.bahmni.registration.conceptSetGroup.observations",
