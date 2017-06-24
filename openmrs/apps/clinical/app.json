@@ -43,12 +43,15 @@
             "patientContext": {
         		"programAttributes": [
             		"Id_Number",
-            		"Doctor",
             		"Stage"
         		],
         		"personAttributes": [
+				"pregnancyStatus",
             		"class",
-            		"caste"
+            		"caste",
+                    "FileNumber",
+					"EDD"
+			
         		],
         		"additionalPatientIdentifiers": [
            			"National ID"
@@ -116,6 +119,9 @@
             },
             "Accepted Family Planning methods": {
                 "multiSelect": true
+            },
+            "Patient Support":{
+                "allowAddMore":true
             },
             "defaults": {
                 "Number of living children": 1,

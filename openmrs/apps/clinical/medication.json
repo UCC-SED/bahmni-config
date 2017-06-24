@@ -98,6 +98,132 @@
           }
         }
       }
+    },
+    "hivTabConfig": {
+      "hideBulkChangeDurationButton": true,
+      "inputOptionsConfig": {
+        "duration": {
+          "required": false
+        },
+        "drugConceptSet": "All HIV Drugs",
+        "isDropDown": true,
+        "hideOrderSet" : true,
+        "labels": {
+          "drugNamePlaceHolder": "MEDICATION_LABEL_DRUG_NAME_PLACEHOLDER_HIV_TAB",
+          "dose": "MEDICATION_LABEL_DOSE_HIV_TAB",
+          "doseUnitsPlaceHolder": "MEDICATION_LABEL_DOSE_UNITS_PLACEHOLDER_HIV_TAB",
+          "frequency": "MEDICATION_LABEL_FREQUENCY_HIV_TAB",
+          "frequencyUnitsPlaceHolder": "MEDICATION_LABEL_FREQUENCY_UNIT_HIV_TAB"
+        },
+        "doseUnits": [
+          "mg"
+        ],
+        "frequencies": [
+          "6 days per week",
+          "7 days per week",
+          "Every other day",
+          "3 days per week"
+        ],
+        "dosingInstructions": [
+          "As directed",
+          "Before meals"
+        ],
+        "routes": [
+          "Oral (PO)",
+          "Intramuscular (IM)",
+          "Intravenous (IV)",
+          "Inhalation"
+        ],
+        "durationUnits": [
+          "Day(s)",
+          "Month(s)"
+        ],
+        "dispensingUnits": [],
+        "hiddenFields": [
+          "dosingTypeToggle",
+          "duration",
+          "durationUnits",
+          "quantity",
+          "quantityUnits",
+          "dosingInstructions",
+          "sos"
+        ],
+        "defaultStartDate": false,
+        "defaultDurationUnit": "Day(s)",
+        "defaultInstructions": "As directed",
+        "frequencyDefaultDurationUnitsMap": [
+          {
+            "minFrequency": 5,
+            "maxFrequency": null,
+            "defaultDurationUnit": "Hour(s)"
+          },
+          {
+            "minFrequency": "1/7",
+            "maxFrequency": 5,
+            "defaultDurationUnit": "Day(s)"
+          },
+          {
+            "minFrequency": "1/30",
+            "maxFrequency": "1/7",
+            "defaultDurationUnit": "Week(s)"
+          },
+          {
+            "minFrequency": null,
+            "maxFrequency": "1/30",
+            "defaultDurationUnit": "Month(s)"
+          }
+        ],
+        "drugFormDefaults": {}
+      },
+      "drugOrderHistoryConfig": {
+        "view": "custom",
+        "sections": {
+          "activeTbDrugs": {
+            "title": "Active TB Drugs",
+            "active": true,
+            "includeConceptSet": "All TB Drugs",
+            "captureStopReason": true,
+            "columnHeaders": {
+              "drugName" : "DRUG_HISTORY_HIV_DRUGNAME",
+              "dosage": "DRUG_HISTORY_HIV_DOSAGE",
+              "route" : "DRUG_HISTORY_HIV_ROUTE",
+              "duration" : "DRUG_HISTORY_HIV_DURATION",
+              "frequency" : "DRUG_HISTORY_HIV_FREQUENCY",
+              "startDate" : "DRUG_HISTORY_HIV_STARTDATE",
+              "stopDate" : "DRUG_HISTORY_HIV_STOPDATE",
+              "stopReason" : "DRUG_HISTORY_HIV_STOPREASON"
+            },
+            "actions": [
+              "stop",
+              "void"
+            ]
+          },
+          "inactiveTbDrugs": {
+            "title": "Inactive TB Drugs",
+            "active": false,
+            "includeConceptSet": "All TB Drugs",
+            "columnHeaders": {
+              "drugName" : "DRUG_HISTORY_HIV_DRUGNAME",
+              "dosage": "DRUG_HISTORY_HIV_DOSAGE",
+              "route" : "DRUG_HISTORY_HIV_ROUTE",
+              "duration" : "DRUG_HISTORY_HIV_DURATION",
+              "frequency" : "DRUG_HISTORY_HIV_FREQUENCY",
+              "startDate" : "DRUG_HISTORY_HIV_STARTDATE",
+              "stopDate" : "DRUG_HISTORY_HIV_STOPDATE",
+              "stopReason" : "DRUG_HISTORY_HIV_STOPREASON"
+            },
+            "actions": [
+              "void"
+            ],
+            "columns": [
+              "frequency",
+              "route",
+              "stopDate",
+              "stopReason"
+            ]
+          }
+        }
+      }
     }
   }
 }
