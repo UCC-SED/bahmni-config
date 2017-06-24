@@ -552,6 +552,33 @@ Bahmni.ConceptSet.FormConditions.rules = {
 
                 return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
             }
+            ,
+            'HTC - Amekubali na Kupimwa hali ya Uambukizi wa VVU': function(formName, formFieldValues, patient) {
+                            var conditions = {show: [], hide: []};
+                            var validation = "HTC - Amekubali na Kupimwa hali ya Uambukizi wa VVU";
+                            var majibu="HTC - Majibu ya hali ya Uambukizi wa VVU";
+                            if (validation == 'True') {
+                                    conditions.show.push(majibu)
+                            } else {
+                                    conditions.hide.push(majibu)
+                            }
+
+                            return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
+                        },
+                       'HTC - Kuchunguzwa Kifua Kikuu': function(formName, formFieldValues, patient) {
+                                                    var conditions = {show: [], hide: []};
+                                                    var validation = "HTC - Kuchunguzwa Kifua Kikuu";
+                                                    var majibu="HTC - Hali ya Uambukizi wa Kifua Kikuu";
+                                                    if (validation == 'True') {
+                                                            conditions.show.push(majibu)
+                                                    } else {
+                                                            conditions.hide.push(majibu)
+                                                    }
+
+                                                    return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
+                                                }
+
+
 
 
 };
