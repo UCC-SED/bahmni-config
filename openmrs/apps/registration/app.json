@@ -28,6 +28,14 @@
           "Telephone Contact"
         ]
       },
+      "pregnancyStatus":{
+        "title":"Preganancy Status",
+        "translationKey":"Preganancy Status",
+        "attributes":[
+          "pregnancyStatus",
+          "EDD"
+        ]
+      },
       "hidden": {
         "attributes": [
           "primaryContact"
