@@ -14,7 +14,7 @@
         "id": "bahmni.registration.navigation.patient.create",
         "extensionPointId": "org.bahmni.registration.navigation",
         "type": "link",
-        "label": "Create New Patient",
+        "label": "Register New Patient",
         "url": "/patient/new",
         "icon": "fa-plus",
         "shortcutKey": "REGISTRATION_CREATE_NEW_CONFIG_ACCESS_KEY",
