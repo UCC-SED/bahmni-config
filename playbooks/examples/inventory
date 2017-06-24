@@ -71,3 +71,6 @@ dcm4chee
 dcm4chee-db
 dcm4chee-db-slave
 bahmni-event-log-service
+[local:vars]
+implementation_name=eFMS
+bahmni_repo_url=http://dl.bintray.com/bahmni/rpm/

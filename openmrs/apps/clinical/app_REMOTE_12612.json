@@ -43,14 +43,11 @@
             "patientContext": {
         		"programAttributes": [
             		"Id_Number",
+            		"Doctor",
             		"Stage"
         		],
         		"personAttributes": [
-<<<<<<< HEAD
-				"pregnancyStatus",
-=======
 				    "pregnancyStatus",
->>>>>>> 79abb5319f68b9a2f526fb2ee20f22b31b64c702
             		"class",
             		"caste",
                     "FileNumber",
@@ -94,6 +91,12 @@
             "P/A Presenting Part": {
                 "multiSelect": true
             },
+            "FHS": {
+                "buttonSelect": true
+            },
+            "P/S (Per Speculum) - Cervix": {
+                "grid": true
+            },
             "Anaemia, Stopped Since When": {
                 "conciseText": true
             },
@@ -121,10 +124,6 @@
             "Accepted Family Planning methods": {
                 "multiSelect": true
             },
-<<<<<<< HEAD
-            "Patient Support":{
-                "allowAddMore":true
-=======
             "CTC - Signs and Symptoms and OIs": {
                 "multiSelect": true
             },
@@ -135,7 +134,6 @@
 			"Patient Support":
              {
                  "allowAddMore": true
->>>>>>> 79abb5319f68b9a2f526fb2ee20f22b31b64c702
             },
             "defaults": {
                 "Number of living children": 1,

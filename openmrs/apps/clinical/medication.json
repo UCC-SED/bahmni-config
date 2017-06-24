@@ -119,8 +119,15 @@
           "mg"
         ],
         "frequencies": [
+<<<<<<< HEAD
+          "6 days per week",
+          "7 days per week",
+          "Every other day",
+          "3 days per week"
+=======
           "Alternate Days",
           "Twice a week"
+>>>>>>> 79abb5319f68b9a2f526fb2ee20f22b31b64c702
         ],
         "dosingInstructions": [
           "As directed",
@@ -177,9 +184,15 @@
         "view": "custom",
         "sections": {
           "activeTbDrugs": {
+<<<<<<< HEAD
+            "title": "Active TB Drugs",
+            "active": true,
+            "includeConceptSet": "All TB Drugs",
+=======
             "title": "All HIV Drugs",
             "active": true,
             "includeConceptSet": "All HIV Drugs",
+>>>>>>> 79abb5319f68b9a2f526fb2ee20f22b31b64c702
             "captureStopReason": true,
             "columnHeaders": {
               "drugName" : "DRUG_HISTORY_HIV_DRUGNAME",
@@ -197,9 +210,15 @@
             ]
           },
           "inactiveTbDrugs": {
+<<<<<<< HEAD
+            "title": "Inactive TB Drugs",
+            "active": false,
+            "includeConceptSet": "All TB Drugs",
+=======
             "title": "Inactive HIV Drugs",
             "active": false,
             "includeConceptSet": "All HIV Drugs",
+>>>>>>> 79abb5319f68b9a2f526fb2ee20f22b31b64c702
             "columnHeaders": {
               "drugName" : "DRUG_HISTORY_HIV_DRUGNAME",
               "dosage": "DRUG_HISTORY_HIV_DOSAGE",
