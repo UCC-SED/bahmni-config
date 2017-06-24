@@ -629,5 +629,28 @@
         "Patient Identifier"
       ]
     }
-  }
+  },
+    "Safe Motherhood Program": {
+        "name": "Safe Motherhood Program",
+        "DHISProgram": true,
+        "type": "concatenated",
+        "config": {
+            "reports":[
+                {
+                    "name":"Antenatal Checkup",
+                    "type":"MRSGeneric",
+                    "config":{
+                        "sqlPath": "/var/www/bahmni_config/openmrs/reports/testCount.sql"
+                    }
+                },
+                {
+                    "name":"Delivery Service",
+                    "type":"MRSGeneric",
+                    "config":{
+                        "sqlPath": "/var/www/bahmni_config/openmrs/reports/testCount.sql"
+                    }
+                }
+            ]
+        }
+    }
 }

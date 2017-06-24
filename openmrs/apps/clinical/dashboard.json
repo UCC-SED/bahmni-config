@@ -143,6 +143,16 @@
                     "HIV Care and Treatment - Intake"
                 ],
                 "translationKey":"DASHBOARD_TITLE_BASELINE_FORMS"
+            },
+            "hivTreatmentsDetails": {
+                "translationKey": "DASHBOARD_TITLE_HIV_TREATMENTS_DETAILS",
+                "type": "drugOrderDetails",
+                "showDetailsButton": true,
+                "displayOrder": 1,
+                "dashboardConfig": {
+                    "showOnlyActive": true,
+                    "drugConceptSet": "All HIV Drugs"
+                }
             }
 
         }
