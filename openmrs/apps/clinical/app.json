@@ -43,19 +43,16 @@
             "patientContext": {
         		"programAttributes": [
             		"Id_Number",
+            		"Doctor",
             		"Stage"
         		],
         		"personAttributes": [
-<<<<<<< HEAD
-				"pregnancyStatus",
-=======
 				    "pregnancyStatus",
->>>>>>> 79abb5319f68b9a2f526fb2ee20f22b31b64c702
             		"class",
             		"caste",
                     "FileNumber",
 					"EDD"
-			
+
         		],
         		"additionalPatientIdentifiers": [
            			"National ID"
@@ -121,10 +118,6 @@
             "Accepted Family Planning methods": {
                 "multiSelect": true
             },
-<<<<<<< HEAD
-            "Patient Support":{
-                "allowAddMore":true
-=======
             "CTC - Signs and Symptoms and OIs": {
                 "multiSelect": true
             },
@@ -135,7 +128,6 @@
 			"Patient Support":
              {
                  "allowAddMore": true
->>>>>>> 79abb5319f68b9a2f526fb2ee20f22b31b64c702
             },
             "defaults": {
                 "Number of living children": 1,
