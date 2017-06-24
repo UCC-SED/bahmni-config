@@ -50,8 +50,9 @@
         "extensionPointId": "org.bahmni.registration.conceptSetGroup.observations",
         "type": "config",
         "extensionParams": {
-            "conceptName": "EMR - Reason For Visit",
+            "conceptName": "EMR - Reason For Visit Section",
             "translationKey": "REASON_FOR_VISIT_LOCALE_KEY",
+            "conceptNames": ["EMR - Reason For Visit"],
             "showLatest": true
         },
         "order": 2,
