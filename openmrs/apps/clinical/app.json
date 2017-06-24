@@ -91,12 +91,6 @@
             "P/A Presenting Part": {
                 "multiSelect": true
             },
-            "FHS": {
-                "buttonSelect": true
-            },
-            "P/S (Per Speculum) - Cervix": {
-                "grid": true
-            },
             "Anaemia, Stopped Since When": {
                 "conciseText": true
             },
