@@ -16,7 +16,7 @@
     "translationKey": "MODULE_LABEL_PROGRAMS_KEY",
     "url": "../clinical/#/programs/patient/search",
     "icon": "icon-bahmni-program",
-    "order": 3,
+    "order": 2,
     "requiredPrivilege": "app:clinical"
   },
   "clinical": {
@@ -26,7 +26,7 @@
     "translationKey": "MODULE_LABEL_CLINICAL_KEY",
     "url": "../clinical/index.html#/default/patient/search",
     "icon": "fa-stethoscope",
-    "order": 2,
+    "order": 3,
     "requiredPrivilege": "app:clinical"
   },
   "adt": {
@@ -66,7 +66,7 @@
     "translationKey": "MODULE_LABEL_ADMIN_KEY",
     "url": "../admin/#/dashboard/home",
     "icon": "icon-bahmni-admin",
-    "order": 10,
+    "order": 7,
     "requiredPrivilege": "app:admin"
   },
   "orders": {
@@ -97,7 +97,7 @@
     "url": "../clinical/#/default/patient/search",
     "icon": "fa-inr",
     "order": 8,
-    "requiredPrivilege": "app:implementer-interface"
+    "requiredPrivilege": "app:billing"
   },
   "appointments": {
     "id": "bahmni.appointments",
@@ -108,8 +108,17 @@
     "icon": "fa fa-calendar",
     "order": 11,
     "requiredPrivilege": "App: appointmentschedulingui.home"
-  }
- ,
+  },
+  "implementerInterface": {
+    "id": "bahmni.implementer.interface",
+    "extensionPointId": "org.bahmni.home.dashboard",
+    "type": "link",
+    "translationKey": "MODULE_LABEL_IMPLEMENTER_INTERFACE_KEY",
+    "url": "/implementer-interface",
+    "icon": "fa fa-pencil-square-o",
+    "order": 12,
+    "requiredPrivilege": "app:implementer-interface"
+  },
   "atomfeedConsole": {
     "id": "bahmni.atomfeed.console",
     "extensionPointId": "org.bahmni.home.dashboard",
@@ -118,9 +127,6 @@
     "url": "/atomfeed-console",
     "icon": "fa fa-terminal",
     "order": 13,
-<<<<<<< HEAD
-    "requiredPrivilege": "app:implementer-interface"
-=======
     "requiredPrivilege": "app:admin"
   },
   "possible_dhis_2_integration": {
@@ -132,6 +138,5 @@
     "icon": "fa-book",
     "order": 11,
     "requiredPrivilege": "app:orders"
->>>>>>> 79abb5319f68b9a2f526fb2ee20f22b31b64c702
   }
 }

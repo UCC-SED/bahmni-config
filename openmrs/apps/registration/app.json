@@ -27,19 +27,18 @@
                         "Place of Birth",
                         "Telephone Contact"
                     ]
-                },
-      "pregnancyStatus":{
+                }, 
+      "pregnancyStatus":{  
          "title":"Preganancy Status",
          "translationKey":"Preganancy Status",
-         "attributes":[
+         "attributes":[  
             "pregnancyStatus",
 			"EDD"
          ]
       },
                 "hidden": {
                     "attributes": [
-                        "primaryContact",
-                        "National ID"
+                        "primaryContact"
                     ]
                 },
                 "defaults":  {
@@ -70,7 +69,7 @@
             "defaultVisitType": "OPD",
             "searchByIdForwardUrl": "/patient/{{patientUuid}}",
             "showMiddleName": true,
-            "showBirthTime": false,
+            "showBirthTime": true,
             "showCasteSameAsLastNameCheckbox": false,
             "printOptions": [
 

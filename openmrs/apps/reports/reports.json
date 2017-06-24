@@ -630,8 +630,8 @@
       ]
     }
   },
-    "Diagnosis Report": {
-        "name": "Diagnosis Report",
+    "Safe Motherhood Program": {
+        "name": "Safe Motherhood Program",
         "DHISProgram": true,
         "type": "concatenated",
         "config": {
@@ -640,14 +640,14 @@
                     "name":"Antenatal Checkup",
                     "type":"MRSGeneric",
                     "config":{
-                        "sqlPath": "/var/www/bahmni_config/openmrs/reports/diagnosisReport.sql"
+                        "sqlPath": "/var/www/bahmni_config/openmrs/reports/testCount.sql"
                     }
                 },
                 {
-                    "name":"Antenatal Checkup",
+                    "name":"Delivery Service",
                     "type":"MRSGeneric",
                     "config":{
-                        "sqlPath": "/var/www/bahmni_config/openmrs/reports/diagnosisReport.sql"
+                        "sqlPath": "/var/www/bahmni_config/openmrs/reports/testCount.sql"
                     }
                 }
             ]
