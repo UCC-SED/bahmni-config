@@ -557,7 +557,7 @@ Bahmni.ConceptSet.FormConditions.rules = {
                             var conditions = {show: [], hide: []};
                             var validation = "HTC - Amekubali na Kupimwa hali ya Uambukizi wa VVU";
                             var majibu="HTC - Majibu ya hali ya Uambukizi wa VVU";
-                            if (validation == 'True') {
+                            if (validation) {
                                     conditions.show.push(majibu)
                             } else {
                                     conditions.hide.push(majibu)
@@ -569,7 +569,8 @@ Bahmni.ConceptSet.FormConditions.rules = {
                                                     var conditions = {show: [], hide: []};
                                                     var validation = "HTC - Kuchunguzwa Kifua Kikuu";
                                                     var majibu="HTC - Hali ya Uambukizi wa Kifua Kikuu";
-                                                    if (validation == 'True') {
+                                                    console(majibu);
+                                                    if (validation) {
                                                             conditions.show.push(majibu)
                                                     } else {
                                                             conditions.hide.push(majibu)

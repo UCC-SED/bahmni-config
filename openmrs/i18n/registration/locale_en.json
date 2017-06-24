@@ -24,5 +24,6 @@
   "NUTRITIONAL_VALUES_LOCALE_KEY": "Nutritional Values",
   "REGISTRATION_PRINT_WITH_BARCODE": "Bar<u>c</u>ode Print",
   "OBS_ABNORMAL_TRANSLATE_KEY": "Abnormal",
-  "VITAL_VALUES_LOCALE_KEY":"Vital Information"
+  "VITAL_VALUES_LOCALE_KEY":"Vital Information",
+  "REASON_FOR_VISIT_LOCALE_KEY":"Reason for Visit"
 }
