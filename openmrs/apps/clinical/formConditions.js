@@ -13,22 +13,6 @@ Bahmni.ConceptSet.FormConditions.rules = {
 
         return conditions;
     },
-    'ARV Status': function(formName, formFieldValues, patient) {
-        var value = formFieldValues['ARV Status'];
-        console.log("Value " + value);
-        var conditions = {
-            show: [],
-            hide: []
-        };
-        if (value) {
-            conditions.show.push("ARV Regimens");
-
-        } else {
-            conditions.hide.push("ARV Regimens");
-        }
-
-        return conditions;
-    },
     'Tests and Examinations': function(formName, formFieldValues, patient) {
         var conditions = {
             show: [],
@@ -167,6 +151,8 @@ Bahmni.ConceptSet.FormConditions.rules = {
         };
 
         var conditionConcept = formFieldValues['CTC - Pregnant Y/N'];
+
+        console.log(conditionConcept);
         if (conditionConcept) {
 
             return {
@@ -201,6 +187,7 @@ Bahmni.ConceptSet.FormConditions.rules = {
     'CTC - ARV Status': function(formName, formFieldValues) {
 
 
+
         var conditions = {
             show: [],
             hide: []
@@ -216,7 +203,18 @@ Bahmni.ConceptSet.FormConditions.rules = {
 
         var adhereStatus = "CTC - ARV Adherence Status";
 
-        if (arvStatus == "CTC - ARV Status, No ARV") {
+        console.log(arvStatus);
+
+        var noARV="No ARV";
+        var startARV="Start ARV";
+        var continueARV="Continue";
+        var changeARV="Change";
+        var stopARV="Stop";
+        var pctmc="PMTCT Prophylaxis";
+        var restartARV="Restart";
+
+
+        if (arvStatus == noARV) {
             conditions.show.push("CTC - ARV Reason - No Start");
             conditions.hide.push("CTC - ARV Start");
 
@@ -230,7 +228,7 @@ Bahmni.ConceptSet.FormConditions.rules = {
             conditions.hide.push(otherReasonPoorAdhere);
 
 
-        } else if (arvStatus == "CTC - ARV Status, Start ARV") {
+        } else if (arvStatus == startARV) {
 
             conditions.show.push("CTC - ARV Start");
 
@@ -244,7 +242,7 @@ Bahmni.ConceptSet.FormConditions.rules = {
             conditions.hide.push(adhereStatus);
             conditions.hide.push(reasonPoorAdhere);
             conditions.hide.push(otherReasonPoorAdhere);
-        } else if (arvStatus == "CTC - ARV Status, Continue") {
+        } else if (arvStatus == continueARV) {
             conditions.hide.push("CTC - ARV Reason - Change or Stop because of TB or Adverse Reaction");
             conditions.hide.push("CTC - ARV Reason - Change or Stop because of Treatment Failure");
             conditions.hide.push("CTC - ARV Reason - Change or Stop because of Other Reasons");
@@ -258,7 +256,7 @@ Bahmni.ConceptSet.FormConditions.rules = {
             conditions.show.push(otherReasonPoorAdhere);
 
 
-        } else if (arvStatus == "CTC - ARV Status, Change") {
+        } else if (arvStatus == changeARV) {
             conditions.show.push("CTC - ARV Reason - Change or Stop because of TB or Adverse Reaction");
             conditions.show.push("CTC - ARV Reason - Change or Stop because of Treatment Failure");
             conditions.show.push("CTC - ARV Reason - Change or Stop because of Other Reasons");
@@ -269,7 +267,7 @@ Bahmni.ConceptSet.FormConditions.rules = {
             conditions.show.push(adhereStatus);
             conditions.show.push(otherReasonPoorAdhere);
             conditions.show.push(reasonPoorAdhere);
-        } else if (arvStatus == "CTC - ARV Status, Stop") {
+        } else if (arvStatus == stopARV) {
             conditions.show.push("CTC - ARV Reason - Change or Stop because of TB or Adverse Reaction");
             conditions.show.push("CTC - ARV Reason - Change or Stop because of Treatment Failure");
             conditions.show.push("CTC - ARV Reason - Change or Stop because of Other Reasons");
@@ -281,7 +279,7 @@ Bahmni.ConceptSet.FormConditions.rules = {
             conditions.show.push(adhereStatus);
             conditions.show.push(reasonPoorAdhere);
             conditions.show.push(otherReasonPoorAdhere);
-        } else if (arvStatus == "CTC - ARV Status, Restart") {
+        } else if (arvStatus == restartARV) {
             conditions.show.push("CTC - ARV Start");
             conditions.hide.push("CTC - ARV Reason - Change or Stop because of TB or Adverse Reaction");
             conditions.hide.push("CTC - ARV Reason - Change or Stop because of Treatment Failure");
@@ -291,7 +289,7 @@ Bahmni.ConceptSet.FormConditions.rules = {
             conditions.show.push(adhereStatus);
             conditions.show.push(reasonPoorAdhere);
             conditions.show.push(otherReasonPoorAdhere);
-        } else if (arvStatus == "CTC - ARV Status, PMTCT Prophylaxis") {
+        } else if (arvStatus == pctmc {
             conditions.show.push("CTC - ARV Start");
             conditions.hide.push("CTC - ARV Reason - No Start");
             conditions.hide.push("CTC - ARV Reason - Change or Stop because of TB or Adverse Reaction");
@@ -554,10 +552,32 @@ Bahmni.ConceptSet.FormConditions.rules = {
 
                 return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
             }
+            ,
+            'HTC - Amekubali na Kupimwa hali ya Uambukizi wa VVU': function(formName, formFieldValues, patient) {
+                            var conditions = {show: [], hide: []};
+                            var validation = "HTC - Amekubali na Kupimwa hali ya Uambukizi wa VVU";
+                            var majibu="HTC - Majibu ya hali ya Uambukizi wa VVU";
+                            if (validation) {
+                                    conditions.show.push(majibu)
+                            } else {
+                                    conditions.hide.push(majibu)
+                            }
 
+                            return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
+                        },
+                       'HTC - Kuchunguzwa Kifua Kikuu': function(formName, formFieldValues, patient) {
+                                                    var conditions = {show: [], hide: []};
+                                                    var validation = "HTC - Kuchunguzwa Kifua Kikuu";
+                                                    var majibu="HTC - Hali ya Uambukizi wa Kifua Kikuu";
 
+                                                    if (validation) {
+                                                            conditions.show.push(majibu)
+                                                    } else {
+                                                            conditions.hide.push(majibu)
+                                                    }
 
-
+                                                    return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
+                                                }
 
 
 

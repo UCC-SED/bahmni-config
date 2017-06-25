@@ -142,6 +142,94 @@
              {
                  "allowAddMore": true
             },
+            "CTC - VisitTypeCode":
+            {
+                "dropdown":true
+            },
+            "CTC - WHO clinical stage (1 - 4)":
+            {
+                "dropdown":true
+            },
+            "CTC - Functional Status":
+            {
+                "dropdown":true
+            },
+            "CTC - TB Screening and Dx":
+            {
+                "dropdown":true
+            },
+            "CTC - TB Rx/ IPT":
+            {
+                "dropdown":true
+            },
+            "CTC - ARV Status":
+            {
+                "dropdown":true
+            },
+            "CTC - ARV Reason - No Start":
+            {
+                "dropdown":true
+            },
+            "CTC - ARV Start":
+            {
+                "dropdown":true
+            },
+            "CTC - ARV Reason - Change or Stop because of TB or Adverse Reaction":
+            {
+                "dropdown":true
+            },
+            "CTC - ARV Reason - Change or Stop because of Treatment Failure":
+            {
+                "dropdown":true
+            },
+            "CTC - ARV Reason - Change or Stop because of Other Reasons":
+            {
+                "dropdown":true
+            },
+            "CTC - ARV Regimens - First Line Adult":
+            {
+                "dropdown":true
+            },
+            "CTC - ARV Regimens - Second Line Adult":
+            {
+                "dropdown":true
+            },
+            "CTC - ARV Regimens - First Line Pediatric":
+            {
+                "dropdown":true
+            },
+            "CTC - ARV Regimens - Second Line Pediatric":
+            {
+                "dropdown":true
+            },
+            "CTC - PMTCT Prophylaxis":
+            {
+                "dropdown":true
+            },
+            "CTC - Reasons for Poor ARV Adherence":
+            {
+                "dropdown":true
+            },
+            "CTC - Nutrition and Referrals":
+            {
+                "dropdown":true
+            },
+            "CTC - Nutritional Supplement":
+            {
+                "dropdown":true
+            },
+            "CTC - Referral to":
+            {
+                "dropdown":true
+            },
+            "CTC - Follow up Status":
+            {
+                "dropdown":true
+            },
+            "CTC - Pregnant Y/N":
+            {
+                "dropdown":true
+            },
             "defaults": {
                 "Number of living children": 1,
                 "Accepted Family Planning methods": [
