@@ -167,6 +167,8 @@ Bahmni.ConceptSet.FormConditions.rules = {
         };
 
         var conditionConcept = formFieldValues['CTC - Pregnant Y/N'];
+
+        console.log(conditionConcept);
         if (conditionConcept) {
 
             return {
@@ -569,7 +571,7 @@ Bahmni.ConceptSet.FormConditions.rules = {
                                                     var conditions = {show: [], hide: []};
                                                     var validation = "HTC - Kuchunguzwa Kifua Kikuu";
                                                     var majibu="HTC - Hali ya Uambukizi wa Kifua Kikuu";
-                                                    console(majibu);
+                                                
                                                     if (validation) {
                                                             conditions.show.push(majibu)
                                                     } else {
