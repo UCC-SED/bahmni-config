@@ -571,7 +571,7 @@ Bahmni.ConceptSet.FormConditions.rules = {
                                                     var conditions = {show: [], hide: []};
                                                     var validation = "HTC - Kuchunguzwa Kifua Kikuu";
                                                     var majibu="HTC - Hali ya Uambukizi wa Kifua Kikuu";
-                                                
+
                                                     if (validation) {
                                                             conditions.show.push(majibu)
                                                     } else {
