@@ -289,7 +289,7 @@ Bahmni.ConceptSet.FormConditions.rules = {
             conditions.show.push(adhereStatus);
             conditions.show.push(reasonPoorAdhere);
             conditions.show.push(otherReasonPoorAdhere);
-        } else if (arvStatus == pctmc {
+        } else if (arvStatus == pctmc) {
             conditions.show.push("CTC - ARV Start");
             conditions.hide.push("CTC - ARV Reason - No Start");
             conditions.hide.push("CTC - ARV Reason - Change or Stop because of TB or Adverse Reaction");
