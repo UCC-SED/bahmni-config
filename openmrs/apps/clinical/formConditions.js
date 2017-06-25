@@ -205,7 +205,16 @@ Bahmni.ConceptSet.FormConditions.rules = {
 
         console.log(arvStatus);
 
-        if (arvStatus == "CTC - ARV Status, No ARV") {
+        var noARV="No ARV";
+        var startARV="Start ARV";
+        var continueARV="Continue";
+        var changeARV="Change";
+        var stopARV="Stop";
+        var pctmc="PMTCT Prophylaxis";
+        var restartARV="Restart";
+
+
+        if (arvStatus == noARV) {
             conditions.show.push("CTC - ARV Reason - No Start");
             conditions.hide.push("CTC - ARV Start");
 
@@ -219,7 +228,7 @@ Bahmni.ConceptSet.FormConditions.rules = {
             conditions.hide.push(otherReasonPoorAdhere);
 
 
-        } else if (arvStatus == "CTC - ARV Status, Start ARV") {
+        } else if (arvStatus == startARV) {
 
             conditions.show.push("CTC - ARV Start");
 
@@ -233,7 +242,7 @@ Bahmni.ConceptSet.FormConditions.rules = {
             conditions.hide.push(adhereStatus);
             conditions.hide.push(reasonPoorAdhere);
             conditions.hide.push(otherReasonPoorAdhere);
-        } else if (arvStatus == "CTC - ARV Status, Continue") {
+        } else if (arvStatus == continueARV) {
             conditions.hide.push("CTC - ARV Reason - Change or Stop because of TB or Adverse Reaction");
             conditions.hide.push("CTC - ARV Reason - Change or Stop because of Treatment Failure");
             conditions.hide.push("CTC - ARV Reason - Change or Stop because of Other Reasons");
@@ -247,7 +256,7 @@ Bahmni.ConceptSet.FormConditions.rules = {
             conditions.show.push(otherReasonPoorAdhere);
 
 
-        } else if (arvStatus == "CTC - ARV Status, Change") {
+        } else if (arvStatus == changeARV) {
             conditions.show.push("CTC - ARV Reason - Change or Stop because of TB or Adverse Reaction");
             conditions.show.push("CTC - ARV Reason - Change or Stop because of Treatment Failure");
             conditions.show.push("CTC - ARV Reason - Change or Stop because of Other Reasons");
@@ -258,7 +267,7 @@ Bahmni.ConceptSet.FormConditions.rules = {
             conditions.show.push(adhereStatus);
             conditions.show.push(otherReasonPoorAdhere);
             conditions.show.push(reasonPoorAdhere);
-        } else if (arvStatus == "CTC - ARV Status, Stop") {
+        } else if (arvStatus == stopARV) {
             conditions.show.push("CTC - ARV Reason - Change or Stop because of TB or Adverse Reaction");
             conditions.show.push("CTC - ARV Reason - Change or Stop because of Treatment Failure");
             conditions.show.push("CTC - ARV Reason - Change or Stop because of Other Reasons");
@@ -270,7 +279,7 @@ Bahmni.ConceptSet.FormConditions.rules = {
             conditions.show.push(adhereStatus);
             conditions.show.push(reasonPoorAdhere);
             conditions.show.push(otherReasonPoorAdhere);
-        } else if (arvStatus == "CTC - ARV Status, Restart") {
+        } else if (arvStatus == restartARV) {
             conditions.show.push("CTC - ARV Start");
             conditions.hide.push("CTC - ARV Reason - Change or Stop because of TB or Adverse Reaction");
             conditions.hide.push("CTC - ARV Reason - Change or Stop because of Treatment Failure");
@@ -280,7 +289,7 @@ Bahmni.ConceptSet.FormConditions.rules = {
             conditions.show.push(adhereStatus);
             conditions.show.push(reasonPoorAdhere);
             conditions.show.push(otherReasonPoorAdhere);
-        } else if (arvStatus == "CTC - ARV Status, PMTCT Prophylaxis") {
+        } else if (arvStatus == pctmc {
             conditions.show.push("CTC - ARV Start");
             conditions.hide.push("CTC - ARV Reason - No Start");
             conditions.hide.push("CTC - ARV Reason - Change or Stop because of TB or Adverse Reaction");
