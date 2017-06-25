@@ -106,6 +106,9 @@
             "Set1": {
                 "allowAddMore": true
             },
+			"CTC - Why Eligible": {
+                "multiSelect": true
+            },
             "Set2": {
                 "allowAddMore": true
             },
