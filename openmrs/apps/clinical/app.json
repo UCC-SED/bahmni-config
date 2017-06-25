@@ -226,7 +226,27 @@
             {
                 "dropdown":true
             },
-            "CTC - Pregnant Y/N":
+            "HTC - Hali ya Ujauzito":
+            {
+                "dropdown":true
+            },
+            "HTC - Alikotoka Mteja":
+            {
+                "dropdown":true
+            },
+            "HTC - Aina ya Ushahuri Nasaha":
+            {
+                "dropdown":true
+            },
+            "HTC - Majibu ya hali ya Uambukizi wa VVU":
+            {
+                "dropdown":true
+            },
+            "HTC - Kushirikisha Majibu":
+            {
+                "dropdown":true
+            },
+            "HTC - Rufaa ya Kwenda":
             {
                 "dropdown":true
             },
