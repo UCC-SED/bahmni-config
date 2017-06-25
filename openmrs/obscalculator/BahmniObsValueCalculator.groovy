@@ -31,7 +31,9 @@ public class eFMSObsValueValidator implements ObsValueCalculator {
 
 
     public void run(BahmniEncounterTransaction bahmniEncounterTransaction) {
-        validator(bahmniEncounterTransaction);
+        System.out.println("This is previousHeight );
+                logger.info("This is Logging ");
+                validator(bahmniEncounterTransaction);
     }
 
     static def validator(BahmniEncounterTransaction bahmniEncounterTransaction) {
@@ -44,10 +46,10 @@ public class eFMSObsValueValidator implements ObsValueCalculator {
             def previousHeightValue = fetchLatestObsValue("CTC - WHO clinical stage (1 - 4)", bahmniEncounterTransaction.getPatientUuid(), WHOConcept, nowAsOfEncounter)
 
             System.out.println("This is previousHeight " + previousHeightValue);
-            logger.info ("This is previousHeight " + previousHeightValue)
+            logger.info("This is previousHeight " + previousHeightValue)
         }
 
-        logger.info ("This is Logging ")
+        logger.info("This is Logging ")
 
     }
 
