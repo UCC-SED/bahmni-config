@@ -543,9 +543,11 @@ Bahmni.ConceptSet.FormConditions.rules = {
                 var conditions = {show: [], hide: []};
                 var name = "Breast feeding";
                 if (patient['gender'] == 'F') {
-                        conditions.show.push("Breast feeding")
+					conditions.show.push("CTC - Why Eligible - Pregnancy");
+                    conditions.show.push("Breast feeding");
                 } else {
-                        conditions.hide.push("Breast feeding")
+					conditions.hide.push("CTC - Why Eligible - Pregnancy");
+                    conditions.hide.push("Breast feeding");
                 }
 
                 return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
