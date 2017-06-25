@@ -53,7 +53,8 @@
             "conceptName": "EMR - Reason For Visit Section",
             "translationKey": "REASON_FOR_VISIT_LOCALE_KEY",
             "conceptNames": ["EMR - Reason For Visit"],
-            "showLatest": true
+            "showLatest": true,
+            "required":true
         },
         "order": 2,
         "requiredPrivilege": "Edit Visits"

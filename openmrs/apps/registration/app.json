@@ -29,8 +29,8 @@
         ]
       },
       "pregnancyStatus":{
-        "title":"Preganancy Status",
-        "translationKey":"Preganancy Status",
+        "title":"Pregnancy Status",
+        "translationKey":"Pregnancy Status",
         "attributes":[
           "pregnancyStatus",
           "EDD"

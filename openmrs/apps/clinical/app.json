@@ -135,6 +135,10 @@
              {
                  "allowAddMore": true
             },
+            "CTC - VisitTypeCode":
+            {
+                "dropdown":true
+            },
             "defaults": {
                 "Number of living children": 1,
                 "Accepted Family Planning methods": [
