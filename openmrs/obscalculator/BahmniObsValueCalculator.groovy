@@ -9,6 +9,7 @@ import org.openmrs.api.context.Context
 import org.openmrs.module.bahmniemrapi.obscalculator.ObsValueCalculator;
 import org.openmrs.module.bahmniemrapi.encountertransaction.contract.BahmniEncounterTransaction
 import org.openmrs.module.emrapi.encounter.domain.EncounterTransaction;
+import java.util.logging.Logger;
 
 import org.joda.time.LocalDate;
 import org.joda.time.Months;
@@ -20,6 +21,8 @@ public class eFMSObsValueValidator implements ObsValueCalculator {
 
 
     private String status
+    Logger logger = Logger.getLogger("")
+
 
     @Override
     public String toString() {
@@ -41,7 +44,10 @@ public class eFMSObsValueValidator implements ObsValueCalculator {
             def previousHeightValue = fetchLatestObsValue("CTC - WHO clinical stage (1 - 4)", bahmniEncounterTransaction.getPatientUuid(), WHOConcept, nowAsOfEncounter)
 
             System.out.println("This is previousHeight " + previousHeightValue);
+            logger.info ("This is previousHeight " + previousHeightValue)
         }
+
+        logger.info ("This is Logging ")
 
     }
 
