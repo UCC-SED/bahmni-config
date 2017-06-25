@@ -250,6 +250,10 @@
             {
                 "dropdown":true
             },
+            "HTC - Hali ya Uambukizi wa Kifua Kikuu":
+            {
+                "dropdown":true
+            },
             "defaults": {
                 "Number of living children": 1,
                 "Accepted Family Planning methods": [
