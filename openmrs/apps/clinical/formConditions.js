@@ -13,22 +13,6 @@ Bahmni.ConceptSet.FormConditions.rules = {
 
         return conditions;
     },
-    'ARV Status': function(formName, formFieldValues, patient) {
-        var value = formFieldValues['ARV Status'];
-        console.log("Value " + value);
-        var conditions = {
-            show: [],
-            hide: []
-        };
-        if (value) {
-            conditions.show.push("ARV Regimens");
-
-        } else {
-            conditions.hide.push("ARV Regimens");
-        }
-
-        return conditions;
-    },
     'Tests and Examinations': function(formName, formFieldValues, patient) {
         var conditions = {
             show: [],
@@ -203,6 +187,7 @@ Bahmni.ConceptSet.FormConditions.rules = {
     'CTC - ARV Status': function(formName, formFieldValues) {
 
 
+
         var conditions = {
             show: [],
             hide: []
@@ -217,6 +202,8 @@ Bahmni.ConceptSet.FormConditions.rules = {
         var arvStatus = formFieldValues['CTC - ARV Status'];
 
         var adhereStatus = "CTC - ARV Adherence Status";
+
+        console.log(arvStatus);
 
         if (arvStatus == "CTC - ARV Status, No ARV") {
             conditions.show.push("CTC - ARV Reason - No Start");
