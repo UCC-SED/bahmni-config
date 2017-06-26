@@ -125,7 +125,7 @@
                  "dropdown":true
             },
             "TB - Started": {
-                "stepper": true
+                "dropdown": true
             },
 			"Gynaecology, Gravida": {
                 "stepper": true
