@@ -85,9 +85,9 @@
       }
     ],
     "conceptSetUI": {
-      "REGISTRATION FEES": {
+      "EMR - Reason For Visit": {
         "required": false,
-        "label": "Fee"
+        "label": "Reason For Visit"
       },
       "FHS": {
         "buttonSelect": true
