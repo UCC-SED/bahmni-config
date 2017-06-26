@@ -119,7 +119,7 @@
                 "allowAddMore": true
             },
 			"TB - List of under 5 years who are household of bacleriogical confirmed TB cases": {
-                 "dropdown":true
+                 "allowAddMore":true
             },
 			"TB - list 5 years household - outcome": {
                  "dropdown":true
