@@ -226,6 +226,79 @@
             {
                 "dropdown":true
             },
+			,
+			"Patient refered from":
+            {
+                "dropdown":true
+            },
+			"Other Referred from":
+            {
+                "dropdown":true
+            },
+			"Other Referred from":
+            {
+                "dropdown":true
+            },
+			"Patient Joined Community Support Organisation":
+            {
+                "dropdown":true
+            },
+			"Prior ARV Exposure":
+            {
+                "dropdown":true
+            },
+			"Transfer In":
+            {
+                "dropdown":true
+            },
+			"TB - place of work":
+            {
+                "dropdown":true
+            },
+			"TB - Reffered by":
+            {
+                "dropdown":true
+            },
+			"TB - DOT option":
+            {
+                "dropdown":true
+            },
+			"TB - DOT option":
+            {
+                "dropdown":true
+            },
+			"TB - Classification by site":
+            {
+                "dropdown":true
+            },
+			"TB - HIV Status":
+            {
+                "dropdown":true
+            },
+			"TB - Classification by history of treatment":
+            {
+                "dropdown":true
+            },
+			"TB - CPT":
+            {
+                "dropdown":true
+            },
+			"TB - ART drugs":
+            {
+                "dropdown":true
+            },
+			"TB - DOT - Phase Type":
+            {
+                "dropdown":true
+            },
+			"TB - DOT - Type":
+            {
+                "dropdown":true
+            },
+			"CTC - Pregnant Y/N":
+			{
+			"dropdown":true
+			},
             "HTC - Hali ya Ujauzito":
             {
                 "dropdown":true
