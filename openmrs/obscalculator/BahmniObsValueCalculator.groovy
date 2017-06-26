@@ -31,9 +31,10 @@ public class eFMSObsValueValidator implements ObsValueCalculator {
 
 
     public void run(BahmniEncounterTransaction bahmniEncounterTransaction) {
-        System.out.println("This is previousHeight );
-                logger.info("This is Logging ");
-                validator(bahmniEncounterTransaction);
+        System.out.println("This is previousHeight )
+                println "Hello World"
+                logger.info("This is Logging ")
+                validator(bahmniEncounterTransaction)
     }
 
     static def validator(BahmniEncounterTransaction bahmniEncounterTransaction) {
