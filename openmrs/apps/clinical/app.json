@@ -119,9 +119,15 @@
                 "allowAddMore": true
             },
 			"TB - List of under 5 years who are household of bacleriogical confirmed TB cases": {
-                "allowAddMore": true
+                 "dropdown":true
             },
-            "Gynaecology, Gravida": {
+			"TB - list 5 years household - outcome": {
+                 "dropdown":true
+            },
+            "TB - Started": {
+                "stepper": true
+            },
+			"Gynaecology, Gravida": {
                 "stepper": true
             },
             "Accepted Family Planning methods": {
@@ -139,6 +145,10 @@
                  "allowAddMore": true
             },
 			"Patient Support":
+             {
+                 "allowAddMore": true
+            },
+			"Drug Allergies":
              {
                  "allowAddMore": true
             },
