@@ -86,7 +86,7 @@
     ],
     "conceptSetUI": {
       "EMR - Reason For Visit": {
-        "required": false,
+        "required": true,
         "label": "Reason For Visit"
       },
       "FHS": {
