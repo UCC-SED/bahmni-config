@@ -26,7 +26,16 @@
                 "showOrder": true,
                 "hideEmptyDisplayControl": true,
                 "showDetailsButton": true,
-                "displayOrder": 1
+                "displayOrder": 2
+            },
+            "birthCertificate": {
+                "type": "custom",
+                "displayOrder": 1,
+                "displayType": "Full-Page",
+                "config": {
+                    "title": "Birth Certificate",
+                    "template": "<birth-certificate></birth-certificate>"
+                }
             },
             "visits": {
                 "translationKey": "DASHBOARD_TITLE_VISITS_KEY",

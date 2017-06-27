@@ -3,13 +3,12 @@
 angular.module('bahmni.common.displaycontrol.custom')
     .directive('birthCertificate', ['observationsService', 'appService', 'spinner', function (observationsService, appService, spinner) {
             var link = function ($scope) {
-                console.log("inside birth certificate");
-                var conceptNames = ["HEIGHT", "Chief Complaint",
-                    "Chief Complaint Notes",
+                var conceptNames = ["WEIGHT",
                     "Lab Samples",
                     "Coded Diagnosis",
                     "Diagnosis Certainty",
-                    "Bahmni Diagnosis Status"];
+                    "Bahmni Diagnosis Status"
+                    ];
                 $scope.contentUrl = appService.configBaseUrl() + "/customDisplayControl/views/birthCertificate.html";
                 spinner.forPromise(observationsService.fetch($scope.patient.uuid, conceptNames, "latest", undefined, $scope.visitUuid, undefined).then(function (response) {
                     $scope.observations = response.data;
