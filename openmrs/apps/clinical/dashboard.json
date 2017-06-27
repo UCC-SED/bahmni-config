@@ -33,8 +33,8 @@
                 "displayOrder": 1,
                 "displayType": "Full-Page",
                 "config": {
-                    "title": "Birth Certificate",
-                    "template": "<birth-certificate></birth-certificate>"
+                    "title": "Latest Visit",
+                    "template": "<last-visit-display></last-visit-display>"
                 }
             },
             "visits": {
