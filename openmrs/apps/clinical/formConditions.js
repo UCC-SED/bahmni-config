@@ -440,6 +440,7 @@ Bahmni.ConceptSet.FormConditions.rules = {
     	'TB - Reffered by': function(formName, formFieldValues, patient) {
             var conditions = {show: [], hide: []};
             var other = formFieldValues['TB - Reffered by'];
+            var variable = "TB - Specify";
             if(other =="Others(Specify below)") {
                 conditions.show.push(variable)
             } else {
