@@ -438,11 +438,9 @@ Bahmni.ConceptSet.FormConditions.rules = {
             return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
         },
     	'TB - Reffered by': function(formName, formFieldValues, patient) {
-    //'Chief Complaint Data' concept when edited, triggers this function
             var conditions = {show: [], hide: []};
             var other = formFieldValues['TB - Reffered by'];
-            var variable = "TB - Specify";
-            if(other =="TB - Others(Specify below)") {
+            if(other =="Others(Specify below)") {
                 conditions.show.push(variable)
             } else {
                 conditions.hide.push(variable)
