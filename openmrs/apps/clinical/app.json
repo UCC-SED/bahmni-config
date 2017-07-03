@@ -332,6 +332,14 @@
             {
                 "dropdown":true
             },
+            "TB - Specimen Type":
+            {
+                "dropdown":true
+            },
+            "TB - Request and Report, HIV Status":
+            {
+                "dropdown":true
+            },
             "HTC - Hali ya Uambukizi wa Kifua Kikuu":
             {
                 "dropdown":true
