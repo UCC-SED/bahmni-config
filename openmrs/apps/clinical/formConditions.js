@@ -479,7 +479,7 @@ Bahmni.ConceptSet.FormConditions.rules = {
     //'Chief Complaint Data' concept when edited, triggers this function
             var conditions = {show: [], hide: []};
             var other = formFieldValues['TB - Classification by history of treatment'];
-            var variable = "TB - Classification by history - Specify";
+            var variable = "Specify";
             if(other =="TB - Classification by history - Others(Specify below)") {
                 conditions.show.push(variable)
             } else {
