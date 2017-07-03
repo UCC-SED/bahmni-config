@@ -31,7 +31,6 @@
             "birthCertificate": {
                 "type": "custom",
                 "displayOrder": 1,
-                "displayType": "Full-Page",
                 "config": {
                     "title": "Latest Visit",
                     "template": "<last-visit-display></last-visit-display>"
