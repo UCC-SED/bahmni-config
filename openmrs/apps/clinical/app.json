@@ -344,6 +344,14 @@
             {
                 "dropdown":true
             },
+            "Exposed Infant - Visit Type":
+            {
+                "dropdown":true
+            },
+            "Exposed Infant - Infant Feeding Practice":
+            {
+                "dropdown":true
+            },
             "defaults": {
                 "Number of living children": 1,
                 "Accepted Family Planning methods": [

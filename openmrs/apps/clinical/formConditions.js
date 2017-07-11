@@ -480,7 +480,7 @@ Bahmni.ConceptSet.FormConditions.rules = {
             var conditions = {show: [], hide: []};
             var other = formFieldValues['TB - Classification by history of treatment'];
             var variable = "TB - Classification by history - Specify";
-            if(other =="Specify") {
+            if(other =="Others(Specify below)") {
                 conditions.show.push(variable)
             } else {
                 conditions.hide.push(variable)
@@ -577,8 +577,37 @@ Bahmni.ConceptSet.FormConditions.rules = {
 
                                                     return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
                                                 }
+                                                ,
+              'Exposed Infant - CTX(Yes/No)': function(formName, formFieldValues, patient) {
+                                var conditions = {show: [], hide: []};
+                                var validation = "Exposed Infant - CTX(Yes/No)";
+                                 var majibu="Exposed Infant - CTX Yes";
+                                 var noOfDays="	Exposed Infant - CTX No of Days Dispensed";
 
+                                 if (validation==majibu) {
+                                      conditions.show.push(noOfDays)
+                                    } else {
+                                 conditions.hide.push(noOfDays)
+                               }
 
+                           return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
+               }
+
+              ,
+              'Exposed Infant - NVP(Yes/No)': function(formName, formFieldValues, patient) {
+                                var conditions = {show: [], hide: []};
+                                var validation = "Exposed Infant - NVP(Yes/No)";
+                                 var majibu="Exposed Infant - NVP Yes";
+                                 var noOfDays="	Exposed Infant - NPV No of Days Dispensed";
+
+                                 if (validation==majibu) {
+                                      conditions.show.push(noOfDays)
+                                    } else {
+                                 conditions.hide.push(noOfDays)
+                               }
+
+                           return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
+               }
 
 
 };
