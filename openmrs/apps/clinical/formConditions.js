@@ -582,7 +582,7 @@ Bahmni.ConceptSet.FormConditions.rules = {
                                 var conditions = {show: [], hide: []};
                                 var validation = "Exposed Infant - CTX(Yes/No)";
                                  var majibu="Exposed Infant - CTX Yes";
-                                 var noOfDays="	Exposed Infant - CTX No of Days Dispensed";
+                                 var noOfDays="Exposed Infant - CTX No of Days Dispensed";
 
                                  if (validation==majibu) {
                                       conditions.show.push(noOfDays)
@@ -598,7 +598,7 @@ Bahmni.ConceptSet.FormConditions.rules = {
                                 var conditions = {show: [], hide: []};
                                 var validation = "Exposed Infant - NVP(Yes/No)";
                                  var majibu="Exposed Infant - NVP Yes";
-                                 var noOfDays="	Exposed Infant - NPV No of Days Dispensed";
+                                 var noOfDays="Exposed Infant - NPV No of Days Dispensed";
 
                                  if (validation==majibu) {
                                       conditions.show.push(noOfDays)
