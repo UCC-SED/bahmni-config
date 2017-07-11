@@ -584,6 +584,7 @@ Bahmni.ConceptSet.FormConditions.rules = {
                                  var majibu="Exposed Infant - CTX Yes";
                                  var noOfDays="Exposed Infant - CTX No of Days Dispensed";
 
+  console.log(validation);
                                  if (validation==majibu) {
                                       conditions.show.push(noOfDays)
                                     } else {
@@ -592,14 +593,13 @@ Bahmni.ConceptSet.FormConditions.rules = {
 
                            return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
                }
-
               ,
               'Exposed Infant - NVP(Yes/No)': function(formName, formFieldValues, patient) {
                                 var conditions = {show: [], hide: []};
                                 var validation = "Exposed Infant - NVP(Yes/No)";
                                  var majibu="Exposed Infant - NVP Yes";
                                  var noOfDays="Exposed Infant - NPV No of Days Dispensed";
-
+  console.log(validation);
                                  if (validation==majibu) {
                                       conditions.show.push(noOfDays)
                                     } else {
