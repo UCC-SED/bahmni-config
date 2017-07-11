@@ -348,7 +348,11 @@
             {
                 "dropdown":true
             },
- 	    "exp-infant - Infact Feeding Practice Birth":
+            "Exposed Infant - Visit Type":
+            {
+                "dropdown":true
+            },
+            "Exposed Infant - Infant Feeding Practice":
             {
                 "dropdown":true
             },
