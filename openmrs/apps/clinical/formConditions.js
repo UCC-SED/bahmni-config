@@ -598,7 +598,7 @@ Bahmni.ConceptSet.FormConditions.rules = {
                                 var conditions = {show: [], hide: []};
                                 var validation = formFieldValues['Exposed Infant - NVP(Yes/No)'];
                                  var majibu="Exposed Infant - NVP Yes";
-                                 var noOfDays="Exposed Infant - NPV No of Days Dispensed";
+                                 var noOfDays="Exposed Infant - NVP No of Days Dispensed";
   console.log(validation);
                                  if (validation==majibu) {
                                       conditions.show.push(noOfDays)
