@@ -564,6 +564,17 @@ Bahmni.ConceptSet.FormConditions.rules = {
 
                             return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
                         },
+'exp-infant - Infact NVP at birth': function(formName, formFieldValues, patient) {
+            var conditions = {show: [], hide: []};
+            var other = formFieldValues['exp-infant - Infact NVP at birth'];
+            var variable = "exp-infant - Number of Days Dispensed";
+            if(other ==true) {
+                conditions.show.push(variable)
+            } else {
+                conditions.hide.push(variable)
+            }
+            return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
+        },
                        'HTC - Kuchunguzwa Kifua Kikuu': function(formName, formFieldValues, patient) {
                                                     var conditions = {show: [], hide: []};
                                                     var validation = "HTC - Kuchunguzwa Kifua Kikuu";

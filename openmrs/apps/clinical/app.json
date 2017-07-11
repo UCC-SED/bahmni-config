@@ -344,6 +344,14 @@
             {
                 "dropdown":true
             },
+ 	    "exp-infant - ARV drugs taken by mother":
+            {
+                "dropdown":true
+            },
+ 	    "exp-infant - Infact Feeding Practice Birth":
+            {
+                "dropdown":true
+            },
             "defaults": {
                 "Number of living children": 1,
                 "Accepted Family Planning methods": [
