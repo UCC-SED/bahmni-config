@@ -381,7 +381,7 @@ Bahmni.ConceptSet.FormConditions.rules = {
         }
         return conditions; //Return object SHOULD be a map with 'enable' and 'disable' arrays having the concept names
     },
-	
+
 
     'ARV Regimens - First Line Adult': function(formName, formFieldValues) {
         var firstLineAdult = "ARV Regimens - First Line Adult";
@@ -564,18 +564,19 @@ Bahmni.ConceptSet.FormConditions.rules = {
 
                             return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
                         },
-'exp-infant - Infact NVP at birth': function(formName, formFieldValues, patient) {
+
+           'exp-infant - Infact NVP at birth': function(formName, formFieldValues, patient) {
             var conditions = {show: [], hide: []};
-            var other = formFieldValues['exp-infant - Infact NVP at birth'];
+            var ans = formFieldValues['exp-infant - Infact NVP at birth'];
             var variable = "exp-infant - Number of Days Dispensed";
-            if(other ==true) {
+            if(ans) {
                 conditions.show.push(variable)
             } else {
                 conditions.hide.push(variable)
             }
             return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
         },
-                       'HTC - Kuchunguzwa Kifua Kikuu': function(formName, formFieldValues, patient) {
+      'HTC - Kuchunguzwa Kifua Kikuu': function(formName, formFieldValues, patient) {
                                                     var conditions = {show: [], hide: []};
                                                     var validation = "HTC - Kuchunguzwa Kifua Kikuu";
                                                     var majibu="HTC - Hali ya Uambukizi wa Kifua Kikuu";
@@ -587,8 +588,8 @@ Bahmni.ConceptSet.FormConditions.rules = {
                                                     }
 
                                                     return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
-                                                }
-                                                ,
+                                                },
+
               'Exposed Infant - CTX(Yes/No)': function(formName, formFieldValues, patient) {
                                 var conditions = {show: [], hide: []};
                                var validation = formFieldValues['Exposed Infant - CTX(Yes/No)'];
@@ -604,10 +605,8 @@ Bahmni.ConceptSet.FormConditions.rules = {
 
                            return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
                }
-              
 
-                           return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
-               }
+
 
 
 };

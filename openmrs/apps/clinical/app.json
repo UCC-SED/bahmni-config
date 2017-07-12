@@ -52,7 +52,7 @@
             		"caste",
                     "FileNumber",
 					"EDD"
-			
+
         		],
         		"additionalPatientIdentifiers": [
            			"National ID"
@@ -353,6 +353,10 @@
                 "dropdown":true
             },
             "Exposed Infant - Infant Feeding Practice":
+            {
+                "dropdown":true
+            },
+            "exp-infant - Infact Feeding Practice Birth":
             {
                 "dropdown":true
             },
