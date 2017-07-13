@@ -34,11 +34,6 @@
                 { "locale" : "pt", "css": "offline-language-portuguese-brazil"}
             ]
         },
-        "program": {
-            "ID_Number" : {
-                "required" : true
-            }
-        },
     	"diagnosisStatus": "Inactive",
             "program": {
                 "patientInformation": {
@@ -47,7 +42,7 @@
             },
             "patientContext": {
         		"programAttributes": [
-            		"Id_Number",
+            		"ID_Number",
             		"Doctor",
             		"Stage"
         		],
@@ -64,6 +59,11 @@
        		],
         		"preferredIdentifier": "Id_Number"
     	},
+        "program": {
+            "ID_Number": {
+                "required": true
+            }
+        },
         "obsIgnoreList": [
             "REGISTRATION FEES",
             "COMMENTS",
