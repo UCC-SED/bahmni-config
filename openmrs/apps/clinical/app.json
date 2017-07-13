@@ -34,6 +34,11 @@
                 { "locale" : "pt", "css": "offline-language-portuguese-brazil"}
             ]
         },
+        "program": {
+            "ID_Number" : {
+                "required" : true
+            }
+        },
     	"diagnosisStatus": "Inactive",
             "program": {
                 "patientInformation": {
