@@ -56,7 +56,7 @@
         },
         "label": "Manage Users",
         "url": "../../openmrs/admin/users/users.list",
-        "icon": "icon-bahmni-admin",
+        "icon": "fa-users",
         "order": 1,
         "requiredPrivilege": "app:admin"
     }
