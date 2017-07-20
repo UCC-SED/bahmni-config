@@ -56,7 +56,7 @@
         },
         "label": "Manage Users",
         "url": "../../openmrs/admin/users/users.list",
-        "icon": "fa-upload",
+        "icon": "fa fa-terminal",
         "order": 1,
         "requiredPrivilege": "app:admin"
     }
