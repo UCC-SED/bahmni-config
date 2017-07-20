@@ -69,16 +69,6 @@
     "order": 7,
     "requiredPrivilege": "app:admin"
   },
-  "orders": {
-    "id": "bahmni.orders",
-    "extensionPointId": "org.bahmni.home.dashboard",
-    "type": "link",
-    "translationKey": "MODULE_LABEL_ORDERS_KEY",
-    "url": "../orders/#/search",
-    "icon": "icon-bahmni-orders",
-    "order": 10,
-    "requiredPrivilege": "app:orders"
-  },
   "reports": {
     "id": "bahmni.reports",
     "extensionPointId": "org.bahmni.home.dashboard",
@@ -88,16 +78,6 @@
     "icon": "icon-bahmni-reports",
     "order": 8,
     "requiredPrivilege": "app:reports"
-  },
-  "bahmniBilling": {
-    "id": "bahmni.billing",
-    "extensionPointId": "org.bahmni.home.dashboard",
-    "type": "link",
-    "label": "Prescription",
-    "url": "../clinical/#/default/patient/search",
-    "icon": "fa-inr",
-    "order": 8,
-    "requiredPrivilege": "app:billing"
   },
   "appointments": {
     "id": "bahmni.appointments",
