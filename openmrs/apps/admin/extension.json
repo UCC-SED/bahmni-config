@@ -47,4 +47,17 @@
         "order": 1,
         "requiredPrivilege": "app:admin"
     }
+,
+    "manageUser":{
+        "id": "bahmni.admin.manageUser",
+        "extensionPointId": "org.bahmni.admin.dashboard",
+        "type": "link",
+        "extensionParams": {
+        },
+        "label": "Manage Users",
+        "url": "../../openmrs/admin/users/users.list",
+        "icon": "fa-upload",
+        "order": 1,
+        "requiredPrivilege": "app:admin"
+    }
 }
