@@ -21,7 +21,7 @@
     "label": "Nurse",
     "order": 2,
     "requiredPrivilege": "app:billing"
-  },,
+  },
   "programs": {
     "id": "bahmni.programs",
     "extensionPointId": "org.bahmni.home.dashboard",
