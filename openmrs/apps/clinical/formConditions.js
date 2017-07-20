@@ -565,7 +565,7 @@ Bahmni.ConceptSet.FormConditions.rules = {
                             return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
                         },
 
-           'exp-infant - Infact NVP at birth': function(formName, formFieldValues, patient) {
+           'exp-infant - Infant NVP at birth': function(formName, formFieldValues, patient) {
             var conditions = {show: [], hide: []};
             var ans = formFieldValues['exp-infant - Infact NVP at birth'];
             var variable = "exp-infant - Number of Days Dispensed";
