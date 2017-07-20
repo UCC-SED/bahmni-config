@@ -49,5 +49,12 @@
                 );
             </sql>
         </changeSet>
-
+    <changeSet id="ucc-20170712163803" author="Tumga, Kaustav">
+        <comment>Remove all default identifiers</comment>
+        <sqlFile path="resetIdentifier.sql"/>
+    </changeSet>
+    <changeSet id="20170712163933" author="Tumga, Kaustav">
+        <comment>Add HFR identifiers</comment>
+        <sqlFile path="addNewIdentifierAndIdGen.sql"/>
+    </changeSet>
 </databaseChangeLog>
