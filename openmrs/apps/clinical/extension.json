@@ -224,7 +224,7 @@
   "bahmniClinicalBillingTreatment": {
     "id": "bahmni.clinical.billing.treatment",
     "extensionPointId": "org.bahmni.clinical.consultation.board",
-    "type": "link",
+    "type": "config",
     "label": "Medications",
     "translationKey":"MEDICATIONS_BOARD_LABEL_KEY",
     "extensionParams":{

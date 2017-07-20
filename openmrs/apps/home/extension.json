@@ -9,19 +9,6 @@
     "order": 1,
     "requiredPrivilege": "app:registration"
   },
-  "vitals": {
-    "id": "bahmni.vitals.patients.search.activePatients",
-    "extensionPointId": "org.bahmni.patient.search",
-    "type": "config",
-    "extensionParams": {
-      "searchHandler": "emrapi.sqlSearch.activePatients",
-      "display": "Active",
-      "forwardUrl": "#/bahmni/registration/index.html#/patient/{{patientUuid}}visit"
-    },
-    "label": "Nurse",
-    "order": 2,
-    "requiredPrivilege": "app:registration"
-  },
   "programs": {
     "id": "bahmni.programs",
     "extensionPointId": "org.bahmni.home.dashboard",
@@ -51,16 +38,6 @@
     "icon": "icon-bahmni-inpatient",
     "order": 4,
     "requiredPrivilege": "app:adt"
-  },
-  "radiologyDocumentUpload": {
-    "id": "bahmni.radiology.document.upload",
-    "extensionPointId": "org.bahmni.home.dashboard",
-    "type": "link",
-    "translationKey": "MODULE_LABEL_RADIOLOGY_UPLOAD_KEY",
-    "url": "../document-upload/?encounterType=RADIOLOGY&topLevelConcept=Radiology",
-    "icon": "icon-bahmni-radiology",
-    "order": 5,
-    "requiredPrivilege": "app:radiology-upload"
   },
   "patientDocumentUpload": {
     "id": "bahmni.patient.document.upload",

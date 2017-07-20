@@ -21,6 +21,7 @@
       "additionalPatientInformation": {
         "title": "Other Vital Information",
         "attributes": [
+          "Marital Status",
           "education",
           "occupation",
           "FileNumber",
