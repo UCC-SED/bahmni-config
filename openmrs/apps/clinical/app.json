@@ -38,12 +38,21 @@
             "program": {
                 "patientInformation": {
                     "ageLimit": 100
+                },
+              "programSpecificAttributeTypesDefinition": [
+                {
+                  "programName": "HIV Care and Treatment",
+                  "attributeTypes": [
+                    "ID_Number",
+                    "Date"
+                  ]
                 }
+              ]
             },
+
             "patientContext": {
         		"programAttributes": [
             		"ID_Number",
-            		"Doctor",
             		"Stage"
         		],
         		"personAttributes": [
@@ -62,7 +71,70 @@
         "program": {
             "ID_Number": {
                 "required": true
+            },
+          "programSpecificAttributeTypesDefinition": [
+            {
+              "programName": "HIV Care and Treatment",
+              "attributeTypes": [
+                "ID_Number",
+                "Date",
+                "Referred From",
+                "Transfer In",
+                "Name of Treatment Supporter",
+                "Tel No of Treatment Supporter",
+                "Patient Joined Community Support Organisation",
+                "Name of Community Support Organisation",
+                "Prior ARV Exposure",
+                "TB Registration No",
+                "HUWANYU/HBC No",
+                "Date Confirmed HIV+",
+                "Date Enrolled In Care",
+                "Date Medically Eligible",
+                "Date Start ART",
+                "Why Eligible",
+                "CD4 Count",
+                "Functional Status",
+                "Weight",
+                "Drug Allergies"
+              ]
+            },
+            {
+              "programName": "TB Treatment",
+              "attributeTypes": [
+                "ID_Number",
+                "Date",
+                "Place of Work",
+                "Reffered by",
+                "Name of Treatment Supporter",
+                "Tel No of Treatment Supporter",
+                "Physical Address of Treatment Supporter",
+                "Name of Community Support Organisation",
+                "DOT Option",
+                "Classification by site",
+                "Site",
+                "Classification by History of Treatment",
+                "HIV Status",
+                "HIV Care registration number",
+                "CPT",
+                "CPT Start Date",
+                "ART drugs",
+                "ART Start Date"
+              ]
+            },
+            {
+              "programName": "Exposed Infant",
+              "attributeTypes": [
+                "ID_Number",
+                "Date",
+                "Name of Mother",
+                "ANC No of Mother",
+                "Infact NVP at Birth",
+                "ARV Drugs Taken by Mother During L&D",
+                "Number of Days Dispensed",
+                "Infact Feeding Practice Birth"
+              ]
             }
+          ]
         },
         "obsIgnoreList": [
             "REGISTRATION FEES",

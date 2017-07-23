@@ -55,7 +55,7 @@
       "Doctor":"provider",
       "Parent":"patient"
     },
-    
+
 
     "autoCompleteFields":["familyName", "caste"],
     "defaultIdentifierPrefix": "GAN",
