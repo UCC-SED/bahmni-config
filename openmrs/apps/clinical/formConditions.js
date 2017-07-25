@@ -607,7 +607,7 @@ Bahmni.ConceptSet.FormConditions.rules = {
                },
                  'TB - Request and Report, Previously Treated': function(formName, formFieldValues, patient) {
                            var conditions = {show: [], hide: []};
-                           var previousTreated = formFieldValues['TB - Request and Report, Previously Treated TB'];
+                           var previousTreated = formFieldValues['TB - Request and Report, Previously Treated'];
                            var specimentType = "TB - Previous Treated";
                              var testRequested = "TB - Test Requested";
                            if(previousTreated) {
