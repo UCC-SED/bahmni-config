@@ -620,69 +620,40 @@ Bahmni.ConceptSet.FormConditions.rules = {
                            return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
                        },
 
-
-'TB - DOT - Phase Type': function(formName, formFieldValues, patient) {
-                           var conditions = {show: [], hide: []};
-                           var phaseType = formFieldValues['TB - DOT - Phase Type'];
-                           var RHZE = "TB - DOT - RHZE";
-                           var RH = "TB - DOT - RH";
-                           var S = "TB - DOT - S(Streptomycin)";
-                           var RETRRHZE = "TB - DOT - RETR - RHZE";
-                           var RHE = "TB - DOT - RHE";
-                           var RHZ = "TB - DOT - Children - RHZ";
-                           var E = "TB - DOT - Children - E";
-                           var RH = "TB - DOT - RH";
-
-                           if(phaseType=="Intensive Phase") {
-                               conditions.show.push(RHZE)
-                               conditions.show.push(S)
-                               conditions.show.push(RH)
-                                conditions.show.push(E)
-                           } else if(phaseType=="Continuation Phase") {
-
-       conditions.show.push(RH)
-                                conditions.show.push(RHZ)
-                           }else
-                           {
-           conditions.hide.push(RHZE)
-                                  conditions.hide.push(S)
-                                  conditions.hide.push(RH)
-                                      conditions.hide.push(RHE)
-                                   conditions.hide.push(E)
-                           conditions.hide.push(RHZ)
-                           }
-                           return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
-                       }
-
-,
-
-
 'TB - Medicine Option': function(formName, formFieldValues, patient) {
                            var conditions = {show: [], hide: []};
                            var phaseType = formFieldValues['TB - Medicine Option'];
-                           var NewCase = "New Case";
-                           var Retreatment = "Retreatment";
-                           var Children = "Children";
+
+                           var NewCase = "TB - DOT - New Case";
+                           var Retreatment = "TB - DOT - Retreatment";
+                           var Children = "TB - DOT - Children";
 
                            var NewCaseSection="TB - New Case";
                            var RetreatmentSection="TB - Retreatment";
                            var ChildrenSection="TB - Children";
 
-                           if(phaseType==NewCase) {
-  conditions.show.push(NewCaseSection)
-    conditions.hide.push(RetreatmentSection)
-      conditions.hide.push(ChildrenSection)
-                           } else if(phaseType==Retreatment) {
-  conditions.hide.push(NewCaseSection)
-    conditions.show.push(RetreatmentSection)
-      conditions.hide.push(ChildrenSection)
+                           console.log(phaseType);
 
-                           }else if (phaseType==Children)
+                           if(phaseType==NewCaseSection) {
+  conditions.show.push(NewCase);
+   conditions.hide.push(Retreatment);
+      conditions.hide.push(Children);
+                           } else if(phaseType==RetreatmentSection) {
+  conditions.hide.push(NewCase);
+   conditions.show.push(Retreatment)
+      conditions.hide.push(Children)
+
+                           }else if (phaseType==ChildrenSection)
                            {
-  conditions.hide.push(NewCaseSection)
-    conditions.hide.push(RetreatmentSection)
-      conditions.show.push(ChildrenSection)
+  conditions.hide.push(NewCase)
+    conditions.hide.push(Retreatment)
+      conditions.show.push(Children)
 
+                           }else
+                           {
+                             conditions.hide.push(NewCase)
+                              conditions.hide.push(Retreatment)
+                                 conditions.hide.push(Children)
                            }
                            return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
                        }
