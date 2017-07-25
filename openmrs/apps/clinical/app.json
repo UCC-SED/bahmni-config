@@ -183,6 +183,9 @@
             "Set1": {
                 "allowAddMore": true
             },
+            "TB - Previous Treated": {
+                "allowAddMore": true
+            },
 			"CTC - Why Eligible": {
                 "multiSelect": true
             },

@@ -604,7 +604,21 @@ Bahmni.ConceptSet.FormConditions.rules = {
                                }
 
                            return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
-               }
+               },
+                 'TB - Request and Report, Previously Treated TB': function(formName, formFieldValues, patient) {
+                           var conditions = {show: [], hide: []};
+                           var previousTreated = formFieldValues['TB - Request and Report, Previously Treated TB'];
+                           var specimentType = "TB - Previous Treated";
+                             var testRequested = "TB - Test Requested";
+                           if(previousTreated) {
+                               conditions.show.push(specimentType)
+                               conditions.show.push(testRequested)
+                           } else {
+                               conditions.hide.push(specimentType)
+                                 conditions.hide.push(testRequested)
+                           }
+                           return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
+                       }
 
 
 
