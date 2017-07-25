@@ -605,7 +605,7 @@ Bahmni.ConceptSet.FormConditions.rules = {
 
                            return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
                },
-                 'TB - Request and Report, Previously Treated TB': function(formName, formFieldValues, patient) {
+                 'TB - Request and Report, Previously Treated': function(formName, formFieldValues, patient) {
                            var conditions = {show: [], hide: []};
                            var previousTreated = formFieldValues['TB - Request and Report, Previously Treated TB'];
                            var specimentType = "TB - Previous Treated";
