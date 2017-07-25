@@ -618,9 +618,72 @@ Bahmni.ConceptSet.FormConditions.rules = {
                                  conditions.hide.push(testRequested)
                            }
                            return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
+                       },
+
+
+'TB - DOT - Phase Type': function(formName, formFieldValues, patient) {
+                           var conditions = {show: [], hide: []};
+                           var phaseType = formFieldValues['TB - DOT - Phase Type'];
+                           var RHZE = "TB - DOT - RHZE";
+                           var RH = "TB - DOT - RH";
+                           var S = "TB - DOT - S(Streptomycin)";
+                           var RETRRHZE = "TB - DOT - RETR - RHZE";
+                           var RHE = "TB - DOT - RHE";
+                           var RHZ = "TB - DOT - Children - RHZ";
+                           var E = "TB - DOT - Children - E";
+                           var RH = "TB - DOT - RH";
+
+                           if(phaseType=="Intensive Phase") {
+                               conditions.show.push(RHZE)
+                               conditions.show.push(S)
+                               conditions.show.push(RH)
+                                conditions.show.push(E)
+                           } else if(phaseType=="Continuation Phase") {
+
+       conditions.show.push(RH)
+                                conditions.show.push(RHZ)
+                           }else
+                           {
+           conditions.hide.push(RHZE)
+                                  conditions.hide.push(S)
+                                  conditions.hide.push(RH)
+                                      conditions.hide.push(RHE)
+                                   conditions.hide.push(E)
+                           conditions.hide.push(RHZ)
+                           }
+                           return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
                        }
 
+,
 
 
+'TB - Medicine Option': function(formName, formFieldValues, patient) {
+                           var conditions = {show: [], hide: []};
+                           var phaseType = formFieldValues['TB - Medicine Option'];
+                           var NewCase = "New Case";
+                           var Retreatment = "Retreatment";
+                           var Children = "Children";
 
+                           var NewCaseSection="TB - New Case";
+                           var RetreatmentSection="TB - Retreatment";
+                           var ChildrenSection="TB - Children";
+
+                           if(phaseType==NewCase) {
+  conditions.show.push(NewCaseSection)
+    conditions.hide.push(RetreatmentSection)
+      conditions.hide.push(ChildrenSection)
+                           } else if(phaseType==Retreatment) {
+  conditions.hide.push(NewCaseSection)
+    conditions.show.push(RetreatmentSection)
+      conditions.hide.push(ChildrenSection)
+
+                           }else if (phaseType==Children)
+                           {
+  conditions.hide.push(NewCaseSection)
+    conditions.hide.push(RetreatmentSection)
+      conditions.show.push(ChildrenSection)
+
+                           }
+                           return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
+                       }
 };
