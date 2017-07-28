@@ -158,6 +158,29 @@
                 "durationRequired": false,
                 "allowAddMore": true
             },
+            "TB - Adverse Effects":{
+                "allowAddMore": true
+            },
+            "Coded Adverse Effect - Suspected Drug":{
+                "dropdown":true
+            },
+            "TB - DOT Administration of Drugs":{
+                "dropdown":true
+            },
+            "Suspected Drug":{
+                "autocomplete":true,
+                "codedConceptName":"Coded Adverse Effect - Suspected Drug",
+                "nonCodedConceptName":"Non Coded Adverse Suspected Drugs",
+                "durationRequired": false,
+                "allowAddMore": true
+            },
+            "Adverse Effects":{
+                "autocomplete":true,
+                "codedConceptName":"Adverse Effects - Type",
+                "nonCodedConceptName":"Non Coded Adverse Effect Type",
+                "durationRequired": false,
+                "allowAddMore": true
+            },
             "Tuberculosis, Adverse Effects" :{
                 "multiSelect" : true,
                 "autocomplete" : true

@@ -203,6 +203,20 @@
         "order": 8,
         "requiredPrivilege": "app:clinical:consultationTab"
     },
+    "bahmniClinicalBillingTreatmentTBTab": {
+        "id": "bahmni.clinical.billing.treatment",
+        "extensionPointId": "org.bahmni.clinical.consultation.board",
+        "type": "link",
+        "label": "Medications",
+        "translationKey": "TB MEDICATION",
+        "extensionParams": {
+            "tabConfigName": "tbTabConfig"
+        },
+        "url": "treatment",
+        "icon": "fa-user-md",
+        "order": 9,
+        "requiredPrivilege": "app:clinical:consultationTab"
+    },
     "bahmniClinicalConsultationOrders": {
         "id": "bahmni.clinical.consultation.orders",
         "extensionPointId": "org.bahmni.clinical.consultation.board",

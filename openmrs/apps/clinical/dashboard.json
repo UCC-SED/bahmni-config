@@ -18,106 +18,12 @@
                     "visitAttribute"
                 ]
             },
-            "diagnosis": {
-                "translationKey": "DASHBOARD_TITLE_DIAGNOSIS_KEY",
-                "type": "diagnosis",
-                "showCertainty": true,
-                "numberOfVisits": 10,
-                "showOrder": true,
-                "hideEmptyDisplayControl": true,
-                "showDetailsButton": true,
-                "displayOrder": 2
-            },
-            "birthCertificate": {
-                "type": "custom",
-                "displayOrder": 1,
-                "config": {
-                    "title": "Latest Visit",
-                    "template": "<last-visit-display></last-visit-display>"
-                }
-            },
-            "visits": {
-                "translationKey": "DASHBOARD_TITLE_VISITS_KEY",
-                "type": "visits",
-                "displayOrder": 2,
-                "dashboardConfig": {
-                    "title": null,
-                    "maximumNoOfVisits": 10,
-                    "groupByVisits": true
-                }
-            },
-            "labOrdersDisplayControl": {
-                "translationKey": "DASHBOARD_TITLE_LAB_ORDERS_DISPLAY_CONTROL_KEY",
-                "type": "ordersControl",
-                "orderType": "Lab Order",
-                "showDetailsButton": true,
-                "displayOrder": 3,
-                "dashboardConfig": {
-                    "conceptNames": [
-                        "Systolic",
-                        "Diastolic",
-                        "Posture",
-                        "Temperature"
-                    ],
-                    "numberOfVisits": 10
-                },
-                "expandedViewConfig": {
-                    "conceptNames": [
-                        "Systolic",
-                        "Diastolic",
-                        "Posture",
-                        "Temperature"
-                    ],
-                    "showDetailsButton": true
-                }
-            },
-            "labResults": {
-                "translationKey": "DASHBOARD_TITLE_LAB_RESULTS_KEY",
-                "type": "labOrders",
-                "displayOrder": 4,
-                "dashboardConfig": {
-                    "title": null,
-                    "showChart": false,
-                    "showTable": true,
-                    "showDetailsButton": false,
-                    "initialAccessionCount": 0,
-                    "latestAccessionCount": 1,
-                    "numberOfVisits": 10
-                },
-                "expandedViewConfig": {
-                    "numberOfVisits": 10
-                }
-            },
-            "treatments": {
-                "translationKey": "DASHBOARD_TITLE_TREATMENTS_KEY",
-                "type": "treatment",
-                "displayOrder": 6,
-                "dashboardConfig": {
-                    "showFlowSheet": true,
-                    "showListView": true,
-                    "showRoute": true,
-                    "showDrugForm": true,
-                    "numberOfVisits": 10,
-                    "showOtherActive": true,
-                    "showDetailsButton": true
-                },
-                "expandedViewConfig": {
-                    "translationKey": "DASHBOARD_TITLE_TREATMENTS_KEY",
-                    "showFlowSheet": true,
-                    "showListView": true,
-                    "showRoute": true,
-                    "showDrugForm": true,
-                    "numberOfVisits": 10,
-                    "showOtherActive": true,
-                    "showDetailsButton": true
-                }
-            },
             "nutritionalValues": {
                 "translationKey": "DASHBOARD_TITLE_NUTRITIONAL_VALUES_KEY",
                 "type": "vitals",
                 "hideEmptyDisplayControl": true,
                 "isObservation": true,
-                "displayOrder": 7,
+                "displayOrder": 2,
                 "dashboardConfig": {
                     "conceptNames": [
                         "HEIGHT",
@@ -133,37 +39,395 @@
                     "numberOfVisits": 2
                 }
             },
+            "visits": {
+                "translationKey": "DASHBOARD_TITLE_VISITS_KEY",
+                "type": "visits",
+                "displayOrder": 3,
+                "dashboardConfig": {
+                    "title": null,
+                    "maximumNoOfVisits": 5,
+                    "groupByVisits": true
+                }
+            },
+            "labOrdersDisplayControl": {
+                "translationKey": "DASHBOARD_TITLE_LAB_ORDERS_DISPLAY_CONTROL_KEY",
+                "type": "ordersControl",
+                "orderType": "Lab Order",
+                "showDetailsButton": true,
+                "displayOrder": 4,
+                "dashboardConfig": {
+                    "conceptNames": [
+                        "Systolic",
+                        "Diastolic",
+                        "Posture",
+                        "Temperature"
+                    ],
+                    "numberOfVisits": 5
+                },
+                "expandedViewConfig": {
+                    "conceptNames": [
+                        "Systolic",
+                        "Diastolic",
+                        "Posture",
+                        "Temperature"
+                    ],
+                    "showDetailsButton": true
+                }
+            },
+            "diagnosis": {
+                "translationKey": "DASHBOARD_TITLE_DIAGNOSIS_KEY",
+                "type": "diagnosis",
+                "showCertainty": true,
+                "numberOfVisits": 10,
+                "showOrder": true,
+                "hideEmptyDisplayControl": true,
+                "showDetailsButton": true,
+                "displayOrder": 5
+            },
+            "labResults": {
+                "translationKey": "DASHBOARD_TITLE_LAB_RESULTS_KEY",
+                "type": "labOrders",
+                "displayOrder": 6,
+                "dashboardConfig": {
+                    "title": null,
+                    "showChart": false,
+                    "showTable": true,
+                    "showDetailsButton": false,
+                    "initialAccessionCount": 0,
+                    "latestAccessionCount": 1,
+                    "numberOfVisits": 5
+                },
+                "expandedViewConfig": {
+                    "numberOfVisits": 10
+                }
+            },
+            "treatments": {
+                "translationKey": "DASHBOARD_TITLE_TREATMENTS_KEY",
+                "type": "treatment",
+                "displayOrder": 7,
+                "dashboardConfig": {
+                    "showFlowSheet": true,
+                    "showListView": true,
+                    "showRoute": true,
+                    "showDrugForm": true,
+                    "numberOfVisits": 5,
+                    "showOtherActive": true,
+                    "showDetailsButton": true
+                },
+                "expandedViewConfig": {
+                    "translationKey": "DASHBOARD_TITLE_TREATMENTS_KEY",
+                    "showFlowSheet": true,
+                    "showListView": true,
+                    "showRoute": true,
+                    "showDrugForm": true,
+                    "numberOfVisits": 10,
+                    "showOtherActive": true,
+                    "showDetailsButton": true
+                }
+            },
             "programs": {
                 "translationKey": "DASHBOARD_TITLE_PROGRAMS_KEY",
                 "hideEmptyDisplayControl": true,
                 "type": "programs",
                 "displayOrder": 8
-            },
-            "Baseline Forms":{
-                "type":"forms",
-                "hideEmptyDisplayControl": true,
-                "displayOrder":9,
-                "dashboardConfig":{
-                    "title":null,
-                    "maximumNoOfVisits":10
-                },
-                "formGroup":[
-                    "HIV Care and Treatment - Intake"
-                ],
-                "translationKey":"DASHBOARD_TITLE_BASELINE_FORMS"
-            },
+            }
+
+        }
+    },
+    "hiv":{
+        "translationKey":"DASHBOARD_TAB_HIV_DASHBOARD_KEY",
+        "maxRecentlyViewedPatients":10,
+        "displayByDefault": true,
+        "sections": {
             "hivTreatmentsDetails": {
-                "translationKey": "DASHBOARD_TITLE_HIV_TREATMENTS_DETAILS",
+                "translationKey": "HIV Drugs",
+                "type": "drugOrderDetails",
+                "showDetailsButton": true,
+                "displayOrder": 2,
+                "dashboardConfig": {
+                    "showOnlyActive": true,
+                    "drugConceptSet": "All HIV Drugs"
+                }
+            },
+            "arvStatus": {
+                "type": "flowSheet",
+                "displayOrder": 1,
+                "displayType": "Full-Page",
+                "title": "ARV Status",
+                "dashboardConfig": {
+                    "numberOfVisits": "5",
+                    "groupBy": "visits",
+                    "obsConcepts": [
+                        "CTC - ARV and Medication"
+                    ]
+                }
+            },
+            "hivFilledForms": {
+                "type": "forms",
+                "displayOrder": 6,
+                "dashboardConfig": {
+                    "title": null,
+                    "maximumNoOfVisits": 10
+                },
+                "formGroup": [
+                    "CTC2 Patient Record Form - Retrospective (CTC)",
+                    "HTC - Register Form"
+                ],
+                "translationKey": "HIV Filled Form"
+            },
+            "weight/BMI":{
+                "type":"observationGraph",
+                "title":"Weight/BMI",
+                "config":{
+                    "yAxisConcepts":[
+                        "Weight",
+                        "BMI"
+                    ],
+                    "xAxisConcept":"observationDateTime",
+                    "numberOfVisits":10
+                },
+                "displayOrder":3
+            }
+
+
+        }
+    },
+    "tb":{
+        "translationKey":"DASHBOARD_TAB_TB_DASHBOARD_KEY",
+        "maxRecentlyViewedPatients":10,
+        "displayByDefault": true,
+        "sections": {
+            "tbTreatmentsDetails": {
+                "translationKey": "TB Drugs",
                 "type": "drugOrderDetails",
                 "showDetailsButton": true,
                 "displayOrder": 1,
                 "dashboardConfig": {
                     "showOnlyActive": true,
-                    "drugConceptSet": "All HIV Drugs"
+                    "drugConceptSet": "All TB Drugs"
+                }
+            },
+            "adverseEvents": {
+                "translationKey": "DASHBOARD_TITLE_ADVERSE_EVENTS_SUMMARY",
+                "type": "obsToObsFlowSheet",
+                "headingConceptSource": "Abbreviation",
+                "dataConceptSource": "Abbreviation",
+                "displayOrder": 18,
+                "dashboardConfig": {
+                    "isEditable": true,
+                    "groupByConcept": "Adverse Effect - Date",
+                    "templateName": "TB - Adverse Effects",
+                    "conceptNames": [
+                        "Adverse Effects",
+                        "Suspected Drug",
+                        "Adverse Effects - Intervention"
+                    ]
+                }
+
+            },
+            "tbMedicationMonitor": {
+                "translationKey": "DASHBOARD_TITLE_MEDICATION_MONITORING_SUMMARY",
+                "type": "obsToObsFlowSheet",
+                "headingConceptSource": "Abbreviation",
+                "dataConceptSource": "Abbreviation",
+                "displayOrder": 18,
+                "dashboardConfig": {
+                    "isEditable": true,
+                    "groupByConcept": "TB - DOT - startDate",
+                    "templateName": "TB - MDR Drugs Followup",
+                    "conceptNames": [
+                        "TB - DOT - EndDate",
+                        "Coded Adverse Effect - Suspected Drug",
+                        "TB - DOT - Dose Number"
+                    ]
+                }
+
+            },
+            "tbFilledForms": {
+                "type": "forms",
+                "displayOrder": 6,
+                "dashboardConfig": {
+                    "title": null,
+                    "maximumNoOfVisits": 10
+                },
+                "formGroup": [
+                    "TB - Lab Result and Weight Monitoring",
+                    "TB - Drug Resistant TB Monthly Treatment Follow-up",
+                    "TB - Request and Reporting form for TB Culture and Drug Susceptibility Test (DST)",
+                    "TB - MDR - Lab Results",
+                    "TB - Treatment Initilization",
+                    "TB - Electrocardiogram Template",
+                    "TB - Xray Template",
+                    "TB - Adverse Effects",
+                    "TB - MDR Drugs Followup"
+                ],
+                "translationKey": "TB Filled Form"
+            },
+            "dstResults": {
+                "translationKey": "SUMMARY_TITLE_DST_RESULTS",
+                "type": "obsToObsFlowSheet",
+                "displayType": "Full-Page",
+                "displayOrder": 8,
+                "headingConceptSource": "Abbreviation",
+                "dataConceptSource": "Abbreviation",
+                "dashboardConfig": {
+                    "groupByConcept": "Specimen Collection Date",
+                    "type": "DstExtension",
+                    "templateName": "Bacteriology, DST result details",
+                    "conceptNames": [
+                        "Bacteriology, Isoniazid 0.2 µg/ml result",
+                        "Bacteriology, Isoniazid 1 µg/ml result",
+                        "Bacteriology, Rifampicin result",
+                        "Bacteriology, Ethambutol result",
+                        "Bacteriology, Streptomycin result",
+                        "Bacteriology, Pyrazinamide result",
+                        "Bacteriology, Ofloxacin result",
+                        "Bacteriology, Levofloxacin result",
+                        "Bacteriology, Moxifloxacin 0.5 µg/ml results",
+                        "Bacteriology, Moxifloxacin 2 µg/ml results",
+                        "Bacteriology, Amikacin result",
+                        "Bacteriology, Kanamycin result",
+                        "Bacteriology, Capreomycin result",
+                        "Bacteriology, Ethionamide result",
+                        "Bacteriology, Cycloserine result",
+                        "Bacteriology, PAS result",
+                        "Bacteriology, Bedaquiline result",
+                        "Bacteriology, Delamanid result",
+                        "Bacteriology, Linezolid result",
+                        "Bacteriology, Clofazamine result"
+                    ]
+                }
+            },
+            "electrocardiogram": {
+                "translationKey": "DASHBOARD_TITLE_ELECTROCARDIOGRAM_SUMMARY",
+                "type": "obsToObsFlowSheet",
+                "headingConceptSource": "Abbreviation",
+                "dataConceptSource": "Abbreviation",
+                "displayOrder": 18,
+                "dashboardConfig": {
+                    "isEditable": true,
+                    "groupByConcept": "Adverse Effect - Date",
+                    "templateName": "TB - Adverse Effects",
+                    "conceptNames": [
+                        "Adverse Effects",
+                        "Suspected Drug",
+                        "Adverse Effects - Intervention"
+                    ]
+                }
+
+            },
+            "ecgReadings": {
+                "translationKey": "ECG",
+                "type": "obsToObsFlowSheet",
+                "headingConceptSource": "Abbreviation",
+                "dataConceptSource": "Abbreviation",
+                "displayType": "Full-Page",
+                "displayOrder": 25,
+                "dashboardConfig": {
+                    "groupByConcept": "EKG, Date of EKG",
+                    "type": "EcgReadingsExtension",
+                    "templateName": "TB - Electrocardiogram Template",
+                    "conceptNames": [
+                        "EKG, Type of assessment",
+                        "EKG, Rhythm",
+                        "EKG, Heart Rate",
+                        "EKG, QT Interval",
+                        "EKG, QTcF Interval"
+                    ]
+                }
+            },
+            "chestXray": {
+                "translationKey": "Chest X-Ray",
+                "type": "obsToObsFlowSheet",
+                "headingConceptSource": "Abbreviation",
+                "dataConceptSource": "Abbreviation",
+                "displayType": "Full-Page",
+                "displayOrder": 26,
+                "dashboardConfig": {
+                    "groupByConcept": "Xray, Chest Xray Date",
+                    "type": "ChestXRayExtension",
+                    "templateName": "TB - Xray Template",
+                    "conceptNames": [
+                        "Xray, Extent of disease",
+                        "Xray, Maximum cavity size",
+                        "Xray, Fibrosis"
+                    ]
+                }
+            },
+            "bacteriologyResults": {
+                "displayType": "Full-Page",
+                "translationKey": "Bacterilogy",
+                "type": "obsToObsFlowSheet",
+                "headingConceptSource": "Abbreviation",
+                "dataConceptSource": "Abbreviation",
+                "displayOrder": 14,
+                "dashboardConfig": {
+                    "templateName": "TB - Lab Bacteriology",
+                    "groupByConcept": "Specimen Collection Date",
+                    "type": "DstExtension",
+                    "conceptNames": [
+                        "Lab, Smear Results",
+                        "Lab, Culture Result"
+                    ]
+                }
+            },
+            "weight/BMI":{
+                "type":"observationGraph",
+                "title":"Weight/BMI",
+                "config":{
+                    "yAxisConcepts":[
+                        "Weight",
+                        "BMI"
+                    ],
+                    "xAxisConcept":"observationDateTime",
+                    "numberOfVisits":10
+                },
+                "displayOrder":3
+            },
+            "labResultAndWeightMonitoring": {
+                "displayType": "Full-Page",
+                "translationKey": "Labatory Result and Weight Monitoring",
+                "type": "obsToObsFlowSheet",
+                "headingConceptSource": "Abbreviation",
+                "dataConceptSource": "Abbreviation",
+                "displayOrder": 14,
+                "dashboardConfig": {
+                    "templateName": "TB - Lab Result and Weight Monitoring",
+                    "groupByConcept": "TB - Lab Result and Weight Monitoring, Date",
+                    "type": "DstExtension",
+                    "conceptNames": [
+                        "Smear",
+                        "GenXpert",
+                        "DST",
+                        "Weight"
+                    ]
                 }
             }
 
         }
+    },
+    "patientMonitoringWithDrugsStartDate": {
+        "displayByDefault": true,
+        "maxRecentlyViewedPatients": 1,
+        "printing": {
+            "title": "EndTB General Patient Monitoring",
+            "header": "Patient Monitoring",
+            "logo": "../images/bahmniLogo.png",
+            "showNameAndImage": true
+        },
+        "sections": {
+            "patientMonitoring": {
+                "type": "custom",
+                "displayType": "Full-Page",
+                "config": {
+                    "startDateDrugConcepts": ["Isoniazid"],
+                    "endDateConcept": "TUBERCULOSIS DRUG TREATMENT START DATE",
+                    "title": "SUMMARY_TITLE_PATIENT_OBSERVATION_CHART",
+                    "template": "<patient-monitoring-tool section='section' patient='patient' enrollment='{{enrollment}}'></patient-monitoring-tool>"
+                }
+            }
+        },
+        "translationKey": "DASHBOARD_TAB_PATIENT_MONITORING_DRUGS_START_DATE_KEY"
     },
     "trends":{
         "translationKey":"DASHBOARD_TAB_TRENDS_KEY",

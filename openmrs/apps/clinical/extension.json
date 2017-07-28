@@ -196,14 +196,14 @@
     "order": 7,
     "requiredPrivilege": "app:clinical:treatmentTab"
   },
-  "bahmniClinicalBillingTreatmentHIVTab": {
+  "bahmniClinicalBillingTreatmentTab": {
     "id": "bahmni.clinical.billing.treatment",
     "extensionPointId": "org.bahmni.clinical.consultation.board",
     "type": "link",
     "label": "Medications",
-    "translationKey": "CLINICAL_EXTENSION_MEDICATION_HIV_TAB",
+    "translationKey": "MEDICATIONS_BOARD_LABEL_KEY",
     "extensionParams": {
-      "tabConfigName": "hivTabConfig"
+      "tabConfigName": "allMedicationTabConfig"
     },
     "url": "treatment",
     "icon": "fa-user-md",
