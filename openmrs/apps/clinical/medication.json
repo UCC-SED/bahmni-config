@@ -109,7 +109,7 @@
         "isDropDown": true,
         "hideOrderSet" : true,
         "labels": {
-          "drugNamePlaceHolder": "MEDICATION_LABEL_DRUG_NAME_PLACEHOLDER_TB_TAB",
+          "drugNamePlaceHolder": "MEDICATION_LABEL_DRUG_NAME_PLACEHOLDER_HIV_TAB",
           "dose": "MEDICATION_LABEL_DOSE_TB_TAB",
           "doseUnitsPlaceHolder": "MEDICATION_LABEL_DOSE_UNITS_PLACEHOLDER_TB_TAB",
           "frequency": "MEDICATION_LABEL_FREQUENCY_TB_TAB",

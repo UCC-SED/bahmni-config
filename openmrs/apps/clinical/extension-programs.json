@@ -208,7 +208,7 @@
         "extensionPointId": "org.bahmni.clinical.consultation.board",
         "type": "link",
         "label": "Medications",
-        "translationKey": "TB MEDICATION",
+        "translationKey": "TB Drugs",
         "extensionParams": {
             "tabConfigName": "tbTabConfig"
         },
