@@ -165,16 +165,6 @@
         "order": 3,
         "requiredPrivilege": "app:clinical:dispositionTab"
     },
-    "consultationSummary": {
-        "id": "bahmni.clinical.consultation.summary",
-        "extensionPointId": "org.bahmni.clinical.consultation.board",
-        "type": "link",
-        "label": "Consultation",
-        "url": "consultation",
-        "icon": "fa-user-md",
-        "order": 5,
-        "requiredPrivilege": "app:clinical:consultationTab"
-    },
     "bahmniClinicalBillingTreatment": {
         "id": "bahmni.clinical.billing.treatment",
         "extensionPointId": "org.bahmni.clinical.consultation.board",

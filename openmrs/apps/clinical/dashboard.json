@@ -175,7 +175,7 @@
                 ],
                 "translationKey": "HIV Filled Form"
             },
-            "weight/BMI":{
+            "weightBMI":{
                 "type":"observationGraph",
                 "title":"Weight/BMI",
                 "config":{

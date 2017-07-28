@@ -37,7 +37,8 @@
     	"diagnosisStatus": "Inactive",
             "program": {
                 "patientInformation": {
-                    "ageLimit": 100
+                    "ageLimit": 100,
+                    "showDetailsWithinDateRange" : true
                 },
               "programSpecificAttributeTypesDefinition": [
                 {
