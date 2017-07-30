@@ -1,36 +1,19 @@
 'use strict';
-
 angular.module('bahmni.common.displaycontrol.custom')
     .directive('birthCertificate', ['observationsService', 'appService', 'spinner', function (observationsService, appService, spinner) {
-        var link = function ($scope) {
-            console.log("inside birth certificate");
-            var conceptNames = ["HEIGHT"];
-            $scope.contentUrl = appService.configBaseUrl() + "/customDisplayControl/views/birthCertificate.html";
-            spinner.forPromise(observationsService.fetch($scope.patient.uuid, conceptNames, "latest", undefined, $scope.visitUuid, undefined).then(function (response) {
-                $scope.observations = response.data;
-            }));
-        };
-
-        return {
-            restrict: 'E',
-            template: '<ng-include src="contentUrl"/>',
-            link: link
-        }
-    }]).directive('deathCertificate', ['observationsService', 'appService', 'spinner', function (observationsService, appService, spinner) {
-    var link = function ($scope) {
-        var conceptNames = ["WEIGHT"];
-        $scope.contentUrl = appService.configBaseUrl() + "/customDisplayControl/views/deathCertificate.html";
-        spinner.forPromise(observationsService.fetch($scope.patient.uuid, conceptNames, "latest", undefined, $scope.visitUuid, undefined).then(function (response) {
-            $scope.observations = response.data;
-        }));
-    };
-
-    return {
-        restrict: 'E',
-        link: link,
-        template: '<ng-include src="contentUrl"/>'
-    }
-}]).directive('coMorbidities', ['observationsService', 'appService', 'spinner', function (observationsService, appService, spinner) {
+            var link = function ($scope,element) {
+                var conceptNames = ["CTC - WHO clinical stage (1 - 4)"];
+                $scope.contentUrl = appService.configBaseUrl() + "/customDisplayControl/views/birthCertificate.html";
+                spinner.forPromise(observationsService.fetch($scope.patient.uuid, conceptNames, "latest", undefined, $scope.visitUuid, undefined).then(function (response) {
+                    $scope.observations = response.data;
+                }), element);
+            };
+            return {
+                restrict: 'E',
+                template: '<ng-include src="contentUrl"/>',
+                link: link
+            }
+    }]).directive('coMorbidities', ['observationsService', 'appService', 'spinner', function (observationsService, appService, spinner) {
     var link = function ($scope, element) {
         var conceptNames = ["Diabetes Mellitus", "Baseline, Chronic renal insufficiency", "History of liver cirrhosis",
             "Baseline, Chronic obstructive pulmonary disease", "Baseline, Has cancer", "Baseline, Cancer type",
@@ -93,7 +76,7 @@ angular.module('bahmni.common.displaycontrol.custom')
     function ($http, $translate, spinner, $q, appService, messagingService, observationsService) {
         var link = function ($scope, element) {
             var fetchFlowsheetAttributes = function (patientProgramUuid) {
-                return $http.get('/openmrs/ws/rest/v1/endtb/patientFlowsheetAttributes', {
+                return $http.get('/openmrs/ws/rest/v1/efms/patientFlowsheetAttributes', {
                     params: {patientProgramUuid: patientProgramUuid},
                     withCredentials: true
                 });

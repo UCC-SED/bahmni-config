@@ -134,7 +134,23 @@
                 "Number of Days Dispensed",
                 "Infact Feeding Practice Birth"
               ]
-            }
+            }, {
+                  "programName": "MDR - TB Treatment",
+                  "attributeTypes": [
+                      "ID_Number",
+                      "Date",
+                      "Place of Work",
+                      "Reffered by",
+                      "Name of Treatment Supporter",
+                      "Tel No of Treatment Supporter",
+                      "Physical Address of Treatment Supporter",
+                      "Name of Community Support Organisation",
+                      "DOT Option",
+                      "Classification by site",
+                      "Site",
+                      "Classification by History of Treatment"
+                  ]
+              }
           ]
         },
         "obsIgnoreList": [

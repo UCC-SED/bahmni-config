@@ -174,7 +174,7 @@
         "view": "custom",
         "sections": {
           "activeTbDrugs": {
-            "title": "Active HIV Drugs",
+            "title": "HIV Drugs",
             "active": true,
             "includeConceptSet": "All HIV Drugs",
             "captureStopReason": true,

@@ -406,28 +406,22 @@
 
         }
     },
-    "patientMonitoringWithDrugsStartDate": {
-        "displayByDefault": true,
-        "maxRecentlyViewedPatients": 1,
+    "birthCertificate": {
+        "title": "Birth Certificate",
         "printing": {
-            "title": "EndTB General Patient Monitoring",
-            "header": "Patient Monitoring",
-            "logo": "../images/bahmniLogo.png",
-            "showNameAndImage": true
+            "title": "Bahmni",
+            "header": "Certificate",
+            "logo": "../images/bahmniLogo.png"
         },
         "sections": {
-            "patientMonitoring": {
+            "Birth Certificate": {
                 "type": "custom",
-                "displayType": "Full-Page",
                 "config": {
-                    "startDateDrugConcepts": ["Isoniazid"],
-                    "endDateConcept": "TUBERCULOSIS DRUG TREATMENT START DATE",
-                    "title": "SUMMARY_TITLE_PATIENT_OBSERVATION_CHART",
-                    "template": "<patient-monitoring-tool section='section' patient='patient' enrollment='{{enrollment}}'></patient-monitoring-tool>"
+                    "title": "Birth Certificate",
+                    "template": "<birth-certificate></birth-certificate>"
                 }
             }
-        },
-        "translationKey": "DASHBOARD_TAB_PATIENT_MONITORING_DRUGS_START_DATE_KEY"
+        }
     },
     "trends":{
         "translationKey":"DASHBOARD_TAB_TRENDS_KEY",
