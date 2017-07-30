@@ -169,31 +169,6 @@
           }
         ],
         "drugFormDefaults": {}
-      },
-      "drugOrderHistoryConfig": {
-        "view": "custom",
-        "sections": {
-          "activeTbDrugs": {
-            "title": "HIV Drugs",
-            "active": true,
-            "includeConceptSet": "All HIV Drugs",
-            "captureStopReason": true,
-            "columnHeaders": {
-              "drugName" : "DRUG_HISTORY_TB_DRUGNAME",
-              "dosage": "DRUG_HISTORY_TB_DOSAGE",
-              "route" : "DRUG_HISTORY_TB_ROUTE",
-              "duration" : "DRUG_HISTORY_TB_DURATION",
-              "frequency" : "DRUG_HISTORY_TB_FREQUENCY",
-              "startDate" : "DRUG_HISTORY_TB_STARTDATE",
-              "stopDate" : "DRUG_HISTORY_TB_STOPDATE",
-              "stopReason" : "DRUG_HISTORY_TB_STOPREASON"
-            },
-            "actions": [
-              "stop",
-              "void"
-            ]
-          }
-        }
       }
     },
     "tbTabConfig": {
