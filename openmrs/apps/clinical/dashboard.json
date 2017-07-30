@@ -43,6 +43,7 @@
                 "translationKey": "DASHBOARD_TITLE_VISITS_KEY",
                 "type": "visits",
                 "displayOrder": 3,
+                "hideEmptyDisplayControl": true,
                 "dashboardConfig": {
                     "title": null,
                     "maximumNoOfVisits": 5,
@@ -54,6 +55,7 @@
                 "type": "ordersControl",
                 "orderType": "Lab Order",
                 "showDetailsButton": true,
+                "hideEmptyDisplayControl": true,
                 "displayOrder": 4,
                 "dashboardConfig": {
                     "conceptNames": [
@@ -88,6 +90,7 @@
                 "translationKey": "DASHBOARD_TITLE_LAB_RESULTS_KEY",
                 "type": "labOrders",
                 "displayOrder": 6,
+                "hideEmptyDisplayControl": true,
                 "dashboardConfig": {
                     "title": null,
                     "showChart": false,
@@ -105,6 +108,7 @@
                 "translationKey": "DASHBOARD_TITLE_TREATMENTS_KEY",
                 "type": "treatment",
                 "displayOrder": 7,
+                "hideEmptyDisplayControl": true,
                 "dashboardConfig": {
                     "showFlowSheet": true,
                     "showListView": true,
@@ -143,6 +147,7 @@
                 "translationKey": "HIV Drugs",
                 "type": "drugOrderDetails",
                 "showDetailsButton": true,
+                "hideEmptyDisplayControl": true,
                 "displayOrder": 2,
                 "dashboardConfig": {
                     "showOnlyActive": true,
@@ -153,6 +158,7 @@
                 "type": "flowSheet",
                 "displayOrder": 1,
                 "displayType": "Full-Page",
+                "hideEmptyDisplayControl": true,
                 "title": "ARV Status",
                 "dashboardConfig": {
                     "numberOfVisits": "5",
@@ -165,6 +171,7 @@
             "hivFilledForms": {
                 "type": "forms",
                 "displayOrder": 6,
+                "hideEmptyDisplayControl": true,
                 "dashboardConfig": {
                     "title": null,
                     "maximumNoOfVisits": 10
@@ -178,6 +185,7 @@
             "weightBMI":{
                 "type":"observationGraph",
                 "title":"Weight/BMI",
+                "hideEmptyDisplayControl": true,
                 "config":{
                     "yAxisConcepts":[
                         "Weight",
@@ -200,6 +208,7 @@
             "tbTreatmentsDetails": {
                 "translationKey": "TB Drugs",
                 "type": "drugOrderDetails",
+                "hideEmptyDisplayControl": true,
                 "showDetailsButton": true,
                 "displayOrder": 1,
                 "dashboardConfig": {
@@ -211,6 +220,7 @@
                 "translationKey": "DASHBOARD_TITLE_ADVERSE_EVENTS_SUMMARY",
                 "type": "obsToObsFlowSheet",
                 "headingConceptSource": "Abbreviation",
+                "hideEmptyDisplayControl": true,
                 "dataConceptSource": "Abbreviation",
                 "displayOrder": 18,
                 "dashboardConfig": {
@@ -229,6 +239,7 @@
                 "translationKey": "DASHBOARD_TITLE_MEDICATION_MONITORING_SUMMARY",
                 "type": "obsToObsFlowSheet",
                 "headingConceptSource": "Abbreviation",
+                "hideEmptyDisplayControl": true,
                 "dataConceptSource": "Abbreviation",
                 "displayOrder": 18,
                 "dashboardConfig": {
@@ -246,6 +257,7 @@
             "tbFilledForms": {
                 "type": "forms",
                 "displayOrder": 6,
+                "hideEmptyDisplayControl": true,
                 "dashboardConfig": {
                     "title": null,
                     "maximumNoOfVisits": 10
@@ -267,6 +279,7 @@
                 "translationKey": "SUMMARY_TITLE_DST_RESULTS",
                 "type": "obsToObsFlowSheet",
                 "displayType": "Full-Page",
+                "hideEmptyDisplayControl": true,
                 "displayOrder": 8,
                 "headingConceptSource": "Abbreviation",
                 "dataConceptSource": "Abbreviation",
@@ -303,6 +316,7 @@
                 "type": "obsToObsFlowSheet",
                 "headingConceptSource": "Abbreviation",
                 "dataConceptSource": "Abbreviation",
+                "hideEmptyDisplayControl": true,
                 "displayOrder": 18,
                 "dashboardConfig": {
                     "isEditable": true,
@@ -321,6 +335,7 @@
                 "type": "obsToObsFlowSheet",
                 "headingConceptSource": "Abbreviation",
                 "dataConceptSource": "Abbreviation",
+                "hideEmptyDisplayControl": true,
                 "displayType": "Full-Page",
                 "displayOrder": 25,
                 "dashboardConfig": {
@@ -342,6 +357,7 @@
                 "headingConceptSource": "Abbreviation",
                 "dataConceptSource": "Abbreviation",
                 "displayType": "Full-Page",
+                "hideEmptyDisplayControl": true,
                 "displayOrder": 26,
                 "dashboardConfig": {
                     "groupByConcept": "Xray, Chest Xray Date",
@@ -358,6 +374,7 @@
                 "displayType": "Full-Page",
                 "translationKey": "Bacterilogy",
                 "type": "obsToObsFlowSheet",
+                "hideEmptyDisplayControl": true,
                 "headingConceptSource": "Abbreviation",
                 "dataConceptSource": "Abbreviation",
                 "displayOrder": 14,
@@ -374,6 +391,7 @@
             "weight/BMI":{
                 "type":"observationGraph",
                 "title":"Weight/BMI",
+                "hideEmptyDisplayControl": true,
                 "config":{
                     "yAxisConcepts":[
                         "Weight",
@@ -388,6 +406,7 @@
                 "displayType": "Full-Page",
                 "translationKey": "Labatory Result and Weight Monitoring",
                 "type": "obsToObsFlowSheet",
+                "hideEmptyDisplayControl": true,
                 "headingConceptSource": "Abbreviation",
                 "dataConceptSource": "Abbreviation",
                 "displayOrder": 14,
@@ -404,23 +423,6 @@
                 }
             }
 
-        }
-    },
-    "birthCertificate": {
-        "title": "Birth Certificate",
-        "printing": {
-            "title": "Bahmni",
-            "header": "Certificate",
-            "logo": "../images/bahmniLogo.png"
-        },
-        "sections": {
-            "Birth Certificate": {
-                "type": "custom",
-                "config": {
-                    "title": "Birth Certificate",
-                    "template": "<birth-certificate></birth-certificate>"
-                }
-            }
         }
     },
     "trends":{
