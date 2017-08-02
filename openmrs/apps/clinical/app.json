@@ -150,6 +150,13 @@
                       "Site",
                       "Classification by History of Treatment"
                   ]
+              },
+              {
+                  "programName": "Antenatal Care",
+                  "attributeTypes": [
+                      "ID_Number",
+                      "Date"
+                  ]
               }
           ]
         },
