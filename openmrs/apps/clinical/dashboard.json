@@ -21,7 +21,6 @@
             "nutritionalValues": {
                 "translationKey": "DASHBOARD_TITLE_NUTRITIONAL_VALUES_KEY",
                 "type": "vitals",
-                "hideEmptyDisplayControl": true,
                 "isObservation": true,
                 "displayOrder": 2,
                 "dashboardConfig": {
@@ -43,7 +42,6 @@
                 "translationKey": "DASHBOARD_TITLE_VISITS_KEY",
                 "type": "visits",
                 "displayOrder": 3,
-                "hideEmptyDisplayControl": true,
                 "dashboardConfig": {
                     "title": null,
                     "maximumNoOfVisits": 5,
@@ -55,7 +53,6 @@
                 "type": "ordersControl",
                 "orderType": "Lab Order",
                 "showDetailsButton": true,
-                "hideEmptyDisplayControl": true,
                 "displayOrder": 4,
                 "dashboardConfig": {
                     "conceptNames": [
@@ -90,7 +87,6 @@
                 "translationKey": "DASHBOARD_TITLE_LAB_RESULTS_KEY",
                 "type": "labOrders",
                 "displayOrder": 6,
-                "hideEmptyDisplayControl": true,
                 "dashboardConfig": {
                     "title": null,
                     "showChart": false,
