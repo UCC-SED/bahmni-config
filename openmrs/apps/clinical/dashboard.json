@@ -83,21 +83,22 @@
                 "showDetailsButton": true,
                 "displayOrder": 5
             },
-            "labResults": {
-                "translationKey": "DASHBOARD_TITLE_LAB_RESULTS_KEY",
-                "type": "labOrders",
-                "displayOrder": 6,
-                "dashboardConfig": {
-                    "title": null,
-                    "showChart": false,
-                    "showTable": true,
-                    "showDetailsButton": false,
-                    "initialAccessionCount": 0,
-                    "latestAccessionCount": 1,
-                    "numberOfVisits": 5
+            "labResults":{
+                "translationKey":"DASHBOARD_TITLE_LAB_RESULTS_KEY",
+                "type":"labOrders",
+                "displayOrder":6,
+                "dashboardConfig":{
+                    "title":null,
+                    "numberOfVisits":6,
+                    "showChart":true,
+                    "showTable":false,
+                    "showNormalLabResults": true,
+                    "showCommentsExpanded": true,
+                    "showAccessionNotes": true,
+                    "showDetailsButton":false
                 },
-                "expandedViewConfig": {
-                    "numberOfVisits": 10
+                "expandedViewConfig":{
+                    "numberOfVisits":10
                 }
             },
             "treatments": {
