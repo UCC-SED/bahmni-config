@@ -90,7 +90,7 @@
                 "dashboardConfig":{
                     "title":null,
                     "numberOfVisits":6,
-                    "showChart":true,
+                    "showChart":false,
                     "showTable":false,
                     "showNormalLabResults": true,
                     "showCommentsExpanded": true,

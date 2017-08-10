@@ -29,14 +29,6 @@
           "Telephone Contact"
         ]
       },
-      "pregnancyStatus":{
-        "title":"Pregnancy Status",
-        "translationKey":"Pregnancy Status",
-        "attributes":[
-          "pregnancyStatus",
-          "EDD"
-        ]
-      },
       "paymentMode":{
         "title":"Payment Mode",
         "translationKey":"Payment Mode",
