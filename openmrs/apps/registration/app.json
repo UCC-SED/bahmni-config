@@ -102,8 +102,8 @@
     "patientSearch": {
       "address": {
         "label": "National Identifier",
-        "placeholder": "Passport/Driving/Voting/National ",
-        "field": "address2"
+        "placeholder": "Passport/Driving/Voting/National",
+        "field": "ID"
       },
       "customAttributes": {
         "label": "File Number",
