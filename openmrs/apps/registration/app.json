@@ -65,7 +65,7 @@
     "showBirthTime": true,
     "hideRelationShipDuration": true,
     "showCasteSameAsLastNameCheckbox": false,
-    "assumedBirthDay": "15/07",
+    "assumedBirthDay": "01/07",
     "printOptions": [
 
       {
@@ -103,7 +103,7 @@
       "address": {
         "label": "National Identifier",
         "placeholder": "Passport/Driving/Voting/National",
-        "field": "ID"
+        "field": "address2"
       },
       "customAttributes": {
         "label": "File Number",
