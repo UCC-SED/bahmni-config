@@ -44,15 +44,5 @@
         },
         "order": 1,
         "requiredPrivilege": "Edit Visits"
-    },
-    "bahmniClinicalTreatmentLinks": {
-        "id": "bahmni.clinical.treatment.links",
-        "extensionPointId": "org.bahmni.clinical.treatment.links",
-        "type": "link",
-        "label": "Open <u>Q</u>uotation",
-        "url": "http://192.168.1.13:8069/quotations/latest?patient_ref={{patient_ref}}&dispensed=false&location_ref={{location_ref}}",
-        "shortcutKey": "q",
-        "order": 3,
-        "requiredPrivilege": "app:billing"
     }
 }

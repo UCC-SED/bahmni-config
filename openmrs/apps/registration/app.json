@@ -55,12 +55,24 @@
       "Parent":"patient"
     },
 
+    "forwardUrlsForVisitTypes": [
+      {
+        "visitType": "OPD",
+        "forwardUrl": "../search",
+        "shortcutKey": "c"
+      },
+      {
+        "visitType": "IPD",
+        "forwardUrl": "../search",
+        "shortcutKey": "d"
+      }
+    ],
 
     "autoCompleteFields":["familyName", "caste"],
     "defaultIdentifierPrefix": "GAN",
     "defaultVisitType": "OPD",
     "searchByIdForwardUrl": "/patient/{{patientUuid}}",
-    "afterVisitSaveForwardUrl":"../registration",
+    "afterVisitSaveForwardUrl":"../search",
     "showMiddleName": true,
     "showBirthTime": true,
     "hideRelationShipDuration": true,
