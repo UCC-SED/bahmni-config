@@ -52,7 +52,7 @@
         "extensionParams" : {
             "display": "Enter <u>C</u>onsultation",
             "shortcutKey": "c",
-            "forwardUrl": "..//patient/new"
+            "forwardUrl": "./patient/new"
         },
         "order": 1,
         "requiredPrivilege": "Edit Patients"
