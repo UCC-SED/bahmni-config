@@ -58,7 +58,7 @@
     "defaultIdentifierPrefix": "GAN",
     "defaultVisitType": "OPD",
     "searchByIdForwardUrl": "/patient/{{patientUuid}}",
-    "afterVisitSaveForwardUrl":"../search",
+    "afterVisitSaveForwardUrl":"../registration",
     "showMiddleName": true,
     "showBirthTime": true,
     "hideRelationShipDuration": true,
