@@ -21,6 +21,18 @@
         "order": 2,
         "requiredPrivilege": "Add Patients"
     },
+    "feeInformation":{
+        "id": "bahmni.registration.conceptSetGroup.feeInformation",
+        "extensionPointId": "org.bahmni.registration.conceptSetGroup.observations",
+        "type": "config",
+        "extensionParams": {
+            "conceptName": "REGISTRATION FEES",
+            "translationKey": "Consultation Fee",
+            "required":true
+        },
+        "order": 2,
+        "requiredPrivilege": "Edit Visits"
+    }
     "view":{
         "id": "bahmni.patient.search.result.action.edit",
         "extensionPointId": "org.bahmni.registration.patient.search.result.action",
