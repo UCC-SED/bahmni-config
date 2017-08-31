@@ -29,6 +29,14 @@
           "Telephone Contact"
         ]
       },
+      "nationalIdentification":{
+        "title":"National Indentifcation",
+        "translationKey":"National Indentifcation",
+        "attributes":[
+          "National ID Type",
+          "ID"
+        ]
+      },
       "hidden": {
         "attributes": [
           "primaryContact"
