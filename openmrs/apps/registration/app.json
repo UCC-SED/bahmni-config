@@ -29,13 +29,6 @@
           "Telephone Contact"
         ]
       },
-      "paymentMode":{
-        "title":"Payment Mode",
-        "translationKey":"Payment Mode",
-        "attributes":[
-          "Payment Mode"
-        ]
-      },
       "hidden": {
         "attributes": [
           "primaryContact"
