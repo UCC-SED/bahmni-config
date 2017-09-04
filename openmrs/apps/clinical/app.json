@@ -182,6 +182,9 @@
                 "durationRequired": false,
                 "allowAddMore": true
             },
+            "All Observation Templates": {
+                "showPanelView": true
+            },
             "TB - Adverse Effects":{
                 "allowAddMore": true
             },

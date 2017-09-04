@@ -35,7 +35,7 @@
     "type": "link",
     "translationKey": "Nurse",
     "url": "../clinical/index.html#/default/patient/search",
-    "icon": "fa-stethoscope",
+    "icon": "fa-user-md",
     "order": 4,
     "requiredPrivilege": "app:nurse"
   },
