@@ -3,6 +3,7 @@ var showOrHideExemptionSection = function (patient) {
         show: [],
         hide: []
     };
+    console.log(patient);
     if (patient["Payment Mode"].value=="Exemption") {
         returnValues.show.push("exemption")
     } else {
