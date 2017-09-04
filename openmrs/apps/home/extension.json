@@ -30,7 +30,7 @@
     "requiredPrivilege": "app:clinical"
   },
   "nurse": {
-    "id": "bahmni.clinical",
+    "id": "bahmni.nurse",
     "extensionPointId": "org.bahmni.home.dashboard",
     "type": "link",
     "translationKey": "Nurse",

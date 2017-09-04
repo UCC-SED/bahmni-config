@@ -56,8 +56,8 @@
     "order": 1,
     "requiredPrivilege": "app:clinical"
   },
-  "bahmniClinicalPatientsSearchAllActivePatients": {
-    "id": "bahmni.clinical.patients.search.allActivePatients",
+  "bahmniClinicalPatientsSearchAllActivePatientsNurse": {
+    "id": "bahmni.clinical.patients.search.allActivePatientsNurse",
     "extensionPointId": "org.bahmni.patient.search",
     "type": "config",
     "extensionParams": {
@@ -105,8 +105,8 @@
     "order": 2,
     "requiredPrivilege": "app:clinical"
   },
-  "bahmniClinicalPatientsWithPendingBill": {
-  "id": "bahmni.clinical.patients.search.activePatientsWithPendingBill",
+  "bahmniClinicalPatientsWithPendingBillNurse": {
+  "id": "bahmni.clinical.patients.search.activePatientsWithPendingBillNurse",
   "extensionPointId": "org.bahmni.patient.search",
   "type": "config",
   "extensionParams": {
