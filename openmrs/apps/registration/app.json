@@ -35,7 +35,8 @@
         "attributes": [
           "Exempted Type",
           "Exemption Reason"
-        ],
+        ]
+      },
 
         "nationalIdentification":{
         "title":"National Indentifcation",
