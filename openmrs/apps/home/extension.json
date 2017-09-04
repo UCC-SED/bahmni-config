@@ -37,7 +37,7 @@
     "url": "../clinical/index.html#/default/patient/search",
     "icon": "fa-stethoscope",
     "order": 4,
-    "requiredPrivilege": "app:clinical"
+    "requiredPrivilege": "app:nurse"
   },
   "adt": {
     "id": "bahmni.adt",
