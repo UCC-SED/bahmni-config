@@ -29,6 +29,16 @@
     "order": 4,
     "requiredPrivilege": "app:clinical"
   },
+  "nurse": {
+    "id": "bahmni.clinical",
+    "extensionPointId": "org.bahmni.home.dashboard",
+    "type": "link",
+    "translationKey": "Nurse",
+    "url": "../clinical/index.html#/default/patient/search",
+    "icon": "fa-stethoscope",
+    "order": 4,
+    "requiredPrivilege": "app:clinical"
+  },
   "adt": {
     "id": "bahmni.adt",
     "extensionPointId": "org.bahmni.home.dashboard",
