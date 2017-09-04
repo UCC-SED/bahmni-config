@@ -29,14 +29,6 @@
           "Telephone Contact"
         ]
       },
-      "exemption": {
-        "title": "Exemption Details",
-        "translationKey": "Exemption Details",
-        "attributes": [
-          "Exempted Type",
-          "Exemption Reason"
-        ]
-      },
 
         "nationalIdentification":{
         "title":"National Indentifcation",
