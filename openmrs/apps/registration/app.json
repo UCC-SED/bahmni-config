@@ -21,12 +21,14 @@
       "additionalPatientInformation": {
         "title": "Other Vital Information",
         "attributes": [
+          "Telephone Contact",
           "Marital Status",
           "education",
           "occupation",
           "FileNumber",
           "Place of Birth",
-          "Telephone Contact"
+          "Name of Area leader/Neighbour",
+          "Tel No of Name of Area leader/Neighbour"
         ]
       },
 
