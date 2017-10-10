@@ -155,7 +155,9 @@
                   "programName": "Antenatal Care",
                   "attributeTypes": [
                       "ID_Number",
-                      "Date"
+                      "Date",
+                      "Namba ya hati punguzo ya chandarua",
+                      "Kimo(cm)"
                   ]
               }
           ]
