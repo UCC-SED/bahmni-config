@@ -35,26 +35,10 @@
             ]
         },
     	"diagnosisStatus": "Inactive",
-            "program": {
-                "patientInformation": {
-                    "ageLimit": 100,
-                    "showDetailsWithinDateRange" : true
-                },
-              "programSpecificAttributeTypesDefinition": [
-                {
-                  "programName": "HIV Care and Treatment",
-                  "attributeTypes": [
-                    "ID_Number",
-                    "Date"
-                  ]
-                }
-              ]
-            },
 
             "patientContext": {
         		"programAttributes": [
-            		"ID_Number",
-            		"Stage"
+            		"ID_Number"
         		],
         		"personAttributes": [
 				    "pregnancyStatus",
@@ -78,7 +62,6 @@
               "programName": "HIV Care and Treatment",
               "attributeTypes": [
                 "ID_Number",
-                "Date",
                 "Referred From",
                 "Transfer In",
                 "Name of Treatment Supporter",
@@ -103,7 +86,6 @@
               "programName": "TB Treatment",
               "attributeTypes": [
                 "ID_Number",
-                "Date",
                 "Place of Work",
                 "Reffered by",
                 "Name of Treatment Supporter",
@@ -126,7 +108,6 @@
               "programName": "Exposed Infant",
               "attributeTypes": [
                 "ID_Number",
-                "Date",
                 "Name of Mother",
                 "ANC No of Mother",
                 "Infact NVP at Birth",
@@ -134,11 +115,11 @@
                 "Number of Days Dispensed",
                 "Infact Feeding Practice Birth"
               ]
-            }, {
+            },
+              {
                   "programName": "MDR - TB Treatment",
                   "attributeTypes": [
                       "ID_Number",
-                      "Date",
                       "Place of Work",
                       "Reffered by",
                       "Name of Treatment Supporter",
@@ -155,9 +136,13 @@
                   "programName": "Antenatal Care",
                   "attributeTypes": [
                       "ID_Number",
-                      "Date",
                       "Namba ya hati punguzo ya chandarua",
                       "Kimo(cm)"
+                  ]
+              } , {
+                  "programName": "MAT",
+                  "attributeTypes": [
+                      "ID_Number"
                   ]
               }
           ]
@@ -507,6 +492,39 @@
             "observationDisplay": {
                 "conceptNames": []
             }
+        },
+        "showObservation": {
+            "showObservationByVisitType": [
+                {
+                    "visitType": "IPD",
+                    "defaultObservationConceptName": [
+                        "All IPD Observations"
+                    ]
+                },
+                {
+                    "visitType": "OPD",
+                    "defaultObservationConceptName": [
+                        "All OPD Observations"
+                    ]
+                },
+                {
+                    "visitType": "CTC",
+                    "defaultObservationConceptName": [
+                        "All CTC Observations"
+                    ]
+                }, {
+                    "visitType": "TB",
+                    "defaultObservationConceptName": [
+                        "All TB Observations"
+                    ]
+                },
+                {
+                    "visitType": "RCH",
+                    "defaultObservationConceptName": [
+                        "All RCH Observations"
+                    ]
+                }
+            ]
         }
     }
 }
