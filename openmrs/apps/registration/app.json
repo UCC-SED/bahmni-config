@@ -1,6 +1,6 @@
 {
   "id": "bahmni.registration",
-  "instanceOf":"bahmni.template.registration",
+  "instanceOf": "bahmni.template.registration",
   "description": "Bahmni Patient Registration App",
   "extensionPoints": [
     {
@@ -16,7 +16,7 @@
     "patientUuid",
     "activeVisitUuid"
   ],
-  "config" : {
+  "config": {
     "patientInformation": {
       "additionalPatientInformation": {
         "title": "Other Vital Information",
@@ -31,11 +31,19 @@
           "Tel No of Name of Area leader/Neighbour"
         ]
       },
-
-        "nationalIdentification":{
-        "title":"National Indentifcation",
-        "translationKey":"National Indentifcation",
-        "attributes":[
+      "nextOfKinInformation": {
+        "title": "Next of Kin",
+        "translationKey": "Next of Kin",
+        "attributes": [
+          "Name",
+          "Next of Kin Contact Number",
+          "Next of Kin Type"
+        ]
+      },
+      "nationalIdentification": {
+        "title": "National Indentifcation",
+        "translationKey": "National Indentifcation",
+        "attributes": [
           "National ID Type",
           "ID"
         ]
@@ -45,7 +53,7 @@
           "primaryContact"
         ]
       },
-      "defaults":  {
+      "defaults": {
         "class": "General",
         "landHolding": 2
       }
@@ -55,21 +63,23 @@
       "strictAutocompleteFromLevel": "stateProvince"
     },
     "relationshipTypeMap": {
-      "Doctor":"provider",
-      "Parent":"patient"
+      "Doctor": "provider",
+      "Parent": "patient"
     },
-    "autoCompleteFields":["familyName", "caste"],
+    "autoCompleteFields": [
+      "familyName",
+      "caste"
+    ],
     "defaultIdentifierPrefix": "GAN",
     "defaultVisitType": "OPD",
     "searchByIdForwardUrl": "/patient/{{patientUuid}}",
-    "afterVisitSaveForwardUrl":"../registration",
+    "afterVisitSaveForwardUrl": "../registration",
     "showMiddleName": true,
     "showBirthTime": true,
     "hideRelationShipDuration": true,
     "showCasteSameAsLastNameCheckbox": false,
     "assumedBirthDay": "01/07",
     "printOptions": [
-
       {
         "translationKey": "REGISTRATION_PRINT_REG_CARD_KEY",
         "templateUrl": "/bahmni_config/openmrs/apps/registration/registrationCardLayout/print.html",
@@ -89,17 +99,35 @@
       "FHS": {
         "buttonSelect": true
       },
-      "defaults":{
+      "defaults": {
         "FHS": "Present"
       }
     },
-    "fieldValidation" : {
-      "primaryContact" : {"pattern" : "[0-9]{8,10}", "errorMessage" : "Should be 12 characters starting with 91 (country code)"},
-      "landHolding" : {"pattern" : "[0-9]{0,3}", "errorMessage" : "Should be between 1 to 999 acres"},
-      "familyName" : {"pattern" : "[a-zA-Z]{0,}", "errorMessage" : "Should contain characters"},
-      "givenName" : {"pattern" : "[a-zA-Z]{0,}", "errorMessage" : "Should contain characters"},
-      "middleName" : {"pattern" : "[a-zA-Z]{0,}", "errorMessage" : "Should contain characters"},
-      "address1" : {"pattern" : "[a-zA-Z0-9]{3}", "errorMessage" : "Should contain 3 characters"}
+    "fieldValidation": {
+      "primaryContact": {
+        "pattern": "[0-9]{8,10}",
+        "errorMessage": "Should be 12 characters starting with 91 (country code)"
+      },
+      "landHolding": {
+        "pattern": "[0-9]{0,3}",
+        "errorMessage": "Should be between 1 to 999 acres"
+      },
+      "familyName": {
+        "pattern": "[a-zA-Z]{0,}",
+        "errorMessage": "Should contain characters"
+      },
+      "givenName": {
+        "pattern": "[a-zA-Z]{0,}",
+        "errorMessage": "Should contain characters"
+      },
+      "middleName": {
+        "pattern": "[a-zA-Z]{0,}",
+        "errorMessage": "Should contain characters"
+      },
+      "address1": {
+        "pattern": "[a-zA-Z0-9]{3}",
+        "errorMessage": "Should contain 3 characters"
+      }
     },
     "patientSearch": {
       "address": {
@@ -110,7 +138,9 @@
       "customAttributes": {
         "label": "File Number",
         "placeholder": "Enter File Number",
-        "fields": ["FileNumber"]
+        "fields": [
+          "FileNumber"
+        ]
       }
     }
   }
