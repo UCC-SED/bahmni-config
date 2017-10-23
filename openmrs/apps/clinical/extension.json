@@ -78,19 +78,6 @@
     "shortcutKey": "q",
     "requiredPrivilege": "app:billing"
   },
-  "bahmniClinicalPatientsSearchActivePatientsForPrograms": {
-    "id": "bahmni.clinical.patients.search.activePatients",
-    "extensionPointId": "org.bahmni.patient.search",
-    "type": "config",
-    "extensionParams": {
-      "searchHandler": "emrapi.sqlSearch.activePatients",
-      "translationKey": "MODULE_LABEL_PROGRAMS_KEY",
-      "forwardUrl": "#/default/patient/{{patientUuid}}/consultationContext"
-    },
-    "label": "Active",
-    "order": 1,
-    "requiredPrivilege": "app:clinical"
-  },
   "bahmniClinicalPatientsWithPendingBill": {
     "id": "bahmni.clinical.patients.search.activePatientsWithPendingBill",
     "extensionPointId": "org.bahmni.patient.search",
