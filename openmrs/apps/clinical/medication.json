@@ -128,10 +128,9 @@
           "Before meals"
         ],
         "routes": [
-          "Oral (PO)",
           "Intramuscular (IM)",
           "Intravenous (IV)",
-          "Inhalation"
+          "Oral"
         ],
         "durationUnits": [
           "Day(s)",
@@ -200,10 +199,9 @@
           "Before meals"
         ],
         "routes": [
-          "Oral (PO)",
           "Intramuscular (IM)",
           "Intravenous (IV)",
-          "Inhalation"
+          "Oral"
         ],
         "durationUnits": [
           "Day(s)",
