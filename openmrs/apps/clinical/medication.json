@@ -107,7 +107,7 @@
         },
         "drugConceptSet": "All HIV Drugs",
         "isDropDown": true,
-        "hideOrderSet" : true,
+        "hideOrderSet" : false,
         "labels": {
           "drugNamePlaceHolder": "MEDICATION_LABEL_DRUG_NAME_PLACEHOLDER_HIV_TAB",
           "dose": "MEDICATION_LABEL_DOSE_TB_TAB",
@@ -178,7 +178,7 @@
         },
         "drugConceptSet": "All TB Drugs",
         "isDropDown": true,
-        "hideOrderSet" : true,
+        "hideOrderSet" : false,
         "labels": {
           "drugNamePlaceHolder": "MEDICATION_LABEL_DRUG_NAME_PLACEHOLDER_TB_TAB",
           "dose": "MEDICATION_LABEL_DOSE_TB_TAB",
