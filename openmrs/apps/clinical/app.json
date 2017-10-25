@@ -85,7 +85,7 @@
             {
               "programName": "TB Treatment",
               "attributeTypes": [
-                "TB District Registration Number",
+                "TB/L District Registration Number",
                 "Place of Work",
                   "Place of Work-Other",
                 "Reffered by",
@@ -121,7 +121,7 @@
               {
                   "programName": "MDR - TB Treatment",
                   "attributeTypes": [
-                      "TB District Registration Number",
+                      "TB/L District Registration Number",
                       "Place of Work",
                       "Place of Work-Other",
                       "Reffered by",
