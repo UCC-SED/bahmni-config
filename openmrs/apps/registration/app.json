@@ -21,7 +21,6 @@
       "additionalPatientInformation": {
         "title": "Other Vital Information",
         "attributes": [
-          "Telephone Contact",
           "Marital Status",
           "education",
           "occupation",
@@ -91,6 +90,9 @@
         "shortcutKey": "c"
       }
     ],
+    "Telephone Contact": {
+      "required": true
+    },
     "conceptSetUI": {
       "EMR - Reason For Visit": {
         "required": true,

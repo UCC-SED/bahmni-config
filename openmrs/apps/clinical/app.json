@@ -85,14 +85,16 @@
             {
               "programName": "TB Treatment",
               "attributeTypes": [
-                "ID_Number",
+                "District Registration Number",
                 "Place of Work",
+                  "Place of Work-Other",
                 "Reffered by",
+                  "Reffered by-Other",
+                  "DOT Option",
                 "Name of Treatment Supporter",
                 "Tel No of Treatment Supporter",
                 "Physical Address of Treatment Supporter",
                 "Name of Community Support Organisation",
-                "DOT Option",
                 "Classification by site",
                 "Site",
                 "Classification by History of Treatment",
@@ -119,14 +121,16 @@
               {
                   "programName": "MDR - TB Treatment",
                   "attributeTypes": [
-                      "ID_Number",
+                      "District Registration Number",
                       "Place of Work",
+                      "Place of Work-Other",
                       "Reffered by",
+                      "Reffered by-Other",
+                      "DOT Option",
                       "Name of Treatment Supporter",
                       "Tel No of Treatment Supporter",
                       "Physical Address of Treatment Supporter",
                       "Name of Community Support Organisation",
-                      "DOT Option",
                       "Classification by site",
                       "Site",
                       "Classification by History of Treatment"

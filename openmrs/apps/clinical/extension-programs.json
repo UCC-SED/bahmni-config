@@ -31,7 +31,7 @@
         "type": "config",
         "extensionParams": {
             "searchHandler": "emrapi.sqlSearch.activeTBPatients",
-            "translationKey": "TB PROGRAM",
+            "translationKey": "TB/L PROGRAM",
             "forwardUrl": "#/default/patient/{{patientUuid}}/consultationContext"
         },
         "label": "Active",
