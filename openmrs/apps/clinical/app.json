@@ -166,6 +166,9 @@
         "maxConceptSetLevels": 3,
         "allowOnlyCodedDiagnosis": false,
         "conceptSetUI": {
+            "Vitals":{
+                "allowAddMore": true
+            },
             "Chief Complaint Data": {
                 "autocomplete":true,
                 "codedConceptName":"Chief Complaint",
@@ -476,6 +479,18 @@
             "exp-infant - Infant Feeding Practice Birth":
             {
                 "dropdown":true
+            },
+            "ANC - Tarehe anayotazamia kujifungua (EDD)": {
+                "allowFutureDates" : true
+            },
+            "ANC -Tarehe ya kurudi": {
+                "allowFutureDates" : true
+            },
+            "RCH1 - Tarehe ya kurudi": {
+                "allowFutureDates" : true
+            },
+            "Next Visit" : {
+                "allowFutureDates" : true
             },
             "ANC - Mimba zilizoharibika":
             {
