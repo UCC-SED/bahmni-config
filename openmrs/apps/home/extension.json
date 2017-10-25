@@ -89,6 +89,7 @@
     "order": 11,
     "requiredPrivilege": "App: appointmentschedulingui.home"
   },
+
   "implementerInterface": {
     "id": "bahmni.implementer.interface",
     "extensionPointId": "org.bahmni.home.dashboard",
@@ -117,6 +118,6 @@
     "url": "/dhis-integration/index.html",
     "icon": "fa-book",
     "order": 11,
-    "requiredPrivilege": "app:orders"
+    "requiredPrivilege": "app:dhis"
   }
 }
