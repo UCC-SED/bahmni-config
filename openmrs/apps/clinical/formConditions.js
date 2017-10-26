@@ -13,6 +13,21 @@ Bahmni.ConceptSet.FormConditions.rules = {
 
         return conditions;
     },
+    'HTC - Hali ya Ujauzito': function(formName, formFieldValues, patient) {
+            var conditions = {
+                show: [],
+                hide: []
+            };
+            var haliYaUjauzito = "HTC - Hali ya Ujauzito";
+
+            if (patient['gender'] == 'M') {
+                conditions.hide.push(haliYaUjauzito);
+            } else {
+                conditions.show.push(haliYaUjauzito);
+            }
+
+            return conditions;
+        },
     'Tests and Examinations': function(formName, formFieldValues, patient) {
         var conditions = {
             show: [],
