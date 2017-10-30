@@ -69,6 +69,20 @@ Bahmni.Clinical.Program.FormConditions.rules = {
         }
         return conditions;
     },
+    'TB - list 5 years household - outcome': function (patientProgramAttributes) {
+        var conditions = {
+            show: [],
+            hide: []
+        };
+        if (patientProgramAttributes['TB - list 5 years household - outcome'] == 'TB -Tb') {
+
+            conditions.show.push('TB - IPT');
+        } else if(patientProgramAttributes['TB - list 5 years household - outcome'] == 'TB - No tb')
+        {
+            conditions.hide.push('TB - IPT');
+        }
+        return conditions;
+    },
     'Reffered by': function (patientProgramAttributes) {
         var conditions = {
             show: [],
