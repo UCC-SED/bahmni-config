@@ -553,6 +553,20 @@ Bahmni.ConceptSet.FormConditions.rules = {
             }
             return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
         },
+        'TB - list 5 years household - outcome': function (patientProgramAttributes) {
+            var conditions = {
+                show: [],
+                hide: []
+            };
+            if (patientProgramAttributes['TB - list 5 years household - outcome'] == 'TB -Tb') {
+
+                conditions.show.push('TB - IPT');
+            } else if(patientProgramAttributes['TB - list 5 years household - outcome'] == 'TB - No tb')
+            {
+                conditions.hide.push('TB - IPT');
+            }
+            return conditions;
+        },
         'Breast feeding': function(formName, formFieldValues, patient) {
                 var conditions = {show: [], hide: []};
                 var name = "Breast feeding";
