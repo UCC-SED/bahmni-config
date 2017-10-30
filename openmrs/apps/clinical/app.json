@@ -87,10 +87,10 @@
               "attributeTypes": [
                 "TB/L District Registration Number",
                 "Place of Work",
-                  "Place of Work-Other",
+                "Place of Work-Other",
                 "Reffered by",
-                  "Reffered by-Other",
-                  "DOT Option",
+                "Reffered by-Other",
+                "DOT Option",
                 "Name of Treatment Supporter",
                 "Tel No of Treatment Supporter",
                 "Physical Address of Treatment Supporter",
@@ -122,6 +122,7 @@
                   "programName": "MDR - TB Treatment",
                   "attributeTypes": [
                       "TB/L District Registration Number",
+                      "DR-TB District Registration Number",
                       "Place of Work",
                       "Place of Work-Other",
                       "Reffered by",
