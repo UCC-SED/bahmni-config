@@ -61,9 +61,7 @@ Bahmni.Clinical.Program.FormConditions.rules = {
         if (patientProgramAttributes['Place of Work'] == 'Other') {
 
             conditions.show.push('Place of Work-Other');
-        } else if (patientProgramAttributes['Place of Work'] == 'TB - Hfacility') {
-            conditions.hide.push('Place of Work-Other');
-        }else if(patientProgramAttributes['Place of Work'] == 'Mines')
+        }else
         {
             conditions.hide.push('Place of Work-Other');
         }
