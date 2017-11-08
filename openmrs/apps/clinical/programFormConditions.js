@@ -69,6 +69,48 @@ Bahmni.Clinical.Program.FormConditions.rules = {
         }
         return conditions;
     },
+    'Classification by site': function (patientProgramAttributes) 
+    {
+        var conditions = 
+        {
+            show: [],
+            hide: []
+        };
+        
+        if (patientProgramAttributes['Classification by site'] == 'TB - Pulmonary') 
+        {
+            conditions.hide.push('TB - Site');
+        } else
+        {
+            conditions.show.push('TB - Site');
+        }
+        return conditions;
+    },
+    'TB - HIV Status': function (patientProgramAttributes) 
+    {
+        var conditions = 
+        {
+            show: [],
+            hide: []
+        };
+        
+        if (patientProgramAttributes['TB - HIV Status'] == 'TB - HIV Status - Negative') 
+        {
+            conditions.hide.push('TB - HIV Care registration number');
+            conditions.hide.push('TB - CPT');
+            conditions.hide.push('TB - CPT - Start Date');
+            conditions.hide.push('TB - ART drugs');
+            conditions.hide.push('TB - ART - Start Date');
+        } else
+        {
+           conditions.show.push('TB - HIV Care registration number');
+            conditions.show.push('TB - CPT');
+            conditions.show.push('TB - CPT - Start Date');
+            conditions.show.push('TB - ART drugs');
+            conditions.show.push('TB - ART - Start Date');
+        }
+        return conditions;
+    },
     'Reffered by': function (patientProgramAttributes) {
         var conditions = {
             show: [],
