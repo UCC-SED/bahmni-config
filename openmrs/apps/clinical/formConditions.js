@@ -633,6 +633,35 @@ Bahmni.ConceptSet.FormConditions.rules = {
 
                            return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
                },
+//conditions for Transfer/Referrals
+    'Transfer/Referral': function(formName, formFieldValues, patient) {
+        var conditions = {show: [], hide: []};
+        var transferType = formFieldValues['Transfer/Referral'];
+        var Transfer_Location = "Transfer Location";
+        var name_facility = "Name of Facility To be Transfer";
+        var Referral_Programs = "Referral Programs";
+        console.log(transferType);
+        if(transferType=="Referral Out") {
+            conditions.show.push(Transfer_Location)
+            conditions.show.push(name_facility)
+            conditions.hide.push(Referral_Programs)
+
+        } else if(transferType=="Referral In")
+        {
+            conditions.show.push(Referral_Programs)
+            conditions.hide.push(Transfer_Location)
+            conditions.hide.push(name_facility)
+
+        }
+        else {
+            conditions.hide.push(Transfer_Location)
+            conditions.hide.push(name_facility)
+            conditions.hide.push(Referral_Programs)
+        }
+        return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
+    },
+
+
                  'TB - Request and Report, Previously Treated': function(formName, formFieldValues, patient) {
                            var conditions = {show: [], hide: []};
                            var previousTreated = formFieldValues['TB - Request and Report, Previously Treated'];

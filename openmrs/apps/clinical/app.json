@@ -83,7 +83,7 @@
               ]
             },
             {
-              "programName": "TB/Lep Treatment",
+              "programName": "TB/Lep Treatment - TB",
               "attributeTypes": [
                 "TB/L District Registration Number",
                 "Place of Work",
@@ -546,5 +546,6 @@
                 }
             ]
         }
+        
     }
 }
