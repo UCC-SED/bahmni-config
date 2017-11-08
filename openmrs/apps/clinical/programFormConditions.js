@@ -53,21 +53,21 @@ Bahmni.Clinical.Program.FormConditions.rules = {
         }
         return conditions;
     },
-    'Place of Work': function (patientProgramAttributes) {
+    'TB - place of work': function (patientProgramAttributes) {
         var conditions = {
             show: [],
             hide: []
         };
-        if (patientProgramAttributes['Place of Work'] == 'Other') {
+        if (patientProgramAttributes['TB - place of work'] == 'Other') {
 
-            conditions.show.push('Place of Work-Other');
+            conditions.show.push('TB - Otherr');
         }else
         {
-            conditions.hide.push('Place of Work-Other');
+            conditions.hide.push('TB - Other');
         }
         return conditions;
     },
-    'Classification by site': function (patientProgramAttributes) 
+    'TB - Classification by site': function (patientProgramAttributes) 
     {
         var conditions = 
         {
@@ -75,7 +75,7 @@ Bahmni.Clinical.Program.FormConditions.rules = {
             hide: []
         };
         
-        if (patientProgramAttributes['Classification by site'] == 'TB - Pulmonary') 
+        if (patientProgramAttributes['TB - Classification by site'] == 'Pulmonary') 
         {
             conditions.hide.push('TB - Site');
         } else
