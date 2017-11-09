@@ -58,9 +58,10 @@ Bahmni.Clinical.Program.FormConditions.rules = {
             show: [],
             hide: []
         };
-        if (patientProgramAttributes['TB - place of work'] == 'Other') {
+        console.log(patientProgramAttributes['TB - place of work']);
+        if (patientProgramAttributes['TB - place of work'] == 'Place of Work-Other') {
 
-            conditions.show.push('TB - Other');
+            conditions.show.push('Place of Work-Other');
         }else
         {
             conditions.hide.push('TB - Other');
