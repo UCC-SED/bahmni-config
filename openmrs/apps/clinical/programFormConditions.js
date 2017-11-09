@@ -23,7 +23,7 @@ Bahmni.Clinical.Program.FormConditions.rules = {
             show: [],
             hide: []
         };
-        console.log(patientProgramAttributes['Classification by site']);
+      
         if (patientProgramAttributes['Classification by site'] == 'Extra-pulmonary') {
 
             conditions.show.push('Site');
@@ -39,19 +39,20 @@ Bahmni.Clinical.Program.FormConditions.rules = {
             show: [],
             hide: []
         };
-        if (patientProgramAttributes['HIV Status'] == 'Positive') {
-
-            conditions.show.push('CPT');
-            conditions.show.push('CPT Start Date');
-            conditions.show.push('ART drugs');
-            conditions.show.push('ART Start Date');
-            conditions.show.push('HIV Care registration number');
-        } else if (patientProgramAttributes['HIV Status'] == 'Negative') {
-            conditions.hide.push('CPT');
+        if (patientProgramAttributes['HIV Status'] == 'Negative') {
+			conditions.hide.push('CPT');
             conditions.hide.push('CPT Start Date');
             conditions.hide.push('ART drugs');
             conditions.hide.push('ART Start Date');
             conditions.hide.push('HIV Care registration number');
+
+           
+        } else  {
+             conditions.show.push('CPT');
+            conditions.show.push('CPT Start Date');
+            conditions.show.push('ART drugs');
+            conditions.show.push('ART Start Date');
+            conditions.show.push('HIV Care registration number');
         }
         return conditions;
     },
@@ -71,31 +72,7 @@ Bahmni.Clinical.Program.FormConditions.rules = {
         return conditions;
     },
 
-    'TB - HIV Status': function (patientProgramAttributes) 
-    {
-        var conditions = 
-        {
-            show: [],
-            hide: []
-        };
-        
-        if (patientProgramAttributes['TB - HIV Status'] == 'TB - HIV Status - Negative') 
-        {
-            conditions.hide.push('TB - HIV Care registration number');
-            conditions.hide.push('TB - CPT');
-            conditions.hide.push('TB - CPT - Start Date');
-            conditions.hide.push('TB - ART drugs');
-            conditions.hide.push('TB - ART - Start Date');
-        } else
-        {
-           conditions.show.push('TB - HIV Care registration number');
-            conditions.show.push('TB - CPT');
-            conditions.show.push('TB - CPT - Start Date');
-            conditions.show.push('TB - ART drugs');
-            conditions.show.push('TB - ART - Start Date');
-        }
-        return conditions;
-    },
+  
     'Reffered by': function (patientProgramAttributes) {
         var conditions = {
             show: [],
