@@ -207,6 +207,7 @@
                 "multiSelect" : true,
                 "autocomplete" : true
             },
+            
             "Posture": {
                 "buttonSelect": true
             },
@@ -497,6 +498,11 @@
             {
                 "allowAddMore": true
             },
+            "conceptSetUI": {
+					"TB - Adverse Effects": {
+					"isTabular": true
+							}
+				},
             "defaults": {
                 "Number of living children": 1,
                 "Accepted Family Planning methods": [
