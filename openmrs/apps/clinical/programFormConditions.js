@@ -53,18 +53,18 @@ Bahmni.Clinical.Program.FormConditions.rules = {
         }
         return conditions;
     },
-    'TB - place of work': function (patientProgramAttributes) {
+    'Place of Work': function (patientProgramAttributes) {
         var conditions = {
             show: [],
             hide: []
         };
-        console.log(patientProgramAttributes['TB - place of work']);
-        if (patientProgramAttributes['TB - place of work'] == 'Place of Work-Other') {
+        console.log(patientProgramAttributes['Place of Work']);
+        if (patientProgramAttributes['Place of Work'] == 'Place of Work-Other') {
 
             conditions.show.push('Place of Work-Other');
         }else
         {
-            conditions.hide.push('TB - Other');
+            conditions.hide.push('Place of Work-Other');
         }
         return conditions;
     },
