@@ -115,15 +115,11 @@ Bahmni.Clinical.Program.FormConditions.rules = {
             show: [],
             hide: []
         };
+        console.log(patientProgramAttributes['Reffered by']);
         if (patientProgramAttributes['Reffered by'] == 'Others(Specify below)') {
 
             conditions.show.push('Reffered by-Other');
-        } else if (patientProgramAttributes['Reffered by'] == 'Self') {
-            conditions.hide.push('Reffered by-Other');
-        }else if(patientProgramAttributes['Reffered by'] == 'Community' )
-        {
-         conditions.hide.push('Reffered by-Other');
-        }else if(patientProgramAttributes['Reffered by'] == 'CTC')
+        } else 
         {
          conditions.hide.push('Reffered by-Other');
         }
