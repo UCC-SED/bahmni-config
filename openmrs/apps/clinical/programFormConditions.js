@@ -23,10 +23,12 @@ Bahmni.Clinical.Program.FormConditions.rules = {
             show: [],
             hide: []
         };
+        console.log(patientProgramAttributes['Classification by site']);
         if (patientProgramAttributes['Classification by site'] == 'Extra-pulmonary') {
 
             conditions.show.push('Site');
-        } else if (patientProgramAttributes['Classification by site'] == 'Pulmonary') {
+        } else
+        {
             conditions.hide.push('Site');
         }
         return conditions;
@@ -68,23 +70,7 @@ Bahmni.Clinical.Program.FormConditions.rules = {
         }
         return conditions;
     },
-    'TB - Classification by site': function (patientProgramAttributes) 
-    {
-        var conditions = 
-        {
-            show: [],
-            hide: []
-        };
-        
-        if (patientProgramAttributes['TB - Classification by site'] == 'Pulmonary') 
-        {
-            conditions.hide.push('TB - Site');
-        } else
-        {
-            conditions.show.push('TB - Site');
-        }
-        return conditions;
-    },
+
     'TB - HIV Status': function (patientProgramAttributes) 
     {
         var conditions = 
