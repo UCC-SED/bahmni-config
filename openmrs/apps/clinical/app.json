@@ -83,9 +83,9 @@
               ]
             },
             {
-              "programName": "TB/Lep Treatment",
+              "programName": "TB/Lep Treatment - TB",
               "attributeTypes": [
-                "TB/L District Registration Number",
+                "District Registration Number",
                 "Place of Work",
                 "Place of Work-Other",
                 "Reffered by",
@@ -121,7 +121,7 @@
               {
                   "programName": "MDR - TB Treatment",
                   "attributeTypes": [
-                      "TB/L District Registration Number",
+                      "District Registration Number",
                       "DR-TB Registration Number",
                       "Place of Work",
                       "Place of Work-Other",
@@ -207,6 +207,7 @@
                 "multiSelect" : true,
                 "autocomplete" : true
             },
+            
             "Posture": {
                 "buttonSelect": true
             },
@@ -497,6 +498,11 @@
             {
                 "allowAddMore": true
             },
+            "conceptSetUI": {
+					"TB - Adverse Effects": {
+					"isTabular": true
+							}
+				},
             "defaults": {
                 "Number of living children": 1,
                 "Accepted Family Planning methods": [
@@ -546,5 +552,6 @@
                 }
             ]
         }
+        
     }
 }
