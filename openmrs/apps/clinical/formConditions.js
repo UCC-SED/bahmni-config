@@ -13,6 +13,24 @@ Bahmni.ConceptSet.FormConditions.rules = {
 
         return conditions;
     },
+
+
+    'ANC - Chupa imepasuka(Ndio/Hapana)': function (formName, formFieldValues, patient) {
+         var conditions = {
+                show: [],
+                hide: []
+            };
+         var other = formFieldValues['ANC - Chupa imepasuka(Ndio/Hapana)'];
+         var variable = "ANC - Chupa imepasuka(tarehe)";
+         console.log(other);
+         if (other == 'ANC - Ndiyo')
+          {
+             conditions.show.push(variable)
+         } else {
+             conditions.hide.push(variable)
+         }
+         return conditions;
+    },
     'HTC - Hali ya Ujauzito': function(formName, formFieldValues, patient) {
             var conditions = {
                 show: [],
