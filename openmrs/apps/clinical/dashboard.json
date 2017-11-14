@@ -197,6 +197,7 @@
 
         }
     },
+ 
     "tb":{
         "translationKey":"DASHBOARD_TAB_TB_DASHBOARD_KEY",
         "maxRecentlyViewedPatients":10,
@@ -518,8 +519,30 @@
             }
         }
     },
+"testData": {
+    "displayByDefault": true,
+    "maxRecentlyViewedPatients": 1,
+    "printing": {
+      "title": "Print Forms",
+      "header": "Print Forms",
+      "logo": "../images/bahmniLogo.png",
+      "showNameAndImage": true
+    },
+    "sections": {
+      "testdata": {
+        "type": "custom",
+        "displayType": "Full-Page",
+        "config": {
+          "startDateObsConcept" : "TB - DOT - startDate",
+          "endDateConcept": "DOT End Date",
+          "title": "Print Forms",
+       "template": "<test-Tool></test-Tool>"
+      }
+      }
 
-
+    },
+    "translationKey": "Print Forms"
+  },
     "trends":{
         "translationKey":"DASHBOARD_TAB_TRENDS_KEY",
         "maxRecentlyViewedPatients":10,

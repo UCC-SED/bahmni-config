@@ -52,6 +52,8 @@
 
   "OBSERVATIONS_BOARD_LABEL_KEY":"Clinical Notes",
   "MEDICATIONS_BOARD_LABEL_KEY":"Medicine",
+  "REFERRALS_BOARD_LABEL_KEY":"Transfer/Referral",
+  "printPriv_BOARD_LABEL_KEY":"Print Outs",
   "ORDERS_BOARD_LABEL_KEY":"Lab Test",
   "BACTERIOLOGY_BOARD_LABEL_KEY":"Bacteriology",
   "CONSULTATION_BOARD_LABEL_KEY":"Consultation",

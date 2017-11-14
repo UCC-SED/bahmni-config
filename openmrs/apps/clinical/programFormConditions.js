@@ -23,10 +23,12 @@ Bahmni.Clinical.Program.FormConditions.rules = {
             show: [],
             hide: []
         };
+      
         if (patientProgramAttributes['Classification by site'] == 'Extra-pulmonary') {
 
             conditions.show.push('Site');
-        } else if (patientProgramAttributes['Classification by site'] == 'Pulmonary') {
+        } else
+        {
             conditions.hide.push('Site');
         }
         return conditions;
@@ -37,52 +39,52 @@ Bahmni.Clinical.Program.FormConditions.rules = {
             show: [],
             hide: []
         };
-        if (patientProgramAttributes['HIV Status'] == 'Positive') {
-
-            conditions.show.push('CPT');
-            conditions.show.push('CPT Start Date');
-            conditions.show.push('ART drugs');
-            conditions.show.push('ART Start Date');
-            conditions.show.push('HIV Care registration number');
-        } else if (patientProgramAttributes['HIV Status'] == 'Negative') {
-            conditions.hide.push('CPT');
+        if (patientProgramAttributes['HIV Status'] == 'Negative') {
+			conditions.hide.push('CPT');
             conditions.hide.push('CPT Start Date');
             conditions.hide.push('ART drugs');
             conditions.hide.push('ART Start Date');
             conditions.hide.push('HIV Care registration number');
+
+           
+        } else  {
+             conditions.show.push('CPT');
+            conditions.show.push('CPT Start Date');
+            conditions.show.push('ART drugs');
+            conditions.show.push('ART Start Date');
+            conditions.show.push('HIV Care registration number');
         }
         return conditions;
     },
+
+
     'Place of Work': function (patientProgramAttributes) {
         var conditions = {
             show: [],
             hide: []
         };
+        
         if (patientProgramAttributes['Place of Work'] == 'Other') {
 
             conditions.show.push('Place of Work-Other');
-        } else if (patientProgramAttributes['Place of Work'] == 'TB - Hfacility') {
-            conditions.hide.push('Place of Work-Other');
-        }else if(patientProgramAttributes['Place of Work'] == 'Mines')
+        }else
         {
             conditions.hide.push('Place of Work-Other');
         }
         return conditions;
     },
+
+  
     'Reffered by': function (patientProgramAttributes) {
         var conditions = {
             show: [],
             hide: []
         };
+        console.log(patientProgramAttributes['Reffered by']);
         if (patientProgramAttributes['Reffered by'] == 'Others(Specify below)') {
 
             conditions.show.push('Reffered by-Other');
-        } else if (patientProgramAttributes['Reffered by'] == 'Self') {
-            conditions.hide.push('Reffered by-Other');
-        }else if(patientProgramAttributes['Reffered by'] == 'Community' )
-        {
-         conditions.hide.push('Reffered by-Other');
-        }else if(patientProgramAttributes['Reffered by'] == 'CTC')
+        } else 
         {
          conditions.hide.push('Reffered by-Other');
         }

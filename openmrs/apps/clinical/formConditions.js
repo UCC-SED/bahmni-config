@@ -13,6 +13,79 @@ Bahmni.ConceptSet.FormConditions.rules = {
 
         return conditions;
     },
+
+    'ANC - Chupa imepasuka(Ndio/Hapana)': function (formName, formFieldValues, patient) {
+         var conditions = {
+                show: [],
+                hide: []
+            };
+         var other = formFieldValues['ANC - Chupa imepasuka(Ndio/Hapana)'];
+         var variable = 'ANC - Chupa imepasuka(tarehe)';
+         console.log(other);
+         if (other == 'ANC - Ndiyo')
+          {
+             conditions.show.push(variable)
+         } else {
+             conditions.hide.push(variable)
+         }
+         return conditions;
+    },
+
+    'ANC - Njia ya kujifungua': function (formName, formFieldValues, patient) {
+          var conditions = {
+                    show: [],
+                    hide: []
+          };
+          var other = formFieldValues['ANC - Njia ya kujifungua'];
+          var variable = 'ANC - Kama amepasuliwa: Sababu ya kupasuliwa';
+          console.log(other);
+          if (other == 'ANC - Caesarian section')
+             {
+                 conditions.show.push(variable)
+             } else {
+                 conditions.hide.push(variable)
+             }
+             return conditions;
+    },
+
+    'ANC - Msamba': function (formName, formFieldValues, patient) {
+          var conditions = {
+                show: [],
+                hide: []
+          };
+          var other = formFieldValues['ANC - Msamba'];
+          var variable = 'ANC - Maelezo ya aliyeshona msamba';
+          console.log(other);
+          if (other == 'ANC - Ulichanwa (Episiotomy)')
+              {
+                  conditions.show.push(variable)
+              } else {
+                   conditions.hide.push(variable)
+              }
+              return conditions;
+    },
+
+    'ANC - PMTCT/ART': function (formName, formFieldValues, patient) {
+           var conditions = {
+                show: [],
+                hide: []
+           };
+           var other = formFieldValues['ANC - PMTCT/ART'];
+           var variable1 = 'ANC - Dawa: (ART)';
+           var variable2 = 'ANC - Uhusiano na huduma ya CTC';
+           console.log(other);
+           if (other == 'ANC - 1')
+           {
+                conditions.show.push(variable1);
+                conditions.show.push(variable2);
+           } else {
+                 conditions.hide.push(variable1);
+                 conditions.hide.push(variable2);
+           }
+           return conditions;
+    },
+
+
     'HTC - Hali ya Ujauzito': function(formName, formFieldValues, patient) {
             var conditions = {
                 show: [],
@@ -28,6 +101,7 @@ Bahmni.ConceptSet.FormConditions.rules = {
 
             return conditions;
         },
+
     'Tests and Examinations': function(formName, formFieldValues, patient) {
         var conditions = {
             show: [],
@@ -48,6 +122,18 @@ Bahmni.ConceptSet.FormConditions.rules = {
 
         return conditions;
     },
+
+
+
+
+
+
+
+
+
+
+
+
     'HIV Vitals': function(formName, formFieldValues, patient) { //'Chief Complaint Data' concept when edited, triggers this function
         var conditions = {
             show: [],
@@ -105,6 +191,62 @@ Bahmni.ConceptSet.FormConditions.rules = {
         }
         return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
     },
+
+
+
+
+
+
+    'ANC, HIV Testing': function(formName, formFieldValues, patient) {
+        var conditions = {
+            show: [],
+            hide: []
+        };
+        var other = "ANC, HIV Test Date";
+        var HIVTestResult = "ANC, HIV Test Result";
+        var CTC_CD4Count = "CTC - CD4 Count";
+        var ARTStatus = "ART Status";
+        var TB_ARTStartDate = "TB - ART Start Date";
+        var CPTStatus = "HIVTC, CPT Status";
+        var HIVcareCPTstartdate = "HIVTC, HIV care CPT start date";
+        var conditionConcept = formFieldValues['ANC, HIV Testing'];
+        if (conditionConcept) {
+            conditions.show.push(other)
+        } else {
+            conditions.hide.push(HIVTestResult)
+            conditions.hide.push(CTC_CD4Count)
+            conditions.hide.push(ARTStatus)
+            conditions.hide.push(TB_ARTStartDate)
+            conditions.hide.push(CPTStatus)
+            conditions.hide.push(HIVcareCPTstartdate)
+
+        }
+        return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
+    },
+
+    'ANC, HIV Test Result': function(formName, formFieldValues, patient) {
+        var conditions = {
+            show: [],
+            hide: []
+        };
+        var other = "CTC - CD4 Count";
+        var conditionConcept = formFieldValues['ANC, HIV Test Result'];
+        if (conditionConcept == "Positive") {
+            conditions.show.push(other)
+        } else {
+            conditions.hide.push(other)
+        }
+        return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
+    },
+
+
+
+
+
+
+
+
+
     'HTC, Pregnancy Status': function(formName, formFieldValues, patient) {
         var conditions = {
             show: [],
@@ -552,6 +694,32 @@ Bahmni.ConceptSet.FormConditions.rules = {
                 conditions.show.push(family_plan)
             }
             return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
+        }, 
+        'TB - list 5 years household - Screened': function (formName, formFieldValues, patient) {
+            var conditions = {show: [],hide: []  };
+            var tb="TB - list 5 years household - outcome";
+            if (formFieldValues['TB - list 5 years household - Screened']) {
+
+                conditions.show.push(tb);
+            } else
+            {
+                conditions.hide.push(tb);
+            }
+            
+            return conditions;
+        },
+        'TB - list 5 years household - outcome': function (formName, formFieldValues, patient) {
+            var conditions = {show: [],hide: []  };
+            var tb="TB - IPT";
+            if (formFieldValues['TB - list 5 years household - outcome'] == 'No TB') {
+
+                conditions.show.push(tb);
+            } else
+            {
+                conditions.hide.push(tb);
+            }
+            
+            return conditions;
         },
         'Breast feeding': function(formName, formFieldValues, patient) {
                 var conditions = {show: [], hide: []};
@@ -620,6 +788,35 @@ Bahmni.ConceptSet.FormConditions.rules = {
 
                            return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
                },
+//conditions for Transfer/Referrals
+    'Transfer/Referral': function(formName, formFieldValues, patient) {
+        var conditions = {show: [], hide: []};
+        var transferType = formFieldValues['Transfer/Referral'];
+        var Transfer_Location = "Transfer Location";
+        var name_facility = "Name of Facility To be Transfer";
+        var Referral_Programs = "Referral Programs";
+        console.log(transferType);
+        if(transferType=="Referral Out") {
+            conditions.show.push(Transfer_Location)
+            conditions.show.push(name_facility)
+            conditions.hide.push(Referral_Programs)
+
+        } else if(transferType=="Referral In")
+        {
+            conditions.show.push(Referral_Programs)
+            conditions.hide.push(Transfer_Location)
+            conditions.hide.push(name_facility)
+
+        }
+        else {
+            conditions.hide.push(Transfer_Location)
+            conditions.hide.push(name_facility)
+            conditions.hide.push(Referral_Programs)
+        }
+        return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
+    },
+
+
                  'TB - Request and Report, Previously Treated': function(formName, formFieldValues, patient) {
                            var conditions = {show: [], hide: []};
                            var previousTreated = formFieldValues['TB - Request and Report, Previously Treated'];
