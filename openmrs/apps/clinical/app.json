@@ -25,6 +25,8 @@
     "config": {
         "enableRadiologyOrderOptions":["Urgent","NeedsPrint"],
         "quickPrints":false,
+        "showSaveConfirmDialog": true,
+        "allowPatientSwitchOnConsultation": true,
         "networkConnectivity" : {
             "showNetworkStatusMessage": true,
             "networkStatusCheckInterval": 5000,
@@ -71,6 +73,7 @@
                 "Prior ARV Exposure",
                 "TB Registration No",
                 "HUWANYU/HBC No",
+                  "Date Diagnosed HIV+",
                 "Date Confirmed HIV+",
                 "Date Enrolled In Care",
                 "Date Medically Eligible",
@@ -187,6 +190,9 @@
                 "dropdown":true
             },
             "TB - DOT Administration of Drugs":{
+                "dropdown":true
+            },
+            "Baseline, Type of past TB treatment":{
                 "dropdown":true
             },
             "Suspected Drug":{
