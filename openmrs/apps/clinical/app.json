@@ -229,6 +229,10 @@
             },
 
 
+            // zainab
+            "Baseline, Past TB treatment regimen type":{
+                "multiSelect": true
+            },
 
 
 

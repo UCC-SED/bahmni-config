@@ -195,6 +195,25 @@ Bahmni.ConceptSet.FormConditions.rules = {
 
 
 
+// zainab
+
+    'ANC, HIV Testing': function(formName, formFieldValues, patient) {
+        var conditions = {
+            show: [],
+            hide: []
+        };
+        var other = "ANC, HIV Test Date";
+        var HIVTestResult = "ANC, HIV Test Result";
+        var conditionConcept = formFieldValues['ANC, HIV Testing'];
+        if (conditionConcept) {
+            conditions.show.push(other)
+        } else {
+            conditions.hide.push(HIVTestResult)
+            }
+        return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
+    },
+
+
 
 
     'ANC, HIV Testing': function(formName, formFieldValues, patient) {
@@ -212,6 +231,12 @@ Bahmni.ConceptSet.FormConditions.rules = {
         var conditionConcept = formFieldValues['ANC, HIV Testing'];
         if (conditionConcept) {
             conditions.show.push(other)
+            conditions.show.push(HIVTestResult)
+            conditions.show.push(CTC_CD4Count)
+            conditions.show.push(ARTStatus)
+            conditions.show.push(TB_ARTStartDate)
+            conditions.show.push(CPTStatus)
+            conditions.show.push(HIVcareCPTstartdate)
         } else {
             conditions.hide.push(HIVTestResult)
             conditions.hide.push(CTC_CD4Count)
@@ -223,6 +248,7 @@ Bahmni.ConceptSet.FormConditions.rules = {
         }
         return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
     },
+
 
     'ANC, HIV Test Result': function(formName, formFieldValues, patient) {
         var conditions = {
@@ -241,11 +267,45 @@ Bahmni.ConceptSet.FormConditions.rules = {
 
 
 
+    '	DR - Used second-line drugs previously?': function(formName, formFieldValues, patient) {
+        var conditions = {
+            show: [],
+            hide: []
+        };
+        var DRSpecify = "DR - Specify";
+        var DRSecond_lineDrugs = "DR - Second-line drugs";
+
+        var conditionConcept = formFieldValues['DR - Used second-line drugs previously?'];
+        if (conditionConcept) {
+            conditions.show.push(DRSpecify)
+            conditions.show.push(DRSecond_lineDrugs)
+        } else {
+            conditions.hide.push(DRSpecify)
+            conditions.hide.push(DRSecond_lineDrugs)
+        }
+        return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
+    },
 
 
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// End Zainab
 
     'HTC, Pregnancy Status': function(formName, formFieldValues, patient) {
         var conditions = {
