@@ -34,123 +34,124 @@
                 { "locale" : "pt", "css": "offline-language-portuguese-brazil"}
             ]
         },
-    	"diagnosisStatus": "Inactive",
+        "diagnosisStatus": "Inactive",
 
-            "patientContext": {
-        		"programAttributes": [
-            		"ID_Number"
-        		],
-        		"personAttributes": [
-				    "pregnancyStatus",
-            		"class",
-            		"caste",
-                    "FileNumber",
-					"EDD"
+        "patientContext": {
+            "programAttributes": [
+                "ID_Number"
+            ],
+            "personAttributes": [
+                "pregnancyStatus",
+                "class",
+                "caste",
+                "FileNumber",
+                "EDD"
 
-        		],
-        		"additionalPatientIdentifiers": [
-           			"National ID"
-       		],
-        		"preferredIdentifier": "Id_Number"
-    	},
+            ],
+            "additionalPatientIdentifiers": [
+                "National ID"
+            ],
+            "preferredIdentifier": "Id_Number"
+        },
         "program": {
             "ID_Number": {
                 "required": true
             },
-          "programSpecificAttributeTypesDefinition": [
-            {
-              "programName": "HIV Care and Treatment",
-              "attributeTypes": [
-                "ID_Number",
-                "Referred From",
-                "Transfer In",
-                "Name of Treatment Supporter",
-                "Tel No of Treatment Supporter",
-                "Patient Joined Community Support Organisation",
-                "Name of Community Support Organisation",
-                "Prior ARV Exposure",
-                "TB Registration No",
-                "HUWANYU/HBC No",
-                "Date Confirmed HIV+",
-                "Date Enrolled In Care",
-                "Date Medically Eligible",
-                "Date Start ART",
-                "Why Eligible",
-                "CD4 Count",
-                "Functional Status",
-                "Weight",
-                "Drug Allergies"
-              ]
-            },
-            {
-              "programName": "TB/Lep Treatment - TB",
-              "attributeTypes": [
-                "District Registration Number",
-                "Place of Work",
-                "Place of Work-Other",
-                "Reffered by",
-                "Reffered by-Other",
-                "DOT Option",
-                "Name of Treatment Supporter",
-                "Tel No of Treatment Supporter",
-                "Physical Address of Treatment Supporter",
-                "Name of Community Support Organisation",
-                "Classification by site",
-                "Site",
-                "Classification by History of Treatment",
-                "HIV Status",
-                "HIV Care registration number",
-                "CPT",
-                "CPT Start Date",
-                "ART drugs",
-                "ART Start Date"
-              ]
-            },
-            {
-              "programName": "Exposed Infant",
-              "attributeTypes": [
-                "ID_Number",
-                "Name of Mother",
-                "ANC No of Mother",
-                "Infact NVP at Birth",
-                "ARV Drugs Taken by Mother During L&D",
-                "Number of Days Dispensed",
-                "Infact Feeding Practice Birth"
-              ]
-            },
-              {
-                  "programName": "MDR - TB Treatment",
-                  "attributeTypes": [
-                      "District Registration Number",
-                      "DR-TB Registration Number",
-                      "Place of Work",
-                      "Place of Work-Other",
-                      "Reffered by",
-                      "Reffered by-Other",
-                      "DOT Option",
-                      "Name of Treatment Supporter",
-                      "Tel No of Treatment Supporter",
-                      "Physical Address of Treatment Supporter",
-                      "Name of Community Support Organisation",
-                      "Classification by site",
-                      "Site",
-                      "Classification by History of Treatment"
-                  ]
-              },
-              {
-                  "programName": "Antenatal Care",
-                  "attributeTypes": [
-                      "ID_Number",
-                      "Namba ya hati punguzo ya chandarua",
-                      "Kimo(cm)"
-                  ]
-              } , {
-                  "programName": "MAT",
-                  "attributeTypes": [
-                      "ID_Number"
-                  ]
-              }
-          ]
+            "programSpecificAttributeTypesDefinition": [
+                {
+                    "programName": "HIV Care and Treatment",
+                    "attributeTypes": [
+                        "ID_Number",
+                        "Referred From",
+                        "Transfer In",
+                        "Name of Treatment Supporter",
+                        "Tel No of Treatment Supporter",
+                        "Patient Joined Community Support Organisation",
+                        "Name of Community Support Organisation",
+                        "Prior ARV Exposure",
+                        "TB Registration No",
+                        "HUWANYU/HBC No",
+                        "Date Diagnosed HIV+",
+                        "Date Confirmed HIV+",
+                        "Date Enrolled In Care",
+                        "Date Medically Eligible",
+                        "Date Start ART",
+                        "Why Eligible",
+                        "CD4 Count",
+                        "Functional Status",
+                        "Weight",
+                        "Drug Allergies"
+                    ]
+                },
+                {
+                    "programName": "TB/Lep Treatment - TB",
+                    "attributeTypes": [
+                        "District Registration Number",
+                        "Place of Work",
+                        "Place of Work-Other",
+                        "Reffered by",
+                        "Reffered by-Other",
+                        "DOT Option",
+                        "Name of Treatment Supporter",
+                        "Tel No of Treatment Supporter",
+                        "Physical Address of Treatment Supporter",
+                        "Name of Community Support Organisation",
+                        "Classification by site",
+                        "Site",
+                        "Classification by History of Treatment",
+                        "HIV Status",
+                        "HIV Care registration number",
+                        "CPT",
+                        "CPT Start Date",
+                        "ART drugs",
+                        "ART Start Date"
+                    ]
+                },
+                {
+                    "programName": "Exposed Infant",
+                    "attributeTypes": [
+                        "ID_Number",
+                        "Name of Mother",
+                        "ANC No of Mother",
+                        "Infact NVP at Birth",
+                        "ARV Drugs Taken by Mother During L&D",
+                        "Number of Days Dispensed",
+                        "Infact Feeding Practice Birth"
+                    ]
+                },
+                {
+                    "programName": "MDR - TB Treatment",
+                    "attributeTypes": [
+                        "District Registration Number",
+                        "DR-TB Registration Number",
+                        "Place of Work",
+                        "Place of Work-Other",
+                        "Reffered by",
+                        "Reffered by-Other",
+                        "DOT Option",
+                        "Name of Treatment Supporter",
+                        "Tel No of Treatment Supporter",
+                        "Physical Address of Treatment Supporter",
+                        "Name of Community Support Organisation",
+                        "Classification by site",
+                        "Site",
+                        "Classification by History of Treatment"
+                    ]
+                },
+                {
+                    "programName": "Antenatal Care",
+                    "attributeTypes": [
+                        "ID_Number",
+                        "Namba ya hati punguzo ya chandarua",
+                        "Kimo(cm)"
+                    ]
+                } , {
+                    "programName": "MAT",
+                    "attributeTypes": [
+                        "ID_Number"
+                    ]
+                }
+            ]
         },
         "obsIgnoreList": [
             "REGISTRATION FEES",
@@ -192,9 +193,9 @@
 
 
 
-          "HIVTC, CPT Status":{
-              "dropdown":true
-          },
+            "HIVTC, CPT Status":{
+                "dropdown":true
+            },
 
 
 
@@ -220,7 +221,7 @@
                 "multiSelect" : true,
                 "autocomplete" : true
             },
-            
+
             "Posture": {
                 "buttonSelect": true
             },
@@ -265,7 +266,7 @@
             "TB - Previous Treated": {
                 "allowAddMore": true
             },
-			"CTC - Why Eligible": {
+            "CTC - Why Eligible": {
                 "multiSelect": true
             },
             "Set2": {
@@ -277,16 +278,16 @@
             "Image": {
                 "allowAddMore": true
             },
-			"TB - List of under 5 years who are household of bacleriogical confirmed TB cases": {
-                 "allowAddMore":true
+            "TB - List of under 5 years who are household of bacleriogical confirmed TB cases": {
+                "allowAddMore":true
             },
-			"TB - list 5 years household - outcome": {
-                 "dropdown":true
+            "TB - list 5 years household - outcome": {
+                "dropdown":true
             },
             "TB - Started": {
                 "dropdown": true
             },
-			"Gynaecology, Gravida": {
+            "Gynaecology, Gravida": {
                 "stepper": true
             },
             "Accepted Family Planning methods": {
@@ -296,16 +297,16 @@
                 "multiSelect": true
             },
             "CTC - Other Signs Symptoms and OIs":
-             {
-                 "allowAddMore": true
+            {
+                "allowAddMore": true
             },
-			"Patient Support":
-             {
-                 "allowAddMore": true
+            "Patient Support":
+            {
+                "allowAddMore": true
             },
-			"Drug Allergies":
-             {
-                 "allowAddMore": true
+            "Drug Allergies":
+            {
+                "allowAddMore": true
             },
             "CTC - VisitTypeCode":
             {
@@ -391,78 +392,78 @@
             {
                 "dropdown":true
             },
-			"Patient refered from":
+            "Patient refered from":
             {
                 "dropdown":true
             },
-			"Other Referred from":
+            "Other Referred from":
             {
                 "dropdown":true
             },
-			"Other Referred from":
+            "Other Referred from":
             {
                 "dropdown":true
             },
-			"Patient Joined Community Support Organisation":
+            "Patient Joined Community Support Organisation":
             {
                 "dropdown":true
             },
-			"Prior ARV Exposure":
+            "Prior ARV Exposure":
             {
                 "dropdown":true
             },
-			"Transfer In":
+            "Transfer In":
             {
                 "dropdown":true
             },
-			"TB - place of work":
+            "TB - place of work":
             {
                 "dropdown":true
             },
-			"TB - Reffered by":
+            "TB - Reffered by":
             {
                 "dropdown":true
             },
-			"TB - DOT option":
+            "TB - DOT option":
             {
                 "dropdown":true
             },
-			"TB - DOT option":
+            "TB - DOT option":
             {
                 "dropdown":true
             },
-			"TB - Classification by site":
+            "TB - Classification by site":
             {
                 "dropdown":true
             },
-			"TB - HIV Status":
+            "TB - HIV Status":
             {
                 "dropdown":true
             },
-			"TB - Classification by history of treatment":
+            "TB - Classification by history of treatment":
             {
                 "dropdown":true
             },
-			"TB - CPT":
+            "TB - CPT":
             {
                 "dropdown":true
             },
-			"TB - ART drugs":
+            "TB - ART drugs":
             {
                 "dropdown":true
             },
-			"TB - DOT - Phase Type":
+            "TB - DOT - Phase Type":
             {
                 "dropdown":true
             },
-			"TB - DOT - Type":
+            "TB - DOT - Type":
             {
                 "dropdown":true
             },
-			"CTC - Pregnant Y/N":
-			{
-			"dropdown":true
-			},
+            "CTC - Pregnant Y/N":
+            {
+                "dropdown":true
+            },
             "HTC - Hali ya Ujauzito":
             {
                 "dropdown":true
@@ -499,7 +500,7 @@
             {
                 "dropdown":true
             },
- 	    "exp-infant - ARV drugs taken by mother":
+            "exp-infant - ARV drugs taken by mother":
             {
                 "dropdown":true
             },
@@ -532,10 +533,10 @@
                 "allowAddMore": true
             },
             "conceptSetUI": {
-					"TB - Adverse Effects": {
-					"isTabular": true
-							}
-				},
+                "TB - Adverse Effects": {
+                    "isTabular": true
+                }
+            },
             "defaults": {
                 "Number of living children": 1,
                 "Accepted Family Planning methods": [
@@ -585,6 +586,6 @@
                 }
             ]
         }
-        
+
     }
 }
