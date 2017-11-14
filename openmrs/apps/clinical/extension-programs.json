@@ -25,19 +25,6 @@
         "order": 2,
         "requiredPrivilege": "app:clinical"
     },
-    "bahmniClinicalPatientsSearchActivePatientsForHIVAppointments": {
-        "id": "bahmni.clinical.patients.search.HIVAppointments",
-        "extensionPointId": "org.bahmni.patient.search",
-        "type": "config",
-        "extensionParams": {
-            "searchHandler": "emrapi.sqlSearch.appointmentHIV",
-            "translationKey": "CTC Today Appointment",
-            "forwardUrl": "#/default/patient/{{patientUuid}}/consultationContext"
-        },
-        "label": "Active",
-        "order": 2,
-        "requiredPrivilege": "app:clinical"
-    },
     "bahmniClinicalPatientsSearchActivePatientsForTBPrograms": {
         "id": "bahmni.clinical.patients.search.activeTBPatients",
         "extensionPointId": "org.bahmni.patient.search",
