@@ -189,6 +189,19 @@
             "TB - DOT Administration of Drugs":{
                 "dropdown":true
             },
+
+
+
+          "HIVTC, CPT Status":{
+              "dropdown":true
+          },
+
+
+
+
+
+
+
             "Suspected Drug":{
                 "autocomplete":true,
                 "codedConceptName":"Coded Adverse Effect - Suspected Drug",
@@ -214,6 +227,22 @@
             "P/A Presenting Part": {
                 "multiSelect": true
             },
+
+
+
+
+
+            "Baseline, Drugs used in ARV treatment": {
+                "multiSelect": true
+            },
+
+
+
+
+
+
+
+
             "FHS": {
                 "buttonSelect": true
             },
