@@ -210,7 +210,7 @@
                 "multiSelect" : true,
                 "autocomplete" : true
             },
-            
+
             "Posture": {
                 "buttonSelect": true
             },
@@ -555,6 +555,6 @@
                 }
             ]
         }
-        
+
     }
 }

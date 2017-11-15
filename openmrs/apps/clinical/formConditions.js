@@ -13,6 +13,79 @@ Bahmni.ConceptSet.FormConditions.rules = {
 
         return conditions;
     },
+
+    'ANC - Chupa imepasuka(Ndio/Hapana)': function (formName, formFieldValues, patient) {
+         var conditions = {
+                show: [],
+                hide: []
+            };
+         var other = formFieldValues['ANC - Chupa imepasuka(Ndio/Hapana)'];
+         var variable = 'ANC - Chupa imepasuka(tarehe)';
+         console.log(other);
+         if (other == 'ANC - Ndiyo')
+          {
+             conditions.show.push(variable)
+         } else {
+             conditions.hide.push(variable)
+         }
+         return conditions;
+    },
+
+    'ANC - Njia ya kujifungua': function (formName, formFieldValues, patient) {
+          var conditions = {
+                    show: [],
+                    hide: []
+          };
+          var other = formFieldValues['ANC - Njia ya kujifungua'];
+          var variable = 'ANC - Kama amepasuliwa: Sababu ya kupasuliwa';
+          console.log(other);
+          if (other == 'ANC - Caesarian section')
+             {
+                 conditions.show.push(variable)
+             } else {
+                 conditions.hide.push(variable)
+             }
+             return conditions;
+    },
+
+    'ANC - Msamba': function (formName, formFieldValues, patient) {
+          var conditions = {
+                show: [],
+                hide: []
+          };
+          var other = formFieldValues['ANC - Msamba'];
+          var variable = 'ANC - Maelezo ya aliyeshona msamba';
+          console.log(other);
+          if (other == 'ANC - Ulichanwa (Episiotomy)')
+              {
+                  conditions.show.push(variable)
+              } else {
+                   conditions.hide.push(variable)
+              }
+              return conditions;
+    },
+
+    'ANC - PMTCT/ART': function (formName, formFieldValues, patient) {
+           var conditions = {
+                show: [],
+                hide: []
+           };
+           var other = formFieldValues['ANC - PMTCT/ART'];
+           var variable1 = 'ANC - Dawa: (ART)';
+           var variable2 = 'ANC - Uhusiano na huduma ya CTC';
+           console.log(other);
+           if (other == 'ANC - 1')
+           {
+                conditions.show.push(variable1);
+                conditions.show.push(variable2);
+           } else {
+                 conditions.hide.push(variable1);
+                 conditions.hide.push(variable2);
+           }
+           return conditions;
+    },
+
+
     'HTC - Hali ya Ujauzito': function(formName, formFieldValues, patient) {
             var conditions = {
                 show: [],
@@ -28,6 +101,7 @@ Bahmni.ConceptSet.FormConditions.rules = {
 
             return conditions;
         },
+
     'Tests and Examinations': function(formName, formFieldValues, patient) {
         var conditions = {
             show: [],
@@ -48,6 +122,18 @@ Bahmni.ConceptSet.FormConditions.rules = {
 
         return conditions;
     },
+
+
+
+
+
+
+
+
+
+
+
+
     'HIV Vitals': function(formName, formFieldValues, patient) { //'Chief Complaint Data' concept when edited, triggers this function
         var conditions = {
             show: [],
@@ -105,6 +191,38 @@ Bahmni.ConceptSet.FormConditions.rules = {
         }
         return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
     },
+
+
+
+
+
+
+    'ANC, HIV Testing': function(formName, formFieldValues, patient) {
+        var conditions = {
+            show: [],
+            hide: []
+        };
+        var other = "ANC, HIV Test Date";
+        var HIVTestResult = "ANC, HIV Test Result";
+        var conditionConcept = formFieldValues['ANC, HIV Testing'];
+        if (conditionConcept) {
+            conditions.show.push(other)
+        } else {
+            conditions.hide.push(HIVTestResult)
+               }
+        return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
+    },
+
+
+
+
+
+
+
+
+
+
+
     'HTC, Pregnancy Status': function(formName, formFieldValues, patient) {
         var conditions = {
             show: [],

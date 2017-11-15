@@ -56,6 +56,8 @@ Bahmni.Clinical.Program.FormConditions.rules = {
         }
         return conditions;
     },
+
+
     'Place of Work': function (patientProgramAttributes) {
         var conditions = {
             show: [],
