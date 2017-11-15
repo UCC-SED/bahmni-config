@@ -189,6 +189,9 @@
             "TB - DOT Administration of Drugs":{
                 "dropdown":true
             },
+            "TB - DOT - RHZE":{
+                "dropdown": true
+            },
             "Suspected Drug":{
                 "autocomplete":true,
                 "codedConceptName":"Coded Adverse Effect - Suspected Drug",
