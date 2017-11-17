@@ -497,6 +497,19 @@
                 "displayOrder":4
             },
 
+            "grafuYaUchungu":{
+                "type":"observationGraph",
+                "title":"ANC - Grafu ya uchungu",
+                "config":{
+                    "yAxisConcepts":[
+                        "ANC - Njia kufunguka (Cervix)",
+                        "ANC - Kichwa kuteremka (Descent)"
+                    ],
+                    "xAxisConcept":"observationDateTime",
+                    "numberOfVisits":10
+                },
+                "displayOrder":5
+            },
 
             "diabetes":{
                 "title":"Diabetes",
