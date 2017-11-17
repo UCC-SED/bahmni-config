@@ -466,7 +466,7 @@
                     "xAxisConcept":"observationDateTime",
                     "numberOfVisits":10
                 },
-                "displayOrder":3
+                "displayOrder":2
             },
 
 
@@ -480,8 +480,24 @@
                     "xAxisConcept":"observationDateTime",
                     "numberOfVisits":10
                 },
-                "displayOrder":5
+                "displayOrder":3
             },
+
+            "majiYaChupa":{
+                "type":"observationGraph",
+                "title":"ANC - Maji ya chupa (Liquor)",
+                "config":{
+                    "yAxisConcepts":[
+                        "ANC - B. Bado kupasuka chupa(intact). S. Safi (clear). M. Meconium",
+                        "ANC - Kubonywa kichwa (Moulding) - Hakuna, + Wastani, ++ Sana"
+                    ],
+                    "xAxisConcept":"observationDateTime",
+                    "numberOfVisits":10
+                },
+                "displayOrder":4
+            },
+
+
             "diabetes":{
                 "title":"Diabetes",
                 "templateName":"Diabetes, Progress",
