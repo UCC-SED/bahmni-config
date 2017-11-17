@@ -448,7 +448,7 @@
                 "title":"Ukuaji na maendeleo ya mtoto",
                 "config":{
                     "yAxisConcepts":[
-                        "Weight"
+                        "RCH1 - Uzito (kilo)"
                     ],
                     "referenceData":"growthChartReference.csv",
                     "numberOfVisits":20
@@ -461,8 +461,7 @@
                 "title":"Ukuaji na maendeleo ya mtoto 2",
                 "config":{
                     "yAxisConcepts":[
-                        "Weight",
-                        "BMI"
+                        "RCH1 - Uzito (kilo)"
                     ],
                     "xAxisConcept":"observationDateTime",
                     "numberOfVisits":10
