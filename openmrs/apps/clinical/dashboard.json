@@ -472,10 +472,10 @@
 
             "observationGraph":{
                 "type":"observationGraph",
-                "title":"Mapigo ya moyo wa mtoto (Zaidi ya 160 au chini ya 120 mwarifi daktari)",
+                "title":"Mapigo ya moyo wa mtoto (Grafu ya uchungu)",
                 "config":{
                     "yAxisConcepts":[
-                        "Pulse Data"
+                        "ANC - Blood pressure mtoto"
                     ],
                     "xAxisConcept":"observationDateTime",
                     "numberOfVisits":10
