@@ -204,40 +204,16 @@ Bahmni.ConceptSet.FormConditions.rules = {
         };
         var other = "ANC, HIV Test Date";
         var HIVTestResult = "ANC, HIV Test Result";
-        var CTC_CD4Count = "CTC - CD4 Count";
-        var ARTStatus = "ART Status";
-        var TB_ARTStartDate = "TB - ART Start Date";
-        var CPTStatus = "HIVTC, CPT Status";
-        var HIVcareCPTstartdate = "HIVTC, HIV care CPT start date";
         var conditionConcept = formFieldValues['ANC, HIV Testing'];
         if (conditionConcept) {
             conditions.show.push(other)
         } else {
             conditions.hide.push(HIVTestResult)
-            conditions.hide.push(CTC_CD4Count)
-            conditions.hide.push(ARTStatus)
-            conditions.hide.push(TB_ARTStartDate)
-            conditions.hide.push(CPTStatus)
-            conditions.hide.push(HIVcareCPTstartdate)
-
-        }
+               }
         return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
     },
 
-    'ANC, HIV Test Result': function(formName, formFieldValues, patient) {
-        var conditions = {
-            show: [],
-            hide: []
-        };
-        var other = "CTC - CD4 Count";
-        var conditionConcept = formFieldValues['ANC, HIV Test Result'];
-        if (conditionConcept == "Positive") {
-            conditions.show.push(other)
-        } else {
-            conditions.hide.push(other)
-        }
-        return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
-    },
+
 
 
 
