@@ -84,7 +84,7 @@
                     ]
                 },
                 {
-                    "programName": "TB/Lep Treatment - TB",
+                    "programName": "NATIONAL TB AND LEPROSY PROGRAM",
                     "attributeTypes": [
                         "District Registration Number",
                         "Place of Work",
@@ -166,6 +166,7 @@
         "defaultVisitType": "OPD",
         "visitTypeForRetrospectiveEntries": "Special OPD",
         "maxConceptSetLevels": 3,
+        "gothomisIntegrationStatus": true,
         "allowOnlyCodedDiagnosis": false,
         "conceptSetUI": {
             "Vitals":{
@@ -196,11 +197,6 @@
             "HIVTC, CPT Status":{
                 "dropdown":true
             },
-
-
-
-
-
 
 
             "Suspected Drug":{

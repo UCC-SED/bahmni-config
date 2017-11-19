@@ -129,5 +129,15 @@
     "icon": "fa-book",
     "order": 11,
     "requiredPrivilege": "app:dhis"
+  },
+  "bahmni_dataintegrity": {
+    "id": "bahmni.reports",
+    "extensionPointId": "org.bahmni.home.dashboard",
+    "type": "link",
+    "translationKey": "MODULE_LABEL_DATA_INTEGRITY_KEY",
+    "url": "../clinical/#/dataintegrity/patient/search",
+    "icon": "icon-bahmni-data-integrity",
+    "order": 7,
+    "requiredPrivilege": "app:reports"
   }
 }

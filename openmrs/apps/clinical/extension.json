@@ -103,28 +103,6 @@
     "order": 2,
     "requiredPrivilege": "app:clinical"
   },
-  "bahmniClinicalConsultationBacteriology": {
-    "id": "bahmni.clinical.consultation.bacteriology",
-    "extensionPointId": "org.bahmni.clinical.consultation.board",
-    "type": "link",
-    "label": "Bacteriology",
-    "translationKey": "BACTERIOLOGY_BOARD_LABEL_KEY",
-    "url": "bacteriology",
-    "icon": "icon-user-md",
-    "order": 7,
-    "requiredPrivilege": "app:clinical:diagnosisTab"
-  },
-  "bahmniClinicalConsultationAppointment": {
-    "id": "bahmni.clinical.consultation.appointment",
-    "extensionPointId": "org.bahmni.clinical.consultation.board",
-    "type": "link",
-    "label": "Bacteriology",
-    "translationKey": "APPOINTMENT_BOARD_LABEL_KEY",
-    "url": "appointment",
-    "icon": "icon-user-md",
-    "order": 7,
-    "requiredPrivilege": "app:clinical:diagnosisTab"
-  },
   "bahmniClinicalPatientsWithPendingBillNurse": {
   "id": "bahmni.clinical.patients.search.activePatientsWithPendingBillNurse",
   "extensionPointId": "org.bahmni.patient.search",

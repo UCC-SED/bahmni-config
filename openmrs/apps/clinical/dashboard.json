@@ -519,6 +519,102 @@
             }
         }
     },
+    "MAT":{
+        "translationKey":"MAT",
+        "maxRecentlyViewedPatients":10,
+        "displayByDefault": false,
+        "sections":{
+            "patientInformation":{
+                "translationKey":"DASHBOARD_TITLE_PATIENT_INFORMATION_KEY",
+                "type":"patientInformation",
+                "patientAttributes":[
+                    "education",
+                    "occupation"
+                ],
+                "addressFields":[
+                    "address1",
+                    "address2",
+                    "cityVillage",
+                    "countryDistrict"
+                ],
+                "displayOrder":0
+            },
+            "growthChart":{
+                "type":"observationGraph",
+                "title":"Ukuaji na maendeleo ya mtoto",
+                "config":{
+                    "yAxisConcepts":[
+                        "Weight"
+                    ],
+                    "referenceData":"growthChartReference.csv",
+                    "numberOfVisits":20
+                },
+                "displayOrder":1
+            },
+
+            "weight/BMI":{
+                "type":"observationGraph",
+                "title":"Ukuaji na maendeleo ya mtoto 2",
+                "config":{
+                    "yAxisConcepts":[
+                        "Weight",
+                        "BMI"
+                    ],
+                    "xAxisConcept":"observationDateTime",
+                    "numberOfVisits":10
+                },
+                "displayOrder":3
+            },
+
+
+            "observationGraph":{
+                "type":"observationGraph",
+                "title":"Mapigo ya moyo wa mtoto (Zaidi ya 160 au chini ya 120 mwarifi daktari)",
+                "config":{
+                    "yAxisConcepts":[
+                        "Pulse Data"
+                    ],
+                    "xAxisConcept":"observationDateTime",
+                    "numberOfVisits":10
+                },
+                "displayOrder":5
+            },
+            "diabetes":{
+                "title":"Diabetes",
+                "templateName":"Diabetes, Progress",
+                "type":"diseaseTemplate",
+                "dashboardConfig":{
+                    "showOnly":[
+
+                    ]
+                },
+                "expandedViewConfig":{
+                    "showDetailsButton":true,
+                    "pivotTable":{
+                        "numberOfVisits":"10",
+                        "groupBy":"visits",
+                        "obsConcepts":[
+                            "Diabetes, Blood Pressure",
+                            "Diabetes, A1C",
+                            "Diabetes, LDL",
+                            "Diabetes, Ulcers on Feet",
+                            "Blood Sugar Fasting",
+                            "Blood Sugar PP"
+                        ],
+                        "labConcepts":[
+                            "RBS",
+                            "FBS",
+                            "PP2BS",
+                            "Hb1AC",
+                            "Creatinine",
+                            "Cholesterol"
+                        ]
+                    }
+                },
+                "displayOrder":6
+            }
+        }
+    },
 "testData": {
     "displayByDefault": true,
     "maxRecentlyViewedPatients": 1,
