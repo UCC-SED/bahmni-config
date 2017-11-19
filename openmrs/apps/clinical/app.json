@@ -57,6 +57,12 @@
             "ID_Number": {
                 "required": true
             },
+            "District Registration Number": {
+                "required": true
+            },
+            "DR-TB Registration Number": {
+                "required": true
+            },
             "programSpecificAttributeTypesDefinition": [
                 {
                     "programName": "HIV Care and Treatment",
