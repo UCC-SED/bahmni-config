@@ -362,7 +362,7 @@
             },
             "CTC - Referral to":
             {
-                "dropdown":true
+                "multiSelect": true
             },
             "CTC - Follow up Status":
             {
@@ -502,7 +502,8 @@
                 "allowFutureDates" : true
             },
             "Next Visit" : {
-                "allowFutureDates" : true
+                "allowFutureDates" : true,
+                "required": true
             },
             "ANC - Mapigo ya moyo ya mtoto" : {
                 "allowAddMore" : true
