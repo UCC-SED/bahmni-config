@@ -57,7 +57,7 @@
   "MEDICATIONS_BOARD_LABEL_KEY":"Medicine",
   "REFERRALS_BOARD_LABEL_KEY":"Transfer/Referral",
   "printPriv_BOARD_LABEL_KEY":"Print Outs",
-  "ORDERS_BOARD_LABEL_KEY":"Lab Test",
+  "ORDERS_BOARD_LABEL_KEY":"Investigation",
   "BACTERIOLOGY_BOARD_LABEL_KEY":"Bacteriology",
   "CONSULTATION_BOARD_LABEL_KEY":"Consultation",
   "DISPOSITION_BOARD_LABEL_KEY":"ADT",
