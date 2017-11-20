@@ -80,6 +80,19 @@
     "order": 2,
     "requiredPrivilege": "app:clinical"
   },
+  "bahmniClinicalPatientsSearchAllActiveResultReadyPatients": {
+    "id": "bahmni.clinical.patients.search.allActiveResultReadyPatients",
+    "extensionPointId": "org.bahmni.patient.search",
+    "type": "config",
+    "extensionParams": {
+      "searchHandler": "emrapi.sqlSearch.activeResultReadyPatients",
+      "translationKey": "MODULE_LABEL_ACTIVE_RESULT_READY_KEY",
+      "forwardUrl": "#/default/patient/{{patientUuid}}/dashboard"
+    },
+    "label": "Active",
+    "order": 3,
+    "requiredPrivilege": "app:clinical"
+  },
   "bahmniClinicalPatientsSearchAllActivePatientsNurse": {
     "id": "bahmni.clinical.patients.search.allActivePatientsNurse",
     "extensionPointId": "org.bahmni.patient.search",
@@ -113,7 +126,7 @@
       "view":"tabular"
     },
     "label": "Active",
-    "order": 2,
+    "order": 4,
     "requiredPrivilege": "app:clinical"
   },
   "bahmniClinicalPatientsWithPendingBillNurse": {
