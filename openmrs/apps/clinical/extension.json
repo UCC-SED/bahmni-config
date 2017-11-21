@@ -33,17 +33,6 @@
     "order": 3,
     "requiredPrivilege": "app:clinical:dispositionTab"
   },
-  "disposition": {
-    "id": "bahmni.clinical.consultation.disposition",
-    "extensionPointId": "org.bahmni.clinical.consultation.board",
-    "type": "link",
-    "label": "Disposition",
-    "translationKey":"DISPOSITION_BOARD_LABEL_KEY",
-    "url": "disposition",
-    "icon": "fa-user-md",
-    "order": 3,
-    "requiredPrivilege": "app:clinical:dispositionTab"
-  },
   "bahmniClinicalOrdersPending": {
     "id": "bahmni.clinical.orders.pending",
     "extensionPointId": "org.bahmni.clinical.orders",
@@ -80,6 +69,19 @@
     "order": 2,
     "requiredPrivilege": "app:clinical"
   },
+  "bahmniClinicalPatientsSearchAllActiveResultReadyPatients": {
+    "id": "bahmni.clinical.patients.search.allActiveResultReadyPatients",
+    "extensionPointId": "org.bahmni.patient.search",
+    "type": "config",
+    "extensionParams": {
+      "searchHandler": "emrapi.sqlSearch.activeResultReadyPatients",
+      "translationKey": "MODULE_LABEL_ACTIVE_RESULT_READY_KEY",
+      "forwardUrl": "#/default/patient/{{patientUuid}}/dashboard"
+    },
+    "label": "Active",
+    "order": 3,
+    "requiredPrivilege": "app:clinical"
+  },
   "bahmniClinicalPatientsSearchAllActivePatientsNurse": {
     "id": "bahmni.clinical.patients.search.allActivePatientsNurse",
     "extensionPointId": "org.bahmni.patient.search",
@@ -113,7 +115,7 @@
       "view":"tabular"
     },
     "label": "Active",
-    "order": 2,
+    "order": 4,
     "requiredPrivilege": "app:clinical"
   },
   "bahmniClinicalPatientsWithPendingBillNurse": {
@@ -249,7 +251,6 @@
     "order": 9,
     "requiredPrivilege": "app:clinical"
   },
-   
     "bahmniClinicalConsultationOrders": {
     "id": "bahmni.clinical.consultation.orders",
     "extensionPointId": "org.bahmni.clinical.consultation.board",
