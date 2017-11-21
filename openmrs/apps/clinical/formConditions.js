@@ -797,6 +797,9 @@ Bahmni.ConceptSet.FormConditions.rules = {
             conditions.hide.push(Transfer_Location)
             conditions.hide.push(name_facility)
             conditions.hide.push(Referral_Programs)
+             conditions.hide.push(Facility_District)
+            conditions.hide.push(curent_location)
+            conditions.hide.push(new_location)
         }
         return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
     },
