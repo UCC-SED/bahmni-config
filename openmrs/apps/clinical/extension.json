@@ -244,7 +244,7 @@
     "type": "link",
     "label": "Referrals",
     "translationKey": "REFERRALS_BOARD_LABEL_KEY",
-    "url": "referral",
+    "url": "printPriv",
     "icon": "fa-user-md",
     "order": 9,
     "requiredPrivilege": "app:clinical"
