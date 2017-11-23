@@ -64,6 +64,9 @@
             "DR-TB Registration Number": {
                 "required": true
             },
+            "Name of Treatment Supporter": {
+                "required": true
+            },
             "programSpecificAttributeTypesDefinition": [
                 {
                     "programName": "HIV Care and Treatment",
