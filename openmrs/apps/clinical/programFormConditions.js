@@ -1,5 +1,4 @@
 Bahmni.Clinical.Program.FormConditions.rules = {
-	console.log("chec");
     'DOT Option': function (patientProgramAttributes) {
         var conditions = {
             show: [],
