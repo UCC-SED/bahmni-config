@@ -60,6 +60,13 @@ public class BahmniObsValueCalculator implements ObsValueCalculator {
     }
 
     public void run(BahmniEncounterTransaction bahmniEncounterTransaction) {
+
+        throw new BahmniEmrAPIException("Please enter correct data. The sum of non prescribed, missed, incomplete days cannot be more than Ideal days")
+
+
+        def file1 = new File(OpenmrsUtil.getApplicationDataDirectory() + "obscalculator/groovy_debug.txt")
+        file1.append 'debugging statement\n';
+
         List<String> conceptNames = Arrays.asList("Baseline, Clinical Examination", "Followup, Clinical Examination", "Monthly Treatment Completeness Template");
         Map<String,List<BahmniObservation>> bahmniObsConceptMap = new HashMap<String,List<BahmniObservation>>();
         findObsListForConcepts(conceptNames,bahmniEncounterTransaction.getObservations(),null,bahmniObsConceptMap);
