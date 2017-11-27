@@ -131,6 +131,15 @@
                 "hideEmptyDisplayControl": true,
                 "type": "programs",
                 "displayOrder": 8
+            },
+
+            "relationships": {
+                "title": "Parental Relationship",
+                "hideEmptyDisplayControl": true,
+                "type": "patientInformation",
+                "patientAttributes" : ["Name","Next of Kin Contact Number","Next of Kin Type"],
+                "showDOB" : false,
+                "displayOrder": 9
             }
 
         }

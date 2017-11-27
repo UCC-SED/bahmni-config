@@ -771,23 +771,35 @@ Bahmni.ConceptSet.FormConditions.rules = {
         var Transfer_Location = "Transfer Location";
         var name_facility = "Name of Facility To be Transfer";
         var Referral_Programs = "Referral Programs";
+        var Facility_District = "Facility District";
+        var curent_location = "Makazi ya Sasa";
+        var new_location = "Makazi Mapya";
         console.log(transferType);
         if(transferType=="Referral Out") {
             conditions.show.push(Transfer_Location)
             conditions.show.push(name_facility)
             conditions.hide.push(Referral_Programs)
+             conditions.show.push(Facility_District)
+            conditions.show.push(curent_location)
+            conditions.show.push(new_location)
 
         } else if(transferType=="Referral In")
         {
             conditions.show.push(Referral_Programs)
             conditions.hide.push(Transfer_Location)
             conditions.hide.push(name_facility)
+             conditions.hide.push(Facility_District)
+            conditions.hide.push(curent_location)
+            conditions.hide.push(new_location)
 
         }
         else {
             conditions.hide.push(Transfer_Location)
             conditions.hide.push(name_facility)
             conditions.hide.push(Referral_Programs)
+             conditions.hide.push(Facility_District)
+            conditions.hide.push(curent_location)
+            conditions.hide.push(new_location)
         }
         return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
     },
