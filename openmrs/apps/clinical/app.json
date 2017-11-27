@@ -107,7 +107,13 @@
                         "Name of Community Support Organisation",
                         "Classification by site",
                         "Site",
-                        "Classification by History of Treatment"
+                        "Classification by History of Treatment",
+						"HIV Status",
+						"HIV Care registration number",
+						"CPT",
+						"CPT Start Date",
+						"ART drugs",
+						"ART Start Date"
                     ]
                 },
                 {
