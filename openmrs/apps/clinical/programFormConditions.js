@@ -23,7 +23,7 @@ Bahmni.Clinical.Program.FormConditions.rules = {
             show: [],
             hide: []
         };
-      
+      console.log(patientProgramAttributes);
         if (patientProgramAttributes['Classification by site'] == 'Extra-pulmonary') {
 
             conditions.show.push('Site');
