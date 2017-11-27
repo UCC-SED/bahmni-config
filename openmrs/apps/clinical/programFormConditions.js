@@ -1,5 +1,4 @@
 Bahmni.Clinical.Program.FormConditions.rules = {
-	console.log("chec");
     'DOT Option': function (patientProgramAttributes) {
         var conditions = {
             show: [],
@@ -24,7 +23,7 @@ Bahmni.Clinical.Program.FormConditions.rules = {
             show: [],
             hide: []
         };
-      
+      console.log(patientProgramAttributes);
         if (patientProgramAttributes['Classification by site'] == 'Extra-pulmonary') {
 
             conditions.show.push('Site');

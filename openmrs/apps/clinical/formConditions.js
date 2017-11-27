@@ -1,6 +1,6 @@
 Bahmni.ConceptSet.FormConditions.rules = {
     'Systolic Data': function(formName, formFieldValues, patient) {
-        console.log(patient);
+
         var conditions = {
             show: [],
             hide: []
