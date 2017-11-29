@@ -14,6 +14,35 @@ Bahmni.ConceptSet.FormConditions.rules = {
         return conditions;
     },
 
+
+
+     'ANC - Mimba ya ngapi': function (formName, formFieldValues, patient) {
+         var conditions = {
+                show: [],
+                hide: []
+            };
+         var other = formFieldValues['ANC - Mimba ya ngapi'];
+         var variable = 'ANC - Amezaa mara ngapi';
+         var variable2 = 'ANC - Watoto walio hai';
+         var variable3 = 'ANC - Mimba zilizoharibika';
+         console.log(other);
+         if (other > 1)
+          {
+             conditions.show.push(variable);
+             conditions.show.push(variable2);
+             conditions.show.push(variable3);
+         } else {
+             conditions.hide.push(variable);
+             conditions.hide.push(variable2);
+             conditions.hide.push(variable3);
+         }
+         return conditions;
+    },
+
+
+
+
+
     'ANC - Chupa imepasuka(Ndio/Hapana)': function (formName, formFieldValues, patient) {
          var conditions = {
                 show: [],
