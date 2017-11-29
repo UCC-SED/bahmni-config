@@ -475,7 +475,7 @@
                 "title":"Mapigo ya moyo wa mtoto (Grafu ya uchungu)",
                 "config":{
                     "yAxisConcepts":[
-                        "ANC - Blood pressure mtoto"
+                        "Mapigo ya moyo wa mtoto"
                     ],
                     "xAxisConcept":"observationDateTime",
                     "numberOfVisits":10
@@ -485,11 +485,11 @@
 
             "majiYaChupa":{
                 "type":"observationGraph",
-                "title":"ANC - Maji ya chupa (Liquor)",
+                "title":"Labor - Maji ya chupa (Liquor)",
                 "config":{
                     "yAxisConcepts":[
-                        "ANC - B. Bado kupasuka chupa(intact). S. Safi (clear). M. Meconium",
-                        "ANC - Kubonywa kichwa (Moulding) - Hakuna, + Wastani, ++ Sana"
+                        "Labour - B. Bado kupasuka chupa(intact). S. Safi (clear). M. Meconium",
+                        "Labour - Kubonywa kichwa (Moulding) - Hakuna, + Wastani, ++ Sana"
                     ],
                     "xAxisConcept":"observationDateTime",
                     "numberOfVisits":10
@@ -499,11 +499,11 @@
 
             "grafuYaUchungu":{
                 "type":"observationGraph",
-                "title":"ANC - Grafu ya uchungu",
+                "title":"Labour - Grafu ya uchungu",
                 "config":{
                     "yAxisConcepts":[
-                        "ANC - Njia kufunguka (Cervix)",
-                        "ANC - Kichwa kuteremka (Descent)"
+                        "Labour - Njia kufunguka (Cervix)",
+                        "Labour - Kichwa kuteremka (Descent)"
                     ],
                     "xAxisConcept":"observationDateTime",
                     "numberOfVisits":10

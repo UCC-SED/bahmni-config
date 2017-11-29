@@ -33,7 +33,7 @@
     "id": "bahmni.nurse",
     "extensionPointId": "org.bahmni.home.dashboard",
     "type": "link",
-    "translationKey": "Nurse",
+    "translationKey": "MODULE_LABEL_NURSE_KEY",
     "url": "../clinical/index.html#/default/patient/search",
     "icon": "fa-user-md",
     "order": 4,
