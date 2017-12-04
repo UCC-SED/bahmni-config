@@ -445,6 +445,7 @@
             },
             "growthChart":{
                 "type":"observationGraph",
+                "hideEmptyDisplayControl": true,
                 "title":"Ukuaji na maendeleo ya mtoto",
                 "config":{
                     "yAxisConcepts":[
@@ -458,6 +459,7 @@
 
             "weight/BMI":{
                 "type":"observationGraph",
+                "hideEmptyDisplayControl": true,
                 "title":"Ukuaji na maendeleo ya mtoto 2",
                 "config":{
                     "yAxisConcepts":[
@@ -472,6 +474,7 @@
 
             "observationGraph":{
                 "type":"observationGraph",
+                "hideEmptyDisplayControl": true,
                 "title":"Mapigo ya moyo wa mtoto (Grafu ya uchungu)",
                 "config":{
                     "yAxisConcepts":[
@@ -485,6 +488,7 @@
 
             "majiYaChupa":{
                 "type":"observationGraph",
+                "hideEmptyDisplayControl": true,
                 "title":"Labor - Maji ya chupa (Liquor)",
                 "config":{
                     "yAxisConcepts":[
@@ -499,6 +503,7 @@
 
             "grafuYaUchungu":{
                 "type":"observationGraph",
+                "hideEmptyDisplayControl": true,
                 "title":"Labour - Grafu ya uchungu",
                 "config":{
                     "yAxisConcepts":[
@@ -513,6 +518,7 @@
 
             "diabetes":{
                 "title":"Diabetes",
+                "hideEmptyDisplayControl": true,
                 "templateName":"Diabetes, Progress",
                 "type":"diseaseTemplate",
                 "dashboardConfig":{
@@ -569,6 +575,7 @@
             },
             "growthChart":{
                 "type":"observationGraph",
+                "hideEmptyDisplayControl": true,
                 "title":"Ukuaji na maendeleo ya mtoto",
                 "config":{
                     "yAxisConcepts":[
@@ -582,6 +589,7 @@
 
             "weight/BMI":{
                 "type":"observationGraph",
+                "hideEmptyDisplayControl": true,
                 "title":"Ukuaji na maendeleo ya mtoto 2",
                 "config":{
                     "yAxisConcepts":[
@@ -597,6 +605,7 @@
 
             "observationGraph":{
                 "type":"observationGraph",
+                "hideEmptyDisplayControl": true,
                 "title":"Mapigo ya moyo wa mtoto (Zaidi ya 160 au chini ya 120 mwarifi daktari)",
                 "config":{
                     "yAxisConcepts":[
@@ -609,6 +618,7 @@
             },
             "diabetes":{
                 "title":"Diabetes",
+                "hideEmptyDisplayControl": true,
                 "templateName":"Diabetes, Progress",
                 "type":"diseaseTemplate",
                 "dashboardConfig":{
