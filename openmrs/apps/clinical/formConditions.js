@@ -38,27 +38,6 @@ Bahmni.ConceptSet.FormConditions.rules = {
     },
 
 
-    'ANC - Umri chini ya miaka 20 Data': function(formName, formFieldValues, patient) {
-        var conditions = {
-            show: [],
-            hide: []
-        };
-        var var1 = "ANC - Umri chini ya miaka 20 Data";
-        if (patient['age'] > 20) {
-            conditions.show.push(cd4Count);
-            conditions.hide.push(cd4Percentage);
-
-        } else {
-            conditions.show.push(cd4Percentage);
-            conditions.hide.push(cd4Count);
-
-
-        }
-
-        return conditions;
-    },
-
-
 
     'ANC - Chupa imepasuka(Ndio/Hapana)': function (formName, formFieldValues, patient) {
          var conditions = {
