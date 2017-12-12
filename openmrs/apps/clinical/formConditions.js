@@ -154,15 +154,6 @@ Bahmni.ConceptSet.FormConditions.rules = {
 
 
 
-
-
-
-
-
-
-
-
-
     'HIV Vitals': function(formName, formFieldValues, patient) { //'Chief Complaint Data' concept when edited, triggers this function
         var conditions = {
             show: [],
@@ -241,14 +232,6 @@ Bahmni.ConceptSet.FormConditions.rules = {
                }
         return conditions; //Return object SHOULD be a map with 'show' and 'hide' arrays having the concept names
     },
-
-
-
-
-
-
-
-
 
 
 
