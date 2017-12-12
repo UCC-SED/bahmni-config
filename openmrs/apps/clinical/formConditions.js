@@ -100,7 +100,6 @@ Bahmni.ConceptSet.FormConditions.rules = {
            var variable2 = 'ANC - Uhusiano na huduma ya CTC';
            var variable3 = 'ANC - Ushauri juu ya lishe ya mtoto';
            var variable4 = 'ANC - Ufuasi (Adhere)';
-';
            console.log(other);
            if (other == 'ANC - 1')
            {
