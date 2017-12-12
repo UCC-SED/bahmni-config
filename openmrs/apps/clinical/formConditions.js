@@ -14,8 +14,6 @@ Bahmni.ConceptSet.FormConditions.rules = {
         return conditions;
     },
 
-
-
      'ANC - Mimba ya ngapi': function (formName, formFieldValues, patient) {
          var conditions = {
                 show: [],
@@ -38,8 +36,6 @@ Bahmni.ConceptSet.FormConditions.rules = {
          }
          return conditions;
     },
-
-
 
 
 
@@ -102,14 +98,21 @@ Bahmni.ConceptSet.FormConditions.rules = {
            var other = formFieldValues['ANC - PMTCT/ART'];
            var variable1 = 'ANC - Dawa: (ART)';
            var variable2 = 'ANC - Uhusiano na huduma ya CTC';
+           var variable3 = 'ANC - Ushauri juu ya lishe ya mtoto';
+           var variable4 = 'ANC - Ufuasi (Adhere)';
+';
            console.log(other);
            if (other == 'ANC - 1')
            {
                 conditions.show.push(variable1);
                 conditions.show.push(variable2);
+                conditions.show.push(variable3);
+                conditions.show.push(variable4);
            } else {
                  conditions.hide.push(variable1);
                  conditions.hide.push(variable2);
+                 conditions.hide.push(variable3);
+                 conditions.hide.push(variable4);
            }
            return conditions;
     },
