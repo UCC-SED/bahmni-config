@@ -233,6 +233,30 @@
                 }
 
             },
+            "labResults":{
+                "translationKey":"DASHBOARD_TITLE_LAB_RESULTS_KEY",
+                "type":"labOrders",
+                "hideEmptyDisplayControl": true,
+                "displayOrder":11,
+                "dashboardConfig":{
+                    "title":null,
+                    "numberOfVisits":6,
+                    "showChart":true,
+                    "showTable":false,
+                    "showNormalLabResults": true,
+                    "showCommentsExpanded": true,
+                    "showAccessionNotes": true,
+                    "showDetailsButton":false,
+                    "conceptNames": [
+                        "Smear",
+                        "GenXpert",
+                        "DST"
+                    ]
+                },
+                "expandedViewConfig":{
+                    "numberOfVisits":10
+                }
+            },
             "tbMedicationMonitor": {
                 "translationKey": "DASHBOARD_TITLE_MEDICATION_MONITORING_SUMMARY",
                 "type": "obsToObsFlowSheet",
