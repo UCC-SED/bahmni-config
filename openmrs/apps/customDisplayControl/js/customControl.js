@@ -1,13 +1,21 @@
 'use strict';
 angular.module('bahmni.common.displaycontrol.custom')
-    .directive('birthCertificate', ['observationsService', 'appService', 'spinner', function (observationsService, appService, spinner) {
+    .directive('notificationCenter', ['$http' ,'observationsService', 'appService', 'spinner', function ($http , observationsService, appService, spinner) {
             var link = function ($scope,element) {
-                var conceptNames = ["CTC - WHO clinical stage (1 - 4)"];
-                $scope.contentUrl = appService.configBaseUrl() + "/customDisplayControl/views/birthCertificate.html";
-                spinner.forPromise(observationsService.fetch($scope.patient.uuid, conceptNames, "latest", undefined, $scope.visitUuid, undefined).then(function (response) {
-                    $scope.observations = response.data;
+                $scope.date = new Date();
+                $scope.contentUrl = appService.configBaseUrl() + "/customDisplayControl/views/notificationCenter.html";
+                spinner.forPromise(getNotifications($scope.patient.uuid, $scope.visitUuid).then(function (response) {
+                console.log(response.data.notifications);
+                    $scope.observations = response.data.notifications;
                 }), element);
             };
+
+              var getNotifications = function (patientUuid, visitUuid) {
+                                            return $http.get('/openmrs/ws/rest/v1/emr/getNotifications', {
+                                                params: {patientUuid: patientUuid, visitUuid: "test"},
+                                                withCredentials: true
+                                            })
+                                        };
             return {
                 restrict: 'E',
                 template: '<ng-include src="contentUrl"/>',
