@@ -240,7 +240,7 @@
                 "displayOrder":11,
                 "dashboardConfig":{
                     "title":null,
-                    "numberOfVisits":6,
+                    "numberOfVisits":10,
                     "showChart":true,
                     "showTable":false,
                     "showNormalLabResults": true,
