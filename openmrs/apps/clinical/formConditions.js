@@ -711,6 +711,21 @@ Bahmni.ConceptSet.FormConditions.rules = {
             
             return conditions;
         },
+        'TB - IPT': function (formName, formFieldValues, patient) {
+            var conditions = {show: [],hide: []  };
+            var REJESTA="TB - REJESTA YA TIBA KINGA YA KIFUA KIKUU";
+            if (formFieldValues['TB - IPT']) {
+				
+                conditions.show.push(REJESTA);
+                
+            } else
+            {
+                conditions.hide.push(REJESTA);
+            }
+            
+            return conditions;
+        }
+        ,
         'Breast feeding': function(formName, formFieldValues, patient) {
                 var conditions = {show: [], hide: []};
                 var name = "Breast feeding";
