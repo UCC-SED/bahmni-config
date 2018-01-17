@@ -58,9 +58,6 @@
       "ID_Number": {
         "required": true
       },
-      "District Registration Number": {
-        "required": true
-      },
       "DR-TB Registration Number": {
         "required": true
       },
