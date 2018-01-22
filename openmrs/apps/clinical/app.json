@@ -569,6 +569,11 @@
           "defaultObservationConceptName": [
             "All TB Observations"
           ]
+        }, {
+          "visitType": "DR TB",
+          "defaultObservationConceptName": [
+            "All DR Observations"
+          ]
         },
         {
           "visitType": "RCH",
