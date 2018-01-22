@@ -574,6 +574,11 @@
           "defaultObservationConceptName": [
             "All DR Observations"
           ]
+        }, {
+          "visitType": "Leprosy",
+          "defaultObservationConceptName": [
+            "All LEP Observations"
+          ]
         },
         {
           "visitType": "RCH",
