@@ -136,7 +136,6 @@
         {
           "programName": "MDR - TB Treatment",
           "attributeTypes": [
-            "District Registration Number",
             "DR-TB Registration Number",
             "Place of Work",
             "Place of Work-Other",
@@ -150,6 +149,16 @@
             "Classification by site",
             "Site",
             "Classification by History of Treatment"
+          ]
+        },
+        {
+          "programName": "TB/Lep Treatment - LEP",
+          "attributeTypes": [
+            "District Registration Number",
+            "LEP - Types of patient",
+            "LEP - Transfer in",
+            "LEP - Other",
+            "HIV Status"
           ]
         },
         {
