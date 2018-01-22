@@ -155,9 +155,9 @@
           "programName": "TB/Lep Treatment - LEP",
           "attributeTypes": [
             "District Registration Number",
-            "LEP - Types of patient",
-            "LEP - Transfer in",
-            "LEP - Other",
+            "Types of patient",
+            "Types of patient (Other)",
+            "Transfer in",
             "HIV Status"
           ]
         },
